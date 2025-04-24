@@ -18,10 +18,13 @@ from psychopy_visionscience.noise import NoiseStim
 import glob
 from PIL import Image
 from psychopy import prefs
-
-prefs.general['windowType'] ='pygame'
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
 from memory_profiler import profile
 
+from utils import scramble_image, logiF, inverse_logistic
+
+prefs.general['windowType'] ='pygame'
 
 MR_settings = { 
     'TR': 2.4, # duration (sec) per volume CHECK
@@ -32,13 +35,18 @@ MR_settings = {
     }
 
 
+# /!\ Change the path to your local path 
+#path = '/Users/sysadmin/Documents/PreddiBrains/'
+path = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/'
 
-stimPath ='/Users/sysadmin/Documents/PreddiBrains/Stimuli/Faces' 
-mStimPath = '/Users/sysadmin/Documents/PreddiBrains/Stimuli/Faces/Males' 
-fStimPath = '/Users/sysadmin/Documents/PreddiBrains/Stimuli/Faces/Females' 
-path = '/Users/sysadmin/Documents/PreddiBrains/'
-outPath = '/Users/sysadmin/Documents/PreddiBrains/Output/Imaging/FA'
+stimPath = path + 'Stimuli/Faces' 
+mStimPath = path + 'Stimuli/Faces/Males' 
+fStimPath = path + 'Stimuli/Faces/Females' 
+outPath = path + 'Output/Imaging/FA'
 
+############################
+###### Set the Subject #####
+############################
 
 subjNum = input("Enter main participant identifier: ") 
 subjPath = os.path.join(outPath, 'PBF' + subjNum)
@@ -50,18 +58,21 @@ while os.path.isfile(os.path.join(subjPath, resFile)):
     print(subjNum)
     
 
-subjData = pd.read_csv('PBF'+subjNum +'_IntakeData.csv')
-lang = subjData.iloc[5,1]
+subjData = pd.read_csv('PBF'+subjNum +'_IntakeData.csv').drop(columns = 'Unnamed: 0')
+lang = subjData.iloc[5,0]
 
-#win = visual.Window([1512,982], [0, 0], monitor="testMonitor", units="norm") # laptop
-# Define a normalized screen size approximation for aspect ratio (e.g., 1920x1080)
+############################
+###### Set the Window ###### 
+############################
+
+# Set the display parameters
 width_norm = 1.6  # corresponds to 16:10 aspect
 height_norm = 1.0
 
 # Create window with norm units
-win = visual.Window(size=[1920, 1080], units="norm", fullscr=False) #FCBG 
+win = visual.Window([1920, 1080],[0, 0], units="norm", fullscr=False) #FCBG 
 
-# Get actual window size in pixels
+# Get actual window size in pixels1
 win_width, win_height = win.size
 win_aspect = win_width / win_height
 
@@ -77,9 +88,12 @@ norm_width = norm_height * img_aspect / win_aspect
 # Use this size for all your ImageStims
 norm_image_size = [norm_width, norm_height]
 
+###########################
+###### Set the Noise ###### 
+###########################
+
 n1 = []
 n2 = []
-#winner used
 for nn in range(1152):
     n1.append(NoiseStim(
     win=win, name='noise', units='pix',
@@ -99,57 +113,43 @@ for nnn in range(1152):
     noiseBaseSf=8.0/512, noiseFilterLower=3/512, noiseFilterUpper=8.0/512.0,
     interpolate=False, depth=-1.0))
 
+noise = n1 + n2
+
+######################################
+#### Set the Stimulus and Percept ####
+######################################
 
 p = []
 g = []
 r = []
 
-imgs = []
-percept = []
+# Define stims 
+stims = []
+genders = ['Males', 'Females']
+whichG = np.random.choice(genders, 1)[0]
+genderpath = stimPath + '/' + whichG
+os.chdir(genderpath)
+Imgs = glob.glob(f'*{whichG[:1]}*.png') 
 
-os.chdir(mStimPath)
-mImgs = glob.glob('*M*.png')
-mIds = []
-fIds = []
-for i in mImgs:
-    isp = i.split('_')
-    mIds.append(isp[0])
+Ids = []
+for i in Imgs:
+        isp = i.split('_')
+        Ids.append(isp[0]) 
 
-umIds = list(set(mIds))
-smIds = random.sample(umIds,1)
-    
-os.chdir(fStimPath)
-fImgs = glob.glob('*F*.png')
+uIds = list(set(Ids)) 
+sIds = random.sample(uIds,1) # Took only 1 randomly
 
-for i in fImgs:
-    isp = i.split('_')
-    fIds.append(isp[0])
+for i in Imgs:
+        if sIds[0] in i:
+            thisIm = os.path.join(genderpath, i)
+            stims.append(thisIm)
 
-ufIds = list(set(fIds))
-sfIds = random.sample(ufIds,1)
-
-whichG = random.randint(1,2)
-
-if whichG == 1:
-    subjData.loc[6,1] = 'M'
-    for i in mImgs:
-        #if smIds[0] in i or smIds[1] in i:
-        if smIds[0] in i:
-            thisIm = os.path.join(mStimPath, i)
-            imgs.append(thisIm)
-elif whichG == 2:
-    subjData.loc[6,1] = 'F'
-    for j in fImgs:
-        #if sfIds[0] in j or sfIds[1] in j:
-        if sfIds[0] in j:
-            thisIm = os.path.join(fStimPath, j)
-            imgs.append(thisIm)
-        
 accept= ['H30','H60', 'H80', 'H50', 'H20', 'H40', 'H70']
-imgs = [i for i in imgs if any(allow in i for allow in accept)]
+stims = [i for i in stims if any(allow in i for allow in accept)]
 
-        
-for m in imgs:
+# Define Percept 
+percept = []    
+for m in stims:
     if 'M' in m:
         g.append(1)
     else:
@@ -180,6 +180,9 @@ for m in imgs:
         p.append(0.2)
         percept.append('A')
 
+##########################
+###### Set the Text ######
+##########################
 
 if lang == 'E':      
     instrText = visual.TextStim(win, text = 'In this task, you will be presented with a series of noise masks. In between the noise masks, we may show you an image of a face. We will then ask you if you saw a face. If yes, press the rightmost button. If no, press the leftmost button. You will then be asked if the face you saw was happy (press right), or angry(press left). You must provide an answer even if you did not see the face. You will then be asked how sure you are of your response on a scale from 1-10. Navigate through the scale with left and right buttons, and confirm your selection with either of the two middle buttons. Press any key to continue.', 
@@ -213,6 +216,12 @@ if lang == 'E':
     depth=0, rgb=None, color='black', colorSpace='rgb', opacity=1.0, contrast=1.0, units='', 
     ori=0.0, height = 0.07, antialias=True, bold=True, italic=False,  anchorVert='center', anchorHoriz='center',
     fontFiles=(), wrapWidth=None, flipHoriz=False, flipVert=False, languageStyle='LTR', name=None, autoLog=None)
+
+    scannerWait = visual.TextStim(win, text = 'Please wait for scanner...', 
+    font='', pos=(0, 0), depth=0, rgb=None, color= 'black', colorSpace='rgb', opacity=1.0, contrast=1.0, units='', 
+    ori=0.0, height=0.07, antialias=True, bold=False, italic=False, alignHoriz='center', alignVert='center',
+    fontFiles=(), wrapWidth=None, flipHoriz=False, flipVert=False, languageStyle='LTR', name=None, autoLog=None)  
+
     
 elif lang == 'F':
     instrText = visual.TextStim(win, text = "Dans cette tâche, vous verrez une série de masques bruités. Entre ces masques, nous pourrons vous présenter un visage. Nous vous demanderons ensuite si vous avez vu un visgae. Si oui, appuyez sur le bouton le plus à droite. Si non, appuyez sur le bouton le plus à gauche. Ensuite, nous vous demanderons si le visage etait heureux (appuyez à droite) ou fâché (appuyez à gauche). Vous devez fournir une réponse, même si vous n’avez pas vu le visage. Enfin, nous vous demanderons à quel point vous êtes sûr(e) de votre dernière réponse sur une échelle de 1 à 10. Naviguez l’échelle avec les boutons gauche et droite, puis  valider votre sélection avec l’un des boutons du milieu. Appuyez sur une touche pour continuer.", 
@@ -246,86 +255,24 @@ elif lang == 'F':
     ori=0.0, height = 0.07, antialias=True, bold=True, italic=False,  anchorVert='center', anchorHoriz='center',
     fontFiles=(), wrapWidth=None, flipHoriz=False, flipVert=False, languageStyle='LTR', name=None, autoLog=None)
 
-
-
+    scannerWait = visual.TextStim(win, text = 'S il vous plait, attendez pour le scanner ...', 
+    font='', pos=(0, 0), depth=0, rgb=None, color= 'black', colorSpace='rgb', opacity=1.0, contrast=1.0, units='', 
+    ori=0.0, height=0.07, antialias=True, bold=False, italic=False, alignHoriz='center', alignVert='center',
+    fontFiles=(), wrapWidth=None, flipHoriz=False, flipVert=False, languageStyle='LTR', name=None, autoLog=None)  
 
 FixationText = visual.TextStim(win=win, text='+', font='', pos=(0, 0),
 depth=0, rgb=None, color='black', colorSpace='rgb', opacity=1.0, contrast=1.0, units='', 
 ori=0.0, height = 0.07, antialias=True, bold=True, italic=False,  anchorVert='center', anchorHoriz='center',
 fontFiles=(), wrapWidth=None, flipHoriz=False, flipVert=False, languageStyle='LTR', name=None, autoLog=None)
 
-scannerWait = visual.TextStim(win, text = 'Please wait for scanner...', 
-font='', pos=(0, 0), depth=0, rgb=None, color= 'black', colorSpace='rgb', opacity=1.0, contrast=1.0, units='', 
-ori=0.0, height=0.07, antialias=True, bold=False, italic=False, alignHoriz='center', alignVert='center',
-fontFiles=(), wrapWidth=None, flipHoriz=False, flipVert=False, languageStyle='LTR', name=None, autoLog=None)  
-
-   
-confScale = visual.Slider(win,
-    ticks=list(range(1, 11)),             # `low=1, high=10` -> ticks from 1 to 10
-    labels=None,                           # No specific labels
-    startValue=random.randint(1, 10),      # `markerStart`
-    granularity=1,                         # Ensures only integer values (discrete steps)
-    color='black',                     # `textColor`
-    pos= (0, -0.3), markerColor='Black')
-# Set up custom key responses for moving the marker and accepting the response
-cleftKeys = '1'
-crightKeys = '4'
-cacceptKeys = ['2', '3']
-
-
-
-def scramble_image(img_grey, block_size=70):
-    """
-    Scramble an image by dividing it into blocks and shuffling them.
-    
-    Args:
-        image_path (str): Path to the image to scramble.
-        block_size (int): Size of each block to divide the image into.
-    
-    Returns:
-        scrambled_img (Image): Scrambled PIL image.
-    """
-    img_array = np.array(img_grey)
-    # Get image dimensions
-    h, w = img_array.shape
-    # Ensure the dimensions are divisible by block_size
-    h_blocks = h // block_size
-    w_blocks = w // block_size
-    img_cropped = img_array[:h_blocks * block_size, :w_blocks * block_size]
-    
-    # Divide image into blocks
-    blocks = [
-        img_cropped[i:i+block_size, j:j+block_size]
-        for i in range(0, h_blocks * block_size, block_size)
-        for j in range(0, w_blocks * block_size, block_size)
-    ]
-    
-    # Shuffle the blocks
-    random.shuffle(blocks)
-    
-    # Reassemble the image
-    scrambled_array = np.vstack([
-        np.hstack(blocks[i:i + w_blocks])
-        for i in range(0, len(blocks), w_blocks)
-    ])
-    
-    # Convert back to a PIL Image
-    scrambled_img = Image.fromarray(scrambled_array)
-    return scrambled_img
-
-# fStimPath = '/Users/sysadmin/Documents/PreddiBrains/Stimuli/Faces/Females' 
-# os.chdir(fStimPath)
-# stims = glob.glob("*H*.png")
-stims = imgs
+# Define stimulus list 
 stimAll = []
 stimScr = []
 sName = []
 imIDs = []
 
-
 for r in range(6):
     for s in stims:
-# img_color = Image.open('/Users/sysadmin/Documents/PreddiBrains/Stimuli/Faces/Females/WF003_H50A50.png')
         img_color = Image.open(s)
         img_grey = img_color.convert('L')
         scrambled_image = scramble_image(img_grey)
@@ -333,34 +280,31 @@ for r in range(6):
         stimAll.append(visual.ImageStim(win, image=img_grey, pos = [0,0], size=norm_image_size))
         sName.append(s.split('_')[1][:-4])
         imIDs.append(s)
-        
 
-response1 = []
-response2 = []
-
-noise = n1 + n2
+#############################################
+###### Set the Duration and Resolution ###### 
+#############################################
 dur = np.hstack([np.tile(0.200, 51), np.tile(0.016, 51)])
-
 frC = 12 # for my Mac, ca 60 Hz refresh rate. Adjust to approx. 100-150 ms
 frUC = 1 # for my Mac, 60 Hz refresh rate. Adjust to approx. 16-24 ms
 
-cond1C = np.ones(51)
-cond2C = np.zeros(51)
-condC = np.hstack([cond1C, cond2C])
-cond1P = np.ones(84)
-cond2P = np.zeros(18)
-condP = np.hstack([cond1P, cond2P])
 
-sNames = sName + sName + list(np.tile(np.nan, 18))
-imIDs = imIDs + imIDs + list(np.tile(np.nan, 18))
-allStims = stimAll + stimAll + list(np.tile(np.nan, 18))
-allStimscr = stimScr + stimScr + list(random.sample(stimScr, 18));
+###############################
+###### Set the Condition ###### 
+###############################
 
+condC = np.hstack([np.ones(51), np.zeros(51)])
+condP = np.hstack([np.ones(84), np.zeros(18)])
+
+sNames = sName + sName + list(np.tile(np.NaN, 18)) 
+imIDs = imIDs + imIDs + list(np.tile(np.NaN, 18))
+allStims = stimAll + stimAll + list(np.tile(np.NaN, 18))
+allStimscr = stimScr + stimScr + list(random.sample(stimScr, 18))
 p = p * 12 + list(np.tile(np.nan, 18))
 g = g * 12 + list(np.tile(np.nan, 18))
 percept = percept * 12 + list(np.tile(np.nan, 18))
 
-
+# Randomize 
 seed = random.randint(1,5)
 random.Random(seed).shuffle(p)
 random.Random(seed).shuffle(g)
@@ -370,13 +314,55 @@ random.Random(seed).shuffle(allStimscr)
 random.Random(seed).shuffle(condP)
 random.Random(seed).shuffle(sNames)
 random.Random(seed).shuffle(imIDs)
-
-
-
 random.Random(9).shuffle(condC)
 random.Random(9).shuffle(dur)
 random.Random(8).shuffle(noise)
 
+####################################
+###### Set the Confidence Bar ###### 
+####################################
+
+confScale = visual.Slider(win,
+    ticks=list(range(1, 11)),             # `low=1, high=10` -> ticks from 1 to 10
+    labels=None,                           # No specific labels
+    startValue=random.randint(1, 10),      # `markerStart`
+    granularity=1,                         # Ensures only integer values (discrete steps)
+    color='black',                     # `textColor`
+    pos= (0, -0.3), markerColor='Black')
+
+# Set up custom key responses for moving the marker and accepting the response
+cleftKeys = '1'
+crightKeys = '4'
+cacceptKeys = ['2', '3']
+
+# Determine which trials to ask the confidence question
+n_trials = len(condC)
+
+# Get indices where condP == 1 and split by condC
+condP1_indices = [i for i in range(n_trials) if condP[i] == 1]
+condP1_C0 = [i for i in condP1_indices if condC[i] == 0]
+condP1_C1 = [i for i in condP1_indices if condC[i] == 1]
+
+# Total confidence questions to ask: half of all condP == 1 trials
+n_conf_total = len(condP1_indices) // 2
+n_each = n_conf_total // 2
+
+# Randomly sample trials from each condC group
+random.seed(42)
+ask_conf_trials_C0 = random.sample(condP1_C0, n_each)
+ask_conf_trials_C1 = random.sample(condP1_C1, n_each)
+
+# Build ask_conf list
+ask_conf = [False] * n_trials
+for idx in ask_conf_trials_C0 + ask_conf_trials_C1:
+    ask_conf[idx] = True
+
+#############################
+###### Set the Storage ###### 
+############################# 
+
+response1 = []
+response2 = []
 
 dused = []
 nused = []
@@ -402,7 +388,7 @@ confROns = []
 confRating = []
 confRT = []
 
-
+#_____________________ Starting Task _____________________
 clock = core.Clock()
 instrText.draw()
 win.flip()
@@ -410,47 +396,22 @@ event.waitKeys()
 scannerWait.draw()
 win.flip()
 
-# Determine which trials to ask the confidence question
-n_trials = len(condC)
-
-# Get indices where condP == 1 and split by condC
-condP1_indices = [i for i in range(n_trials) if condP[i] == 1]
-condP1_C0 = [i for i in condP1_indices if condC[i] == 0]
-condP1_C1 = [i for i in condP1_indices if condC[i] == 1]
-
-# Total confidence questions to ask: half of all condP == 1 trials
-n_conf_total = len(condP1_indices) // 2
-n_each = n_conf_total // 2
-
-# Randomly sample trials from each condC group
-random.seed(42)
-ask_conf_trials_C0 = random.sample(condP1_C0, n_each)
-ask_conf_trials_C1 = random.sample(condP1_C1, n_each)
-
-# Build ask_conf list
-ask_conf = [False] * n_trials
-for idx in ask_conf_trials_C0 + ask_conf_trials_C1:
-    ask_conf[idx] = True
-
-
 logFile = os.path.join(outPath, "outputFaces" + subjNum + ".txt")
 with open(logFile, "a") as f:
     trigger = event.waitKeys(keyList = ['5'], clearEvents=True, timeStamped=True) 
     jitter = random.uniform(1,2)
-    #block key 5 to keep console clear
-    #keyboard.block_key("5")
 
     trigTime = clock.getTime()
     startExp = clock.getTime()
-    subjData.loc[7,1] = trigTime
-    subjData.loc[8,1] = startExp
+    subjData.loc[7,0] = trigTime
+    subjData.loc[8,0] = startExp
     print('Trigger at ' + str(startExp), file=f)
     print('Trigger at ' + str(startExp))
     print('Start at ' + str(startExp), file=f)
     print('Start at ' + str(startExp))
 
 
-    for im in range(len(condC)): 
+    for im in range(10) : #len(condC)): # lenght == 102 
         thisP = p[im]
         print('Bias in trial ' + str(im) +' is ' + str(thisP), file=f)
         print('Bias in trial ' + str(im) +' is ' + str(thisP))
@@ -459,10 +420,10 @@ with open(logFile, "a") as f:
         print('Presence in trial ' + str(im) +' is ' + str(condP[im]), file=f)
         print('Presence in trial ' + str(im) +' is ' + str(condP[im]))
         
-        if condC[im] == 1:
+        # Stim presentation
+        if condC[im] == 1: # Conscious condition
             stim = allStims[im]
             sScr = allStimscr[im]
-            # n = noise[im00]
             d = dur[im]
             n = random.sample(noise, 4)
             for nm in range(4): 
@@ -470,10 +431,8 @@ with open(logFile, "a") as f:
                 sScr.draw()
                 win.flip()
                 core.wait(0.066)
-            # n.draw() 
-            # win.flip()
-            # core.wait(0.120)
-            if condP[im] == 1:
+            
+            if condP[im] == 1: # stim present
                 for _ in range(frC):
                     stim.draw()
                     win.flip()
@@ -482,8 +441,8 @@ with open(logFile, "a") as f:
                         stimPres.append(clock.getTime())
                         print('Stimulus presented at ' + str(sP), file=f)
                         print('Stimulus presented at  ' + str(sP))
-                #core.wait(0.080)
-            elif condP[im] == 0:
+
+            elif condP[im] == 0: # stim not present
                 for _ in range(frC):
                     win.flip()
                     if _ == 0:
@@ -491,27 +450,27 @@ with open(logFile, "a") as f:
                         stimPres.append(clock.getTime())
                         print('Stimulus presented at ' + str(sP), file=f)
                         print('Stimulus presented at ' + str(sP))
-                # core.wait(0.080)      
+    
             n = random.sample(noise, 4)
             for nm in range(4): 
                 n[nm].draw() 
                 sScr.draw()
                 win.flip()
                 core.wait(0.066)
-            # n.draw() 
+
             FixationText.draw()
             win.flip()
-            # core.wait(0.120)
+
             core.wait(4.5 + jitter)
             Quest1.draw()
             win.flip()
             q1P = clock.getTime()
             q1Pres.append(q1P)
             
-        elif condC[im] == 0:
+        elif condC[im] == 0: # Not conscious condition
             stim = allStims[im]
             sScr = allStimscr[im]
-            # n = noise[im]
+
             d = dur[im]
             n = random.sample(noise, 4)
             for nm in range(4): 
@@ -519,10 +478,8 @@ with open(logFile, "a") as f:
                 n[nm].draw() 
                 win.flip()
                 core.wait(0.066)
-            # n.draw() 
-            # win.flip()
-            # core.wait(0.120)
-            if condP[im] == 1:
+    
+            if condP[im] == 1: # Stim present
                 for _ in range(frUC):
                     stim.draw()
                     win.flip()
@@ -531,8 +488,8 @@ with open(logFile, "a") as f:
                         stimPres.append(clock.getTime())
                         print('Stimulus presented at ' + str(sP), file=f)
                         print('Stimulus presented at ' + str(sP))
-                #core.wait(d)
-            elif condP[im] == 0:
+
+            elif condP[im] == 0: # stim not present 
                 for _ in range(frUC):
                     win.flip()
                     if _ == 0:
@@ -540,7 +497,7 @@ with open(logFile, "a") as f:
                         stimPres.append(clock.getTime())
                         print('Stimulus presented at ' + str(sP), file=f)
                         print('Stimulus presented at ' + str(sP))
-                # core.wait(d)     
+  
             n = random.sample(noise, 4)
             for nm in range(4): 
                 n[nm].draw() 
@@ -555,6 +512,7 @@ with open(logFile, "a") as f:
             q1Pres.append(clock.getTime())
             
             
+        # Take the answer 
         resp1 = event.waitKeys(keyList = ['1', '4'], clearEvents=True, timeStamped=True)
         press1 = resp1[0][0]
         response1.append(press1)
@@ -579,7 +537,8 @@ with open(logFile, "a") as f:
         FixationText.draw()
         win.flip()
         core.wait(2)
-        # nused.append(n.getNoiseType())
+
+        # Ask for confidence
         if ask_conf[im]:  # Only ask on selected trials
             confQO = []
             while confScale.getRating() is None:
@@ -599,21 +558,23 @@ with open(logFile, "a") as f:
                     t1 = confQO[0]
                     confQOns.append(t1)
                     confROns.append(c2)
+                    confRT.append(t1 - c2)
                     break
         
             rating = confScale.getMarkerPos()
-            confRT.append(t1 - c2)
+            #confRT.append(t1 - c2)
             print('Subject reported a confidence of ' + str(rating) + ' at ' + str(c2), file=f)
             print('Subject reported a confidence of ' + str(rating) + ' at ' + str(c2))
             confRating.append(rating)
         else:
-            confQOns.append(np.nan)
-            confROns.append(np.nan)
-            confRT.append(np.nan)
-            confRating.append(np.nan)
+            print('Subject confidence not asked')
+            confQOns.append('Not asked')
+            confROns.append('Not asked')
+            confRT.append('Not asked')
+            confRating.append('Not asked')
 
+        # Save 
         dused.append(d)
-        # nsize.append(n.noiseElementSize)
         val.append(sNames[im])
         Percepts.append(percept[im])
         bias.append(p[im])
@@ -635,23 +596,25 @@ with open(logFile, "a") as f:
         win.flip()
         core.wait(3.5 + jitter)
 
+# Save in csv
 allRes =pd.concat([pd.Series(stimPres), pd.Series(q1Pres), pd.Series(response1), pd.Series(r1Ons), pd.Series(q2Pres), pd.Series(response2), pd.Series(r2Ons), pd.Series(confQOns),pd.Series(confROns), pd.Series(confRT),pd.Series(confRating), pd.Series(bias), pd.Series(condition),pd.Series(present), pd.Series(dur), pd.Series(val), pd.Series(Id)], axis = 1)
 allRes.columns =['StimOnset', 'Q1Onset', 'Seen', 'Resp1Onset', 'Q2Onset', 'Emotion','Resp2Onset', 'ConfQOnset', 'ConfROnset', 'ConfRT', 'ConfRating', 'Bias', 'Condition', 'StimPresent', 'Duration','Sname', 'StimID']
+
 endExp = clock.getTime()
-subjData.loc[9,1] = endExp
-
+subjData.loc[9,0] = endExp
 subjData.to_csv('PBF' +subjNum +'_IntakeData.csv')
-
 expDur = endExp - startExp
 print('Experiment lasted ' + str(expDur))
 
+#_____________________ End of the Task _____________________
+allRes = allRes.dropna(subset='Emotion') # TO REMOVE!!!!!!!
 
+# Compute and Save scores
 correct1 = []
 correct2 = []
 
 H = ['H60', 'H70', 'H80']
 A = ['H20', 'H30', 'H40']
-
 
 em = []
 for i in range(len(allRes)):
@@ -666,7 +629,7 @@ for i in range(len(allRes)):
 
 emC = []  
 for i in range(len(allRes)):
-    emotion = allRes.Emotion.iloc[i]
+    emotion = allRes.Emotion.iloc[i] #________ PB here 
     if '4' in emotion:
         emC.append('happy')
     elif '1' in emotion:
@@ -674,8 +637,7 @@ for i in range(len(allRes)):
     else:
         emC.append(np.nan)
 
-
-                
+        
 for i in range(len(allRes)):
     if em[i] in emC[i]:
         correct2.append(1)
@@ -696,48 +658,41 @@ for i in range(len(allRes)):
 os.chdir(subjPath)     
 
 allRes = pd.concat([allRes, pd.Series(emC), pd.Series(correct1), pd.Series(correct2), pd.Series(gender)], axis = 1)
-allRes.columns =['StimOnset', 'Q1Onset', 'Seen', 'Resp1Onset', 'Q2Onset', 'Emotion','Resp2Onset', 'ConfQOnset', 'ConfROnset', 'ConfRT', 'ConfRating','Bias', 'Condition', 'StimPresent', 'Duration','Sname', 'StimID', 'PerceptC', 'CorrectSeen', 'CorrectPercept', 'Gender']
-allRes.to_csv('FaceI_' + subjNum + '.csv')
+allRes = allRes.rename(columns = {0 :'PerceptC', 1: 'CorrectSeen', 2: 'CorrectPercept', 3:'Gender'})
 
+allRes.to_csv('FaceI_' + subjNum + '.csv')
 
 thanksText.draw()
 win.flip()
 core.wait(2)
 win.close()
-    
-#unblock trigger key
-#keyboard.unblock_key('5')
 
 score= []
      
 allpVals = np.unique(allRes.Bias.values)
 allRes = allRes.dropna()
 
-
-import matplotlib.pyplot as plt
+'''
 for i in allpVals:
     thisB = allRes.loc[allRes['Bias'] == i]
-    count = sum(thisB['selection'] == 'h')
+    #count = sum(thisB['selection'] == 'h') # TODO : still don't work 
+    count = sum(thisB)
     subProb = count/len(thisB)
     score.append(subProb)
-    
+'''
 
+for i in allpVals: # TOCHECK if what we want ? 
+    thisB = allRes.loc[allRes['Bias'] == i]
+    count = sum(thisB.CorrectSeen)
+    try : 
+        subProb = count/len(thisB)
+    except : 
+        subProb = 0
+    score.append(subProb)
+    
 plt.plot(allpVals, score)  
-    
-    # Wait for a key press before proceeding to the next frame
-    #event.waitKeys()
 
-# Close the PsychoPy window
-
-from scipy.optimize import curve_fit
-
-def logiF(x, L, k, x0):
-    return L / (1 + np.exp(-k * (x - x0)))
-
-def inverse_logistic(y, L, k, x0):
-    return x0 - (1/k) * np.log(L/y - 1)
-
-# data for fit
+# data for fit with log curve
 x_data = allpVals
 y_data = score
 
@@ -745,10 +700,7 @@ ass = [1.0, 1.0, 0.5]
 
 # Fit the curve
 popt, pcov = curve_fit(logiF, x_data, y_data, p0=ass)
-
-y_values = np.array([0, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1])
-
-# Compute corresponding x-values using the fitted parameters
+y_values = np.arange(0, 11)*0.1
 x_values = inverse_logistic(y_values, *popt)
 
 # Print the results
