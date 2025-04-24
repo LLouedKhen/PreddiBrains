@@ -602,6 +602,7 @@ allRes.columns =['StimOnset', 'Q1Onset', 'Seen', 'Resp1Onset', 'Q2Onset', 'Emoti
 
 endExp = clock.getTime()
 subjData.loc[9,0] = endExp
+
 subjData.to_csv('PBF' +subjNum +'_IntakeData.csv')
 expDur = endExp - startExp
 print('Experiment lasted ' + str(expDur))
@@ -629,7 +630,7 @@ for i in range(len(allRes)):
 
 emC = []  
 for i in range(len(allRes)):
-    emotion = allRes.Emotion.iloc[i] #________ PB here 
+    emotion = allRes.Emotion.iloc[i] 
     if '4' in emotion:
         emC.append('happy')
     elif '1' in emotion:
@@ -668,19 +669,22 @@ core.wait(2)
 win.close()
 
 score= []
-     
+    
+# sol form leyla mail 
 allpVals = np.unique(allRes.Bias.values)
-allRes = allRes.dropna()
+allpVals = [x for x in allpVals if not np.isnan(x)]
+allResults = allRes[allRes.StimPresent == 1]
+allResults = allResults[allResults.Condition == 1]
 
-'''
+
 for i in allpVals:
-    thisB = allRes.loc[allRes['Bias'] == i]
-    #count = sum(thisB['selection'] == 'h') # TODO : still don't work 
-    count = sum(thisB)
+    thisB = allResults.loc[allResults['Bias'] == i]
+    count = sum(thisB['Emotion'] == '1')
     subProb = count/len(thisB)
     score.append(subProb)
-'''
 
+
+''' sol by me to replace 
 for i in allpVals: # TOCHECK if what we want ? 
     thisB = allRes.loc[allRes['Bias'] == i]
     count = sum(thisB.CorrectSeen)
@@ -689,7 +693,8 @@ for i in allpVals: # TOCHECK if what we want ?
     except : 
         subProb = 0
     score.append(subProb)
-    
+''' 
+
 plt.plot(allpVals, score)  
 
 # data for fit with log curve
