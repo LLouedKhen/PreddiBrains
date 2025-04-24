@@ -2,6 +2,7 @@
 Lecture/
 Stimuli/
 Output/ 
+.DS_Store
 
 # files to ignore : file test to open the outputs and check 
 test.ipynb
