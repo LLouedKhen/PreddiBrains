@@ -1,0 +1,11 @@
+# new env 
+pip 
+python ==3.9.19
+psychopy==2024.2.1
+psychopy-visionscience
+setuptools==66.1.1  
+importlib-metadata==4.5.0
+datetime 
+pandas
+json_tricks==3.17.3
+memory_profiler
