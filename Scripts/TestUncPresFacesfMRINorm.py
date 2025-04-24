@@ -190,8 +190,6 @@ if lang == 'E':
     ori=0.0, height = 0.07, antialias=True, bold=False, italic=False,  anchorVert='center', anchorHoriz='center',
     fontFiles=(), wrapWidth=None, flipHoriz=False, flipVert=False, languageStyle='LTR', name=None, autoLog=None)  
     
-    
-    
     Quest1 = visual.TextStim(win, text = 'Did you see a face?', 
     font='', pos=(0, 0), depth=0, rgb=None, color= 'black', colorSpace='rgb', opacity=1.0, contrast=1.0, units='', 
     ori=0.0, height = 0.07, antialias=True, bold=False, italic=False,  anchorVert='center', anchorHoriz='center',
@@ -228,7 +226,6 @@ elif lang == 'F':
     font='', pos=(0, 0), depth=0, rgb=None, color= 'black', colorSpace='rgb', opacity=1.0, contrast=1.0, units='', 
     ori=0.0, height = 0.07, antialias=True, bold=False, italic=False,  anchorVert='center', anchorHoriz='center',
     fontFiles=(), wrapWidth=None, flipHoriz=False, flipVert=False, languageStyle='LTR', name=None, autoLog=None)  
-
     
     Quest1 = visual.TextStim(win, text = 'Avez-vous vu un visage?', 
     font='', pos=(0, 0), depth=0, rgb=None, color= 'black', colorSpace='rgb', opacity=1.0, contrast=1.0, units='', 
@@ -287,7 +284,6 @@ for r in range(6):
 dur = np.hstack([np.tile(0.200, 51), np.tile(0.016, 51)])
 frC = 12 # for my Mac, ca 60 Hz refresh rate. Adjust to approx. 100-150 ms
 frUC = 1 # for my Mac, 60 Hz refresh rate. Adjust to approx. 16-24 ms
-
 
 ###############################
 ###### Set the Condition ###### 
@@ -411,7 +407,7 @@ with open(logFile, "a") as f:
     print('Start at ' + str(startExp))
 
 
-    for im in range(10) : #len(condC)): # lenght == 102 
+    for im in range(len(condC)): # lenght == 102 
         thisP = p[im]
         print('Bias in trial ' + str(im) +' is ' + str(thisP), file=f)
         print('Bias in trial ' + str(im) +' is ' + str(thisP))
@@ -608,7 +604,7 @@ expDur = endExp - startExp
 print('Experiment lasted ' + str(expDur))
 
 #_____________________ End of the Task _____________________
-allRes = allRes.dropna(subset='Emotion') # TO REMOVE!!!!!!!
+#allRes = allRes.dropna(subset='Emotion') # to debug
 
 # Compute and Save scores
 correct1 = []
@@ -676,24 +672,11 @@ allpVals = [x for x in allpVals if not np.isnan(x)]
 allResults = allRes[allRes.StimPresent == 1]
 allResults = allResults[allResults.Condition == 1]
 
-
 for i in allpVals:
     thisB = allResults.loc[allResults['Bias'] == i]
     count = sum(thisB['Emotion'] == '1')
     subProb = count/len(thisB)
     score.append(subProb)
-
-
-''' sol by me to replace 
-for i in allpVals: # TOCHECK if what we want ? 
-    thisB = allRes.loc[allRes['Bias'] == i]
-    count = sum(thisB.CorrectSeen)
-    try : 
-        subProb = count/len(thisB)
-    except : 
-        subProb = 0
-    score.append(subProb)
-''' 
 
 plt.plot(allpVals, score)  
 
@@ -716,12 +699,15 @@ for y, x in zip(y_values, x_values):
 x_fit = np.arange(0, 1.1, 0.1)  # Adjust this to match your data
 y_fit = logiF(x_fit, *popt)
 
-plt.scatter(x_data, y_data, label='Data')
-plt.plot(x_fit, y_fit, color='red', label='Fitted logistic curve')
-plt.scatter(x_values, y_values, color='green', label='Specific y-values')
-plt.legend()
+fig, ax = plt.subplots()
+
+ax.scatter(x_data, y_data, label='Data')
+ax.plot(x_fit, y_fit, color='red', label='Fitted logistic curve')
+ax.scatter(x_values, y_values, color='green', label='Specific y-values')
+ax.legend()
 plt.show()
-plt.savefig(os.path.join(subjPath, 'PBF' + subjNum + '_DataFit.png'))  # save the figure to file
+fig.savefig(os.path.join(subjPath, 'PBF' + subjNum + '_DataFit.png'))  # save the figure to file
+
 plt.close()
    
 fitVals = pd.Series(x_values)
