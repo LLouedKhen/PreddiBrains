@@ -40,8 +40,6 @@ MR_settings = {
 path = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/'
 
 stimPath = path + 'Stimuli/Faces' 
-mStimPath = path + 'Stimuli/Faces/Males' 
-fStimPath = path + 'Stimuli/Faces/Females' 
 outPath = path + 'Output/Imaging/FA'
 
 ############################
@@ -674,7 +672,7 @@ allResults = allResults[allResults.Condition == 1]
 
 for i in allpVals:
     thisB = allResults.loc[allResults['Bias'] == i]
-    count = sum(thisB['Emotion'] == '1')
+    count = sum(thisB['Emotion'].astype(str) =='1') # to be sure to have str and not float
     subProb = count/len(thisB)
     score.append(subProb)
 
