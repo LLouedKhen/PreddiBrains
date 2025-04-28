@@ -602,7 +602,6 @@ expDur = endExp - startExp
 print('Experiment lasted ' + str(expDur))
 
 #_____________________ End of the Task _____________________
-#allRes = allRes.dropna(subset='Emotion') # to debug
 
 # Compute and Save scores
 correct1 = []
@@ -676,16 +675,11 @@ for i in allpVals:
     subProb = count/len(thisB)
     score.append(subProb)
 
-plt.plot(allpVals, score)  
-
-# data for fit with log curve
-x_data = allpVals
-y_data = score
-
+# logfit 
 ass = [1.0, 1.0, 0.5]
 
 # Fit the curve
-popt, pcov = curve_fit(logiF, x_data, y_data, p0=ass)
+popt, pcov = curve_fit(logiF, allpVals, score, p0=ass)
 y_values = np.arange(0, 11)*0.1
 x_values = inverse_logistic(y_values, *popt)
 
@@ -699,13 +693,12 @@ y_fit = logiF(x_fit, *popt)
 
 fig, ax = plt.subplots()
 
-ax.scatter(x_data, y_data, label='Data')
+ax.scatter(allpVals, score, label='Data')
 ax.plot(x_fit, y_fit, color='red', label='Fitted logistic curve')
 ax.scatter(x_values, y_values, color='green', label='Specific y-values')
 ax.legend()
 plt.show()
 fig.savefig(os.path.join(subjPath, 'PBF' + subjNum + '_DataFit.png'))  # save the figure to file
-
 plt.close()
    
 fitVals = pd.Series(x_values)
