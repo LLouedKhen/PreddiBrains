@@ -6,6 +6,17 @@ from psychopy import visual, event
 
 # FACE 
 
+def bais_mapping(x) : 
+    if  x > 0.5:
+        emo= 'happy'
+    elif x == 0.5:
+        emo = 'neutral'
+    elif x < 0.5:
+        emo = 'angry'
+    else:
+        emo = 'null'
+    return emo
+
 def scramble_image(img_grey, block_size=70):
     """
     Scramble an image by dividing it into blocks and shuffling them.

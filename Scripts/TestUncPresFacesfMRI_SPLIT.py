@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from memory_profiler import profile
 
-from utils import scramble_image, logiF, inverse_logistic
+from utils import scramble_image, logiF, inverse_logistic, bais_mapping
 
 prefs.general['windowType'] ='pygame'
 
@@ -36,8 +36,8 @@ MR_settings = {
 
 
 # /!\ Change the path to your local path 
-path = '/Users/sysadmin/Documents/PreddiBrains/'
-#path = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/'
+#path = '/Users/sysadmin/Documents/PreddiBrains/'
+path = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/'
 
 stimPath = path + 'Stimuli/Faces' 
 outPath = path + 'Output/Imaging/FA'
@@ -57,7 +57,7 @@ while os.path.isfile(os.path.join(subjPath, resFile)):
     
 
 subjData = pd.read_csv('PBF'+subjNum +'_IntakeData.csv').drop(columns = 'Unnamed: 0')
-lang = subjData.Language.loc[0]
+lang = subjData.loc[0, 'Language']
 
 ############################
 ###### Set the Window ###### 
@@ -421,11 +421,11 @@ for block in range(2):
         trigTime = clock.getTime()
         startExp = clock.getTime()
         if b == 0:
-            subjData.Trigger1.loc[0] = trigTime
-            subjData.StartTime1.loc[0] = startExp
+            subjData.loc[0, 'Trigger1'] = trigTime
+            subjData.loc[0, 'StartTime1'] = startExp
         else:
-            subjData.Trigger2.loc[0] = trigTime
-            subjData.StartTime2.loc[0] = startExp
+            subjData.loc[0, 'Trigger2'] = trigTime
+            subjData.loc[0, 'StartTime2'] = startExp
         print('Trigger at ' + str(startExp), file=f)
         print('Trigger at ' + str(startExp))
         print('Start at ' + str(startExp), file=f)
@@ -588,7 +588,6 @@ for block in range(2):
                         break
             
                 rating = confScale.getMarkerPos()
-                #confRT.append(t1 - c2)
                 print('Subject reported a confidence of ' + str(rating) + ' at ' + str(c2), file=f)
                 print('Subject reported a confidence of ' + str(rating) + ' at ' + str(c2))
                 confRating.append(rating)
@@ -625,12 +624,12 @@ for block in range(2):
         # Save in csv
         allRes =pd.concat([pd.Series(stimPres), pd.Series(q1Pres), pd.Series(response1), pd.Series(r1Ons), pd.Series(q2Pres), pd.Series(response2), pd.Series(r2Ons), pd.Series(confQOns),pd.Series(confROns), pd.Series(confRT),pd.Series(confRating), pd.Series(bias), pd.Series(condition),pd.Series(present), pd.Series(dur), pd.Series(val), pd.Series(Id)], axis = 1)
         allRes.columns =['StimOnset', 'Q1Onset', 'Seen', 'Resp1Onset', 'Q2Onset', 'Emotion','Resp2Onset', 'ConfQOnset', 'ConfROnset', 'ConfRT', 'ConfRating', 'Bias', 'Condition', 'StimPresent', 'Duration','Sname', 'StimID']
-        
+
         endExp = clock.getTime()
         if b == 0:
-            subjData.EndTime1.loc[0] = endExp
+            subjData.loc[0, 'EndTime1'] = endExp
         else: 
-            subjData.EndTime2.loc[0]  = endExp
+            subjData.loc[0, 'EndTime2']  = endExp
             
     subjData.to_csv('PBF' +subjNum +'_IntakeData.csv')
     expDur = endExp - startExp
@@ -645,50 +644,25 @@ for block in range(2):
     H = ['H60', 'H70', 'H80']
     A = ['H20', 'H30', 'H40']
     
-    em = []
+    allRes['em'] = allRes.Bias.apply(lambda x : bais_mapping(x))
+    mapping_emotion = {1:'happy', 4:'angry', '1' : 'happy', '4' : 'angry'}
+    allRes['PerceptC'] = allRes.Emotion.map(mapping_emotion)
+    allRes['CorrectPercept'] = np.array(allRes.em == allRes.PerceptC)*1
+
     for i in range(len(allRes)):
-        if  allRes.Bias.iloc[i] > 0.5:
-            em.append('happy')
-        elif allRes.Bias.iloc[i] == 0.5:
-            em.append('neutral')
-        elif allRes.Bias.iloc[i] < 0.5:
-            em.append('angry')
-        else:
-            em.append('null')
-    
-    emC = []  
-    for i in range(len(allRes)):
-        emotion = allRes.Emotion.iloc[i] 
-        if '4' in emotion:
-            emC.append('happy')
-        elif '1' in emotion:
-            emC.append('angry')
-        else:
-            emC.append(np.nan)
-    
-            
-    for i in range(len(allRes)):
-        if em[i] in emC[i]:
-            correct2.append(1)
-        else:
-            correct2.append(0)
-            
-    for i in range(len(allRes)):
-        if '4' in allRes.Seen.iloc[i] and allRes.StimPresent.iloc[i] == 1:
-            correct1.append(0)
-        elif '4' in allRes.Seen.iloc[i] and allRes.StimPresent.iloc[i] == 0:
-            correct1.append(-1)
-        elif '1' in allRes.Seen.iloc[i] and allRes.StimPresent.iloc[i] == 0:
-            correct1.append(0)
-        elif '1' in allRes.Seen.iloc[i] and allRes.StimPresent.iloc[i] == 1:
-            correct1.append(1)
-    
-            
+        if '4' in str(allRes.loc[i, 'Seen']) and allRes.loc[i, 'StimPresent'] == 1:
+            allRes.loc[i, 'CorrectSeen']= 0 
+        elif  '4' in str(allRes.loc[i, 'Seen']) and allRes.loc[i, 'StimPresent'] == 0:
+            allRes.loc[i, 'CorrectSeen']= -1 
+        elif '1' in str(allRes.loc[i, 'Seen']) and allRes.loc[i, 'StimPresent'] == 0:
+            allRes.loc[i, 'CorrectSeen']= 0
+        elif '1' in str(allRes.loc[i, 'Seen']) and allRes.loc[i, 'StimPresent'] == 1:
+            allRes.loc[i, 'CorrectSeen']= 1
+
+
+    allRes = pd.concat([allRes, pd.Series(gender)], axis = 1).rename(columns = {0: 'gender'})
+
     os.chdir(subjPath)     
-    
-    allRes = pd.concat([allRes, pd.Series(emC), pd.Series(correct1), pd.Series(correct2), pd.Series(gender)], axis = 1)
-    allRes = allRes.rename(columns = {0 :'PerceptC', 1: 'CorrectSeen', 2: 'CorrectPercept', 3:'Gender'})
-    
     allRes.to_csv('FaceI_' + subjNum + 'Block' + str(b) + '.csv')
     
     if b == 0:
@@ -701,15 +675,13 @@ core.wait(2)
 win.close()
 
 score= []
-    
-# sol form leyla mail 
 allpVals = np.unique(allRes.Bias.values)
 allpVals = [x for x in allpVals if not np.isnan(x)]
 allResults = allRes[allRes.StimPresent == 1]
 allResults = allResults[allResults.Condition == 1]
 
 for i in allpVals:
-    thisB = allResults.loc[allResults['Bias'] == i]
+    thisB = allResults[allResults['Bias'] == i]
     count = sum(thisB['Emotion'].astype(str) =='1') # to be sure to have str and not float
     subProb = count/len(thisB)
     score.append(subProb)
@@ -719,7 +691,6 @@ ass = [1.0, 1.0, 0.5]
 
 # Fit the curve
 popt, pcov = curve_fit(logiF, allpVals, score, p0=ass)
-# y_values = np.arange(0, 11)*0.1
 y_values = allpVals
 x_values = inverse_logistic(y_values, *popt)
 
@@ -728,7 +699,6 @@ for y, x in zip(y_values, x_values):
     print(f"x corresponding to y = {y}: {x}")
 
 # Plotting
-# x_fit = np.arange(0, 1.1, 0.1)  # Adjust this to match your data
 x_fit = allpVals  # Adjust this to match your data
 y_fit = logiF(x_fit, *popt)
 

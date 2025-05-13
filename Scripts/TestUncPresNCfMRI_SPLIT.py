@@ -24,8 +24,8 @@ from utils import draw_cube_intro, generate_random_lines_in_cube_area, draw_cube
 logging.console.setLevel(logging.WARNING)
 
 # /!\ Change for your local path 
-path = '/Users/sysadmin/Documents/PreddiBrains/'
-#path = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/'
+#path = '/Users/sysadmin/Documents/PreddiBrains/'
+path = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/'
 #path = 'd:\\llk\\preddibrains\\' #FCBG
 
 outPath = path + 'Output/Imaging/NC'
@@ -53,7 +53,7 @@ lang = subjData.Language.loc[0]
 ############################
 
 #change to second line if in FCBG
-win = visual.Window([1920, 1080],[0, 0], units="norm", fullscr=False) 
+win = visual.Window([1920, 1080], screen=1, units="norm", fullscr=True) 
 #win = visual.Window(size=[1920, 1080], pos=[0, 0], screen=1, units="norm", fullscr=True) #FCBG
 
 n1 = []
