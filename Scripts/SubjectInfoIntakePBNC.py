@@ -83,7 +83,26 @@ os.chdir(subjPath)
 
 intakeData = [StudyDate, subjectNum, subjDOB, Age, subjGender,language, subjPath]
 
-intakeData = pd.DataFrame(intakeData)
+
+
+
+intakeData = pd.DataFrame([{
+    "StudyDate": StudyDate,
+    "SubjectID": subjectNum,
+    "DOB": subjDOB,
+    "Age": Age,
+    "Gender": subjGender.upper(),
+    "Language": language.upper(),
+    "DataPath": subjPath,
+    "Trigger1": None,     # to be filled later
+    "StartTime1": None,       # to be filled later
+    "EndTime1": None,          # to be filled later
+    "Trigger2": None,     # to be filled later
+    "StartTime2": None,       # to be filled later
+    "EndTime2": None          # to be filled later
+}])
+
+
 intakeData.to_csv(subjectNum + '_IntakeData.csv')
 
 #return (subjectNum, subjPath, RatScaleOr)
