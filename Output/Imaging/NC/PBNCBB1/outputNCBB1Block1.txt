@@ -1,0 +1,15 @@
+Trigger at 1854.1519795120003
+Start at 1854.1519850580007
+Bias in trial 54 is 0.0
+Condition in trial 54 is 0.0
+Presence in trial 54 is 1.0
+Stimulus presented at 1854.5411041860007
+Response 1 given at 1864.781468489
+Response 1 given at 1867.6583829850006
+Subject reported a confidence of 3 at 1871.8934737199997
+Duration in trial 54 is 0.0167
+Percept in trial 54 is 0.0
+Bias in trial 55 is nan
+Condition in trial 55 is 1.0
+Presence in trial 55 is 0.0
+Stimulus presented at 1878.0244407610007

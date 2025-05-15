@@ -1,0 +1,2793 @@
+Trigger at 2.699224801000014
+Start at 2.699224801000014
+Bias in trial 0 is 0.7
+Condition in trial 0 is 0.0
+Presence in trial 0 is 1.0
+Stimulus presented at 3.034226905999958
+Response 1 given at 12.330990405999955
+Response 1 given at 19.98410027099999
+Subject reported a confidence of 7 at 24.563350647999982
+Duration in trial 0 is 0.016
+Percept in trial 0 is A
+Stim Name in trial 0 is H70A30
+Stim Id in trial 0 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 1 is nan
+Condition in trial 1 is 0.0
+Presence in trial 1 is 0.0
+Stimulus presented at 30.198124520999954
+Response 4 given at 37.58130306099997
+Response 4 given at 40.04570719200001
+Duration in trial 1 is 0.016
+Percept in trial 1 is nan
+Stim Name in trial 1 is nan
+Stim Id in trial 1 is nan
+Bias in trial 2 is 0.4
+Condition in trial 2 is 1.0
+Presence in trial 2 is 1.0
+Stimulus presented at 47.691148361000046
+Response 1 given at 56.21771960299998
+Response 1 given at 59.37038655900005
+Subject reported a confidence of 7 at 62.557325838999986
+Duration in trial 2 is 0.2
+Percept in trial 2 is A
+Stim Name in trial 2 is H40A60
+Stim Id in trial 2 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H40A60.png
+Bias in trial 3 is 0.5
+Condition in trial 3 is 0.0
+Presence in trial 3 is 1.0
+Stimulus presented at 68.16994946700004
+Response 1 given at 84.21161123299999
+Response 1 given at 95.60654154600002
+Subject reported a confidence of 6 at 102.34315265300006
+Duration in trial 3 is 0.016
+Percept in trial 3 is N
+Stim Name in trial 3 is H50A50
+Stim Id in trial 3 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png
+Bias in trial 4 is 0.5
+Condition in trial 4 is 1.0
+Presence in trial 4 is 1.0
+Stimulus presented at 107.98579417400003
+Response 1 given at 123.720704082
+Response 1 given at 127.21185882999998
+Duration in trial 4 is 0.2
+Percept in trial 4 is N
+Stim Name in trial 4 is H50A50
+Stim Id in trial 4 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png
+Bias in trial 5 is 0.3
+Condition in trial 5 is 0.0
+Presence in trial 5 is 1.0
+Stimulus presented at 134.84454857000003
+Response 1 given at 144.16449223400002
+Response 1 given at 163.839134672
+Subject reported a confidence of 4 at 168.42683214099998
+Duration in trial 5 is 0.016
+Percept in trial 5 is A
+Stim Name in trial 5 is H30A70
+Stim Id in trial 5 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 6 is 0.3
+Condition in trial 6 is 1.0
+Presence in trial 6 is 1.0
+Stimulus presented at 174.05776710600003
+Response 1 given at 189.31783354699996
+Response 1 given at 198.17180679700004
+Subject reported a confidence of 3 at 203.22054452600003
+Duration in trial 6 is 0.2
+Percept in trial 6 is A
+Stim Name in trial 6 is H30A70
+Stim Id in trial 6 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 7 is 0.4
+Condition in trial 7 is 0.0
+Presence in trial 7 is 1.0
+Stimulus presented at 208.85191157400004
+Response 1 given at 216.35398730600002
+Response 1 given at 221.89130060499997
+Duration in trial 7 is 0.016
+Percept in trial 7 is A
+Stim Name in trial 7 is H40A60
+Stim Id in trial 7 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H40A60.png
+Bias in trial 8 is 0.3
+Condition in trial 8 is 0.0
+Presence in trial 8 is 1.0
+Stimulus presented at 229.53410497699997
+Response 1 given at 239.10701174200005
+Response 1 given at 252.83102144099996
+Duration in trial 8 is 0.016
+Percept in trial 8 is A
+Stim Name in trial 8 is H30A70
+Stim Id in trial 8 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 9 is 0.8
+Condition in trial 9 is 0.0
+Presence in trial 9 is 1.0
+Stimulus presented at 260.46739624099996
+Response 1 given at 274.16808061000006
+Response 1 given at 280.815838925
+Subject reported a confidence of 2 at 291.19243044999996
+Duration in trial 9 is 0.016
+Percept in trial 9 is H
+Stim Name in trial 9 is H80A20
+Stim Id in trial 9 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Bias in trial 10 is 0.4
+Condition in trial 10 is 0.0
+Presence in trial 10 is 1.0
+Stimulus presented at 296.823385123
+Response 1 given at 305.01273548100005
+Response 1 given at 316.11918217000004
+Subject reported a confidence of 5 at 320.774652631
+Duration in trial 10 is 0.016
+Percept in trial 10 is A
+Stim Name in trial 10 is H40A60
+Stim Id in trial 10 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H40A60.png
+Bias in trial 11 is 0.6
+Condition in trial 11 is 1.0
+Presence in trial 11 is 1.0
+Stimulus presented at 326.415403726
+Response 1 given at 342.631972314
+Response 1 given at 354.946553354
+Subject reported a confidence of 4 at 359.701569757
+Duration in trial 11 is 0.2
+Percept in trial 11 is H
+Stim Name in trial 11 is H60A40
+Stim Id in trial 11 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H60A40.png
+Bias in trial 12 is nan
+Condition in trial 12 is 0.0
+Presence in trial 12 is 0.0
+Stimulus presented at 365.31123030599997
+Response 1 given at 387.117851877
+Response 1 given at 402.82623487499995
+Duration in trial 12 is 0.016
+Percept in trial 12 is nan
+Stim Name in trial 12 is nan
+Stim Id in trial 12 is nan
+Bias in trial 13 is 0.8
+Condition in trial 13 is 0.0
+Presence in trial 13 is 1.0
+Stimulus presented at 410.466294331
+Response 1 given at 424.953770933
+Response 1 given at 434.0018289090001
+Subject reported a confidence of 3 at 442.08408114300005
+Duration in trial 13 is 0.016
+Percept in trial 13 is H
+Stim Name in trial 13 is H80A20
+Stim Id in trial 13 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Bias in trial 14 is 0.4
+Condition in trial 14 is 0.0
+Presence in trial 14 is 1.0
+Stimulus presented at 447.69895849399995
+Response 1 given at 471.39670169600004
+Response 1 given at 481.668744954
+Subject reported a confidence of 6 at 485.63352020499997
+Duration in trial 14 is 0.016
+Percept in trial 14 is A
+Stim Name in trial 14 is H40A60
+Stim Id in trial 14 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H40A60.png
+Bias in trial 15 is 0.3
+Condition in trial 15 is 0.0
+Presence in trial 15 is 1.0
+Stimulus presented at 491.24331161500004
+Response 1 given at 509.86449796600004
+Response 1 given at 523.921129739
+Duration in trial 15 is 0.016
+Percept in trial 15 is A
+Stim Name in trial 15 is H30A70
+Stim Id in trial 15 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 16 is 0.8
+Condition in trial 16 is 1.0
+Presence in trial 16 is 1.0
+Stimulus presented at 531.574564772
+Response 1 given at 554.474725282
+Response 1 given at 568.711543955
+Duration in trial 16 is 0.2
+Percept in trial 16 is H
+Stim Name in trial 16 is H80A20
+Stim Id in trial 16 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Bias in trial 17 is 0.2
+Condition in trial 17 is 1.0
+Presence in trial 17 is 1.0
+Stimulus presented at 576.3640358929999
+Response 1 given at 592.619435652
+Response 1 given at 605.9936470089999
+Duration in trial 17 is 0.2
+Percept in trial 17 is A
+Stim Name in trial 17 is H20A80
+Stim Id in trial 17 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H20A80.png
+Bias in trial 18 is 0.8
+Condition in trial 18 is 1.0
+Presence in trial 18 is 1.0
+Stimulus presented at 613.644897275
+Response 1 given at 633.6353819630001
+Response 1 given at 676.475421568
+Duration in trial 18 is 0.2
+Percept in trial 18 is H
+Stim Name in trial 18 is H80A20
+Stim Id in trial 18 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Bias in trial 19 is 0.7
+Condition in trial 19 is 1.0
+Presence in trial 19 is 1.0
+Stimulus presented at 684.098652351
+Response 1 given at 703.408312814
+Response 1 given at 719.522651261
+Duration in trial 19 is 0.2
+Percept in trial 19 is A
+Stim Name in trial 19 is H70A30
+Stim Id in trial 19 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 20 is nan
+Condition in trial 20 is 1.0
+Presence in trial 20 is 0.0
+Stimulus presented at 727.146639153
+Response 1 given at 745.6215227140001
+Response 1 given at 750.02499777
+Duration in trial 20 is 0.2
+Percept in trial 20 is nan
+Stim Name in trial 20 is nan
+Stim Id in trial 20 is nan
+Bias in trial 21 is 0.6
+Condition in trial 21 is 1.0
+Presence in trial 21 is 1.0
+Stimulus presented at 757.650048127
+Response 1 given at 773.4902180859999
+Response 1 given at 788.0214151580001
+Subject reported a confidence of 5 at 793.945723631
+Duration in trial 21 is 0.2
+Percept in trial 21 is H
+Stim Name in trial 21 is H60A40
+Stim Id in trial 21 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H60A40.png
+Bias in trial 22 is 0.7
+Condition in trial 22 is 0.0
+Presence in trial 22 is 1.0
+Stimulus presented at 799.5762421500001
+Response 1 given at 812.4603520190001
+Response 1 given at 815.598312826
+Duration in trial 22 is 0.016
+Percept in trial 22 is A
+Stim Name in trial 22 is H70A30
+Stim Id in trial 22 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 23 is 0.4
+Condition in trial 23 is 0.0
+Presence in trial 23 is 1.0
+Stimulus presented at 823.225799775
+Response 1 given at 830.1469194650001
+Response 1 given at 838.3339856330001
+Duration in trial 23 is 0.016
+Percept in trial 23 is A
+Stim Name in trial 23 is H40A60
+Stim Id in trial 23 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H40A60.png
+Bias in trial 24 is 0.5
+Condition in trial 24 is 0.0
+Presence in trial 24 is 1.0
+Stimulus presented at 845.9673454890001
+Response 1 given at 854.9396519950001
+Response 1 given at 858.332865335
+Duration in trial 24 is 0.016
+Percept in trial 24 is N
+Stim Name in trial 24 is H50A50
+Stim Id in trial 24 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png
+Bias in trial 25 is 0.3
+Condition in trial 25 is 1.0
+Presence in trial 25 is 1.0
+Stimulus presented at 865.9577661640001
+Response 1 given at 875.362116105
+Response 1 given at 886.4419903
+Subject reported a confidence of 3 at 894.133579905
+Duration in trial 25 is 0.2
+Percept in trial 25 is A
+Stim Name in trial 25 is H30A70
+Stim Id in trial 25 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 26 is 0.2
+Condition in trial 26 is 0.0
+Presence in trial 26 is 1.0
+Stimulus presented at 899.752657818
+Response 1 given at 913.307481848
+Response 1 given at 916.3531658300001
+Duration in trial 26 is 0.016
+Percept in trial 26 is A
+Stim Name in trial 26 is H20A80
+Stim Id in trial 26 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H20A80.png
+Bias in trial 27 is 0.2
+Condition in trial 27 is 0.0
+Presence in trial 27 is 1.0
+Stimulus presented at 923.9920246449999
+Response 1 given at 937.5744661900001
+Response 1 given at 940.60248002
+Subject reported a confidence of 5 at 949.0840678689999
+Duration in trial 27 is 0.016
+Percept in trial 27 is A
+Stim Name in trial 27 is H20A80
+Stim Id in trial 27 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H20A80.png
+Bias in trial 28 is 0.7
+Condition in trial 28 is 0.0
+Presence in trial 28 is 1.0
+Stimulus presented at 954.7228669369999
+Response 1 given at 962.726387938
+Response 1 given at 966.644184816
+Subject reported a confidence of 7 at 983.014747125
+Duration in trial 28 is 0.016
+Percept in trial 28 is A
+Stim Name in trial 28 is H70A30
+Stim Id in trial 28 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 29 is 0.6
+Condition in trial 29 is 1.0
+Presence in trial 29 is 1.0
+Stimulus presented at 988.6345140830001
+Response 1 given at 1001.2892695329999
+Response 1 given at 1013.696641603
+Subject reported a confidence of 6 at 1023.3474542440001
+Duration in trial 29 is 0.2
+Percept in trial 29 is H
+Stim Name in trial 29 is H60A40
+Stim Id in trial 29 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H60A40.png
+Bias in trial 30 is nan
+Condition in trial 30 is 0.0
+Presence in trial 30 is 0.0
+Stimulus presented at 1028.955887733
+Response 1 given at 1061.74678546
+Response 1 given at 1069.503725505
+Duration in trial 30 is 0.016
+Percept in trial 30 is nan
+Stim Name in trial 30 is nan
+Stim Id in trial 30 is nan
+Bias in trial 31 is 0.3
+Condition in trial 31 is 0.0
+Presence in trial 31 is 1.0
+Stimulus presented at 1077.157714513
+Response 1 given at 1092.556020106
+Response 1 given at 1096.064817834
+Subject reported a confidence of 4 at 1100.130647375
+Duration in trial 31 is 0.016
+Percept in trial 31 is A
+Stim Name in trial 31 is H30A70
+Stim Id in trial 31 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 32 is 0.6
+Condition in trial 32 is 0.0
+Presence in trial 32 is 1.0
+Stimulus presented at 1105.764029063
+Response 1 given at 1113.971370823
+Response 1 given at 1117.814235928
+Subject reported a confidence of 4 at 1121.388206103
+Duration in trial 32 is 0.016
+Percept in trial 32 is H
+Stim Name in trial 32 is H60A40
+Stim Id in trial 32 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H60A40.png
+Bias in trial 33 is nan
+Condition in trial 33 is 1.0
+Presence in trial 33 is 0.0
+Stimulus presented at 1127.004306417
+Response 1 given at 1135.138192927
+Response 1 given at 1140.649486418
+Duration in trial 33 is 0.2
+Percept in trial 33 is nan
+Stim Name in trial 33 is nan
+Stim Id in trial 33 is nan
+Bias in trial 34 is 0.3
+Condition in trial 34 is 0.0
+Presence in trial 34 is 1.0
+Stimulus presented at 1148.29925978
+Response 1 given at 1155.59889792
+Response 1 given at 1162.79722193
+Duration in trial 34 is 0.016
+Percept in trial 34 is A
+Stim Name in trial 34 is H30A70
+Stim Id in trial 34 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 35 is nan
+Condition in trial 35 is 0.0
+Presence in trial 35 is 0.0
+Stimulus presented at 1170.420022844
+Response 1 given at 1180.099809656
+Response 1 given at 1185.917471429
+Duration in trial 35 is 0.016
+Percept in trial 35 is nan
+Stim Name in trial 35 is nan
+Stim Id in trial 35 is nan
+Bias in trial 36 is 0.6
+Condition in trial 36 is 0.0
+Presence in trial 36 is 1.0
+Stimulus presented at 1193.55410197
+Response 1 given at 1200.423977474
+Response 1 given at 1213.693221382
+Subject reported a confidence of 4 at 1217.021647216
+Duration in trial 36 is 0.016
+Percept in trial 36 is H
+Stim Name in trial 36 is H60A40
+Stim Id in trial 36 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H60A40.png
+Bias in trial 37 is 0.6
+Condition in trial 37 is 0.0
+Presence in trial 37 is 1.0
+Stimulus presented at 1222.653941814
+Response 1 given at 1235.896087066
+Response 1 given at 1251.446799621
+Subject reported a confidence of 3 at 1271.563063229
+Duration in trial 37 is 0.016
+Percept in trial 37 is H
+Stim Name in trial 37 is H60A40
+Stim Id in trial 37 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H60A40.png
+Bias in trial 38 is 0.5
+Condition in trial 38 is 1.0
+Presence in trial 38 is 1.0
+Stimulus presented at 1277.213263933
+Response 1 given at 1314.055329713
+Response 1 given at 1359.264461377
+Subject reported a confidence of 3 at 1366.937107722
+Duration in trial 38 is 0.2
+Percept in trial 38 is N
+Stim Name in trial 38 is H50A50
+Stim Id in trial 38 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png
+Bias in trial 39 is 0.5
+Condition in trial 39 is 0.0
+Presence in trial 39 is 1.0
+Stimulus presented at 1372.555275253
+Response 1 given at 1383.701542509
+Response 1 given at 1400.161447425
+Duration in trial 39 is 0.016
+Percept in trial 39 is N
+Stim Name in trial 39 is H50A50
+Stim Id in trial 39 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png
+Bias in trial 40 is 0.8
+Condition in trial 40 is 1.0
+Presence in trial 40 is 1.0
+Stimulus presented at 1407.808853168
+Response 1 given at 1420.6930297089998
+Response 1 given at 1437.821058376
+Subject reported a confidence of 2 at 1443.187527645
+Duration in trial 40 is 0.2
+Percept in trial 40 is H
+Stim Name in trial 40 is H80A20
+Stim Id in trial 40 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Bias in trial 41 is 0.2
+Condition in trial 41 is 0.0
+Presence in trial 41 is 1.0
+Stimulus presented at 1448.8215537790002
+Response 1 given at 1476.1988497520001
+Response 1 given at 1478.6897873490002
+Subject reported a confidence of 5 at 1483.6197733180002
+Duration in trial 41 is 0.016
+Percept in trial 41 is A
+Stim Name in trial 41 is H20A80
+Stim Id in trial 41 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H20A80.png
+Bias in trial 42 is nan
+Condition in trial 42 is 0.0
+Presence in trial 42 is 0.0
+Stimulus presented at 1489.2218218799999
+Response 1 given at 1507.8712692210001
+Response 1 given at 1513.3758488899998
+Duration in trial 42 is 0.016
+Percept in trial 42 is nan
+Stim Name in trial 42 is nan
+Stim Id in trial 42 is nan
+Bias in trial 43 is 0.6
+Condition in trial 43 is 1.0
+Presence in trial 43 is 1.0
+Stimulus presented at 1521.028439055
+Response 1 given at 1529.3579995549999
+Response 1 given at 1533.0340414830002
+Subject reported a confidence of 4 at 1536.6509581290002
+Duration in trial 43 is 0.2
+Percept in trial 43 is H
+Stim Name in trial 43 is H60A40
+Stim Id in trial 43 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H60A40.png
+Bias in trial 44 is 0.7
+Condition in trial 44 is 0.0
+Presence in trial 44 is 1.0
+Stimulus presented at 1542.275696783
+Response 1 given at 1559.152096762
+Response 1 given at 1576.60968855
+Duration in trial 44 is 0.016
+Percept in trial 44 is A
+Stim Name in trial 44 is H70A30
+Stim Id in trial 44 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 45 is 0.7
+Condition in trial 45 is 1.0
+Presence in trial 45 is 1.0
+Stimulus presented at 1584.25350776
+Response 1 given at 1595.6935050030002
+Response 1 given at 1606.0115665960002
+Subject reported a confidence of 3 at 1623.123482122
+Duration in trial 45 is 0.2
+Percept in trial 45 is A
+Stim Name in trial 45 is H70A30
+Stim Id in trial 45 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 46 is 0.3
+Condition in trial 46 is 1.0
+Presence in trial 46 is 1.0
+Stimulus presented at 1628.740430982
+Response 1 given at 1635.854222071
+Response 1 given at 1638.1825046109998
+Duration in trial 46 is 0.2
+Percept in trial 46 is A
+Stim Name in trial 46 is H30A70
+Stim Id in trial 46 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 47 is 0.5
+Condition in trial 47 is 1.0
+Presence in trial 47 is 1.0
+Stimulus presented at 1645.808849436
+Response 1 given at 1675.2518346010002
+Response 1 given at 1684.660623624
+Duration in trial 47 is 0.2
+Percept in trial 47 is N
+Stim Name in trial 47 is H50A50
+Stim Id in trial 47 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png
+Bias in trial 48 is 0.8
+Condition in trial 48 is 1.0
+Presence in trial 48 is 1.0
+Stimulus presented at 1692.3090092520001
+Response 1 given at 1713.753158038
+Response 1 given at 1726.1977675910002
+Subject reported a confidence of 3 at 1730.356711501
+Duration in trial 48 is 0.2
+Percept in trial 48 is H
+Stim Name in trial 48 is H80A20
+Stim Id in trial 48 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Bias in trial 49 is nan
+Condition in trial 49 is 1.0
+Presence in trial 49 is 0.0
+Stimulus presented at 1735.9933856480002
+Response 1 given at 1747.6434435269998
+Response 1 given at 1753.047966435
+Duration in trial 49 is 0.2
+Percept in trial 49 is nan
+Stim Name in trial 49 is nan
+Stim Id in trial 49 is nan
+Bias in trial 50 is 0.8
+Condition in trial 50 is 0.0
+Presence in trial 50 is 1.0
+Stimulus presented at 1760.6704856289998
+Response 1 given at 1769.42197377
+Response 1 given at 1786.7150201260001
+Duration in trial 50 is 0.016
+Percept in trial 50 is H
+Stim Name in trial 50 is H80A20
+Stim Id in trial 50 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Trigger at 2.7327679899999566
+Start at 2.7327679899999566
+Bias in trial 0 is 0.2
+Condition in trial 0 is 0.0
+Presence in trial 0 is 1.0
+Stimulus presented at 3.0599860370002716
+Response 1 given at 15.000126638000438
+Response 1 given at 17.79905993400007
+Subject reported a confidence of 6 at 22.01366077700004
+Duration in trial 0 is 0.016
+Percept in trial 0 is A
+Stim Name in trial 0 is H20A80
+Stim Id in trial 0 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 1 is nan
+Condition in trial 1 is 0.0
+Presence in trial 1 is 0.0
+Stimulus presented at 27.620899436999935
+Response 1 given at 35.03641141299977
+Response 1 given at 43.06942620599966
+Duration in trial 1 is 0.016
+Percept in trial 1 is nan
+Stim Name in trial 1 is nan
+Stim Id in trial 1 is nan
+Bias in trial 2 is 0.3
+Condition in trial 2 is 1.0
+Presence in trial 2 is 1.0
+Stimulus presented at 50.709521390999726
+Response 1 given at 58.59426999900006
+Response 1 given at 61.48327389000042
+Subject reported a confidence of 4 at 65.46377366500019
+Duration in trial 2 is 0.2
+Percept in trial 2 is A
+Stim Name in trial 2 is H30A70
+Stim Id in trial 2 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H30A70.png
+Bias in trial 3 is 0.8
+Condition in trial 3 is 0.0
+Presence in trial 3 is 1.0
+Stimulus presented at 71.10554340500039
+Response 1 given at 78.73489908899955
+Response 1 given at 82.7099262339998
+Subject reported a confidence of 3 at 86.12338543199985
+Duration in trial 3 is 0.016
+Percept in trial 3 is H
+Stim Name in trial 3 is H80A20
+Stim Id in trial 3 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 4 is 0.8
+Condition in trial 4 is 1.0
+Presence in trial 4 is 1.0
+Stimulus presented at 91.75905905299987
+Response 1 given at 99.88259323399961
+Response 1 given at 106.26931075300035
+Duration in trial 4 is 0.2
+Percept in trial 4 is H
+Stim Name in trial 4 is H80A20
+Stim Id in trial 4 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 5 is 0.4
+Condition in trial 5 is 0.0
+Presence in trial 5 is 1.0
+Stimulus presented at 113.9128361840003
+Response 1 given at 121.46208532000037
+Response 1 given at 126.15639824299978
+Subject reported a confidence of 2 at 130.79628475499976
+Duration in trial 5 is 0.016
+Percept in trial 5 is A
+Stim Name in trial 5 is H40A60
+Stim Id in trial 5 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 6 is 0.4
+Condition in trial 6 is 1.0
+Presence in trial 6 is 1.0
+Stimulus presented at 136.4410031389998
+Response 1 given at 144.0808024429998
+Response 1 given at 147.19952681700033
+Subject reported a confidence of 3 at 151.39474752499973
+Duration in trial 6 is 0.2
+Percept in trial 6 is A
+Stim Name in trial 6 is H40A60
+Stim Id in trial 6 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 7 is 0.3
+Condition in trial 7 is 0.0
+Presence in trial 7 is 1.0
+Stimulus presented at 157.02729759900012
+Response 1 given at 164.06681363200005
+Response 1 given at 171.21096342500005
+Duration in trial 7 is 0.016
+Percept in trial 7 is A
+Stim Name in trial 7 is H30A70
+Stim Id in trial 7 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H30A70.png
+Bias in trial 8 is 0.4
+Condition in trial 8 is 0.0
+Presence in trial 8 is 1.0
+Stimulus presented at 178.85227144300006
+Response 1 given at 190.5851525199996
+Response 1 given at 195.33130126200012
+Duration in trial 8 is 0.016
+Percept in trial 8 is A
+Stim Name in trial 8 is H40A60
+Stim Id in trial 8 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 9 is 0.6
+Condition in trial 9 is 0.0
+Presence in trial 9 is 1.0
+Stimulus presented at 202.96876309799973
+Response 1 given at 211.31136003699976
+Response 1 given at 218.39652922200003
+Subject reported a confidence of 2 at 222.91182977799963
+Duration in trial 9 is 0.016
+Percept in trial 9 is H
+Stim Name in trial 9 is H60A40
+Stim Id in trial 9 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 10 is 0.3
+Condition in trial 10 is 0.0
+Presence in trial 10 is 1.0
+Stimulus presented at 228.56797026799995
+Response 1 given at 235.93156983900008
+Response 1 given at 240.68868559699968
+Subject reported a confidence of 8 at 251.2212459430002
+Duration in trial 10 is 0.016
+Percept in trial 10 is A
+Stim Name in trial 10 is H30A70
+Stim Id in trial 10 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H30A70.png
+Bias in trial 11 is 0.7
+Condition in trial 11 is 1.0
+Presence in trial 11 is 1.0
+Stimulus presented at 256.8603056279999
+Response 1 given at 265.3419656830001
+Response 1 given at 269.0986304480002
+Subject reported a confidence of 7 at 272.63749056600045
+Duration in trial 11 is 0.2
+Percept in trial 11 is A
+Stim Name in trial 11 is H70A30
+Stim Id in trial 11 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 12 is nan
+Condition in trial 12 is 0.0
+Presence in trial 12 is 0.0
+Stimulus presented at 278.2519409870001
+Response 1 given at 284.9566200979998
+Response 1 given at 288.4411166609998
+Duration in trial 12 is 0.016
+Percept in trial 12 is nan
+Stim Name in trial 12 is nan
+Stim Id in trial 12 is nan
+Bias in trial 13 is 0.6
+Condition in trial 13 is 0.0
+Presence in trial 13 is 1.0
+Stimulus presented at 296.0768300990003
+Response 1 given at 304.5299167459998
+Response 1 given at 308.8806540100004
+Subject reported a confidence of 5 at 312.6347284049998
+Duration in trial 13 is 0.016
+Percept in trial 13 is H
+Stim Name in trial 13 is H60A40
+Stim Id in trial 13 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 14 is 0.3
+Condition in trial 14 is 0.0
+Presence in trial 14 is 1.0
+Stimulus presented at 318.27143060399976
+Response 1 given at 328.19150744200033
+Response 1 given at 333.67168076300004
+Subject reported a confidence of 4 at 337.97010653399957
+Duration in trial 14 is 0.016
+Percept in trial 14 is A
+Stim Name in trial 14 is H30A70
+Stim Id in trial 14 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H30A70.png
+Bias in trial 15 is 0.4
+Condition in trial 15 is 0.0
+Presence in trial 15 is 1.0
+Stimulus presented at 343.58564989499973
+Response 1 given at 351.31920620100027
+Response 1 given at 354.80217473799985
+Duration in trial 15 is 0.016
+Percept in trial 15 is A
+Stim Name in trial 15 is H40A60
+Stim Id in trial 15 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 16 is 0.6
+Condition in trial 16 is 1.0
+Presence in trial 16 is 1.0
+Stimulus presented at 362.4443926060003
+Response 1 given at 376.361703132
+Response 1 given at 381.82844226900033
+Duration in trial 16 is 0.2
+Percept in trial 16 is H
+Stim Name in trial 16 is H60A40
+Stim Id in trial 16 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 17 is 0.5
+Condition in trial 17 is 1.0
+Presence in trial 17 is 1.0
+Stimulus presented at 389.4679712520001
+Response 1 given at 397.43124321399955
+Response 1 given at 403.8808195880001
+Duration in trial 17 is 0.2
+Percept in trial 17 is N
+Stim Name in trial 17 is H50A50
+Stim Id in trial 17 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 18 is 0.6
+Condition in trial 18 is 1.0
+Presence in trial 18 is 1.0
+Stimulus presented at 411.52635725300024
+Response 1 given at 422.8913131540003
+Response 1 given at 428.7049539460004
+Duration in trial 18 is 0.2
+Percept in trial 18 is H
+Stim Name in trial 18 is H60A40
+Stim Id in trial 18 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 19 is 0.2
+Condition in trial 19 is 1.0
+Presence in trial 19 is 1.0
+Stimulus presented at 436.3221010289999
+Response 1 given at 445.24707712800046
+Response 1 given at 448.3583784040002
+Duration in trial 19 is 0.2
+Percept in trial 19 is A
+Stim Name in trial 19 is H20A80
+Stim Id in trial 19 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 20 is nan
+Condition in trial 20 is 1.0
+Presence in trial 20 is 0.0
+Stimulus presented at 455.98653697400005
+Response 1 given at 463.6216379719999
+Response 1 given at 466.96354850100033
+Duration in trial 20 is 0.2
+Percept in trial 20 is nan
+Stim Name in trial 20 is nan
+Stim Id in trial 20 is nan
+Bias in trial 21 is 0.7
+Condition in trial 21 is 1.0
+Presence in trial 21 is 1.0
+Stimulus presented at 474.58926941499976
+Response 1 given at 482.25652740999976
+Response 1 given at 485.1231735299998
+Subject reported a confidence of 5 at 489.4245566030004
+Duration in trial 21 is 0.2
+Percept in trial 21 is A
+Stim Name in trial 21 is H70A30
+Stim Id in trial 21 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 22 is 0.2
+Condition in trial 22 is 0.0
+Presence in trial 22 is 1.0
+Stimulus presented at 495.0654986589998
+Response 1 given at 502.45292790799977
+Response 1 given at 505.40005173699956
+Duration in trial 22 is 0.016
+Percept in trial 22 is A
+Stim Name in trial 22 is H20A80
+Stim Id in trial 22 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 23 is 0.3
+Condition in trial 23 is 0.0
+Presence in trial 23 is 1.0
+Stimulus presented at 513.0309548020005
+Response 1 given at 524.0861022489999
+Response 1 given at 537.1502456939998
+Duration in trial 23 is 0.016
+Percept in trial 23 is A
+Stim Name in trial 23 is H30A70
+Stim Id in trial 23 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H30A70.png
+Bias in trial 24 is 0.8
+Condition in trial 24 is 0.0
+Presence in trial 24 is 1.0
+Stimulus presented at 544.7889644039997
+Response 1 given at 551.5081290710004
+Response 1 given at 570.9906524569997
+Duration in trial 24 is 0.016
+Percept in trial 24 is H
+Stim Name in trial 24 is H80A20
+Stim Id in trial 24 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 25 is 0.4
+Condition in trial 25 is 1.0
+Presence in trial 25 is 1.0
+Stimulus presented at 578.6251639849997
+Response 1 given at 586.9355065099999
+Response 1 given at 592.8151375890002
+Subject reported a confidence of 3 at 597.9965583089997
+Duration in trial 25 is 0.2
+Percept in trial 25 is A
+Stim Name in trial 25 is H40A60
+Stim Id in trial 25 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 26 is 0.5
+Condition in trial 26 is 0.0
+Presence in trial 26 is 1.0
+Stimulus presented at 603.5986527839996
+Response 1 given at 610.9027190229999
+Response 1 given at 614.0779924990002
+Duration in trial 26 is 0.016
+Percept in trial 26 is N
+Stim Name in trial 26 is H50A50
+Stim Id in trial 26 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 27 is 0.5
+Condition in trial 27 is 0.0
+Presence in trial 27 is 1.0
+Stimulus presented at 621.6994735959997
+Response 1 given at 628.7019561249999
+Response 1 given at 636.8689396569998
+Subject reported a confidence of 6 at 644.7369554509996
+Duration in trial 27 is 0.016
+Percept in trial 27 is N
+Stim Name in trial 27 is H50A50
+Stim Id in trial 27 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 28 is 0.2
+Condition in trial 28 is 0.0
+Presence in trial 28 is 1.0
+Stimulus presented at 650.3803901089996
+Response 1 given at 660.2056955150001
+Response 1 given at 673.1271948049998
+Subject reported a confidence of 5 at 677.7118554429999
+Duration in trial 28 is 0.016
+Percept in trial 28 is A
+Stim Name in trial 28 is H20A80
+Stim Id in trial 28 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 29 is 0.7
+Condition in trial 29 is 1.0
+Presence in trial 29 is 1.0
+Stimulus presented at 683.3315847249996
+Response 1 given at 691.2018883889996
+Response 1 given at 697.4939334370001
+Subject reported a confidence of 4 at 700.4144983779997
+Duration in trial 29 is 0.2
+Percept in trial 29 is A
+Stim Name in trial 29 is H70A30
+Stim Id in trial 29 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 30 is nan
+Condition in trial 30 is 0.0
+Presence in trial 30 is 0.0
+Stimulus presented at 706.0406945149998
+Response 1 given at 712.6099292050003
+Response 1 given at 715.4055513269996
+Duration in trial 30 is 0.016
+Percept in trial 30 is nan
+Stim Name in trial 30 is nan
+Stim Id in trial 30 is nan
+Bias in trial 31 is 0.4
+Condition in trial 31 is 0.0
+Presence in trial 31 is 1.0
+Stimulus presented at 723.0456347740001
+Response 1 given at 730.6571489429998
+Response 1 given at 734.3844294170003
+Subject reported a confidence of 6 at 738.1097579719999
+Duration in trial 31 is 0.016
+Percept in trial 31 is A
+Stim Name in trial 31 is H40A60
+Stim Id in trial 31 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 32 is 0.7
+Condition in trial 32 is 0.0
+Presence in trial 32 is 1.0
+Stimulus presented at 743.7382099739998
+Response 1 given at 751.1374291459997
+Response 1 given at 754.7128338880002
+Subject reported a confidence of 5 at 758.1931947109997
+Duration in trial 32 is 0.016
+Percept in trial 32 is A
+Stim Name in trial 32 is H70A30
+Stim Id in trial 32 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 33 is nan
+Condition in trial 33 is 1.0
+Presence in trial 33 is 0.0
+Stimulus presented at 763.8301166419997
+Response 1 given at 775.3151070969998
+Response 1 given at 778.7589405119998
+Duration in trial 33 is 0.2
+Percept in trial 33 is nan
+Stim Name in trial 33 is nan
+Stim Id in trial 33 is nan
+Bias in trial 34 is 0.4
+Condition in trial 34 is 0.0
+Presence in trial 34 is 1.0
+Stimulus presented at 786.3879684109997
+Response 1 given at 793.6264920069998
+Response 1 given at 797.1733648580002
+Duration in trial 34 is 0.016
+Percept in trial 34 is A
+Stim Name in trial 34 is H40A60
+Stim Id in trial 34 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 35 is nan
+Condition in trial 35 is 0.0
+Presence in trial 35 is 0.0
+Stimulus presented at 804.7901529139999
+Response 1 given at 814.7436944789997
+Response 4 given at 817.9353452699997
+Duration in trial 35 is 0.016
+Percept in trial 35 is nan
+Stim Name in trial 35 is nan
+Stim Id in trial 35 is nan
+Bias in trial 36 is 0.7
+Condition in trial 36 is 0.0
+Presence in trial 36 is 1.0
+Stimulus presented at 825.5765257820003
+Response 4 given at 832.8542659530003
+Response 4 given at 836.3266482299996
+Subject reported a confidence of 6 at 839.7552807060001
+Duration in trial 36 is 0.016
+Percept in trial 36 is A
+Stim Name in trial 36 is H70A30
+Stim Id in trial 36 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 37 is 0.7
+Condition in trial 37 is 0.0
+Presence in trial 37 is 1.0
+Stimulus presented at 845.398383316
+Response 4 given at 852.6381988639996
+Response 4 given at 855.624589129
+Subject reported a confidence of 5 at 859.0861304979999
+Duration in trial 37 is 0.016
+Percept in trial 37 is A
+Stim Name in trial 37 is H70A30
+Stim Id in trial 37 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 38 is 0.8
+Condition in trial 38 is 1.0
+Presence in trial 38 is 1.0
+Stimulus presented at 864.7256709000003
+Response 1 given at 873.636027691
+Response 1 given at 882.3054532240003
+Subject reported a confidence of 4 at 885.6947227159999
+Duration in trial 38 is 0.2
+Percept in trial 38 is H
+Stim Name in trial 38 is H80A20
+Stim Id in trial 38 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 39 is 0.8
+Condition in trial 39 is 0.0
+Presence in trial 39 is 1.0
+Stimulus presented at 891.3188614979999
+Response 1 given at 898.4720831980003
+Response 1 given at 901.6398037689996
+Duration in trial 39 is 0.016
+Percept in trial 39 is H
+Stim Name in trial 39 is H80A20
+Stim Id in trial 39 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 40 is 0.6
+Condition in trial 40 is 1.0
+Presence in trial 40 is 1.0
+Stimulus presented at 909.2730990740001
+Response 1 given at 917.1074940139997
+Response 1 given at 922.7164546180002
+Subject reported a confidence of 3 at 926.901895469
+Duration in trial 40 is 0.2
+Percept in trial 40 is H
+Stim Name in trial 40 is H60A40
+Stim Id in trial 40 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 41 is 0.5
+Condition in trial 41 is 0.0
+Presence in trial 41 is 1.0
+Stimulus presented at 932.5424450959999
+Response 1 given at 939.9724669110001
+Response 1 given at 944.2352217369998
+Subject reported a confidence of 8 at 948.5671658279998
+Duration in trial 41 is 0.016
+Percept in trial 41 is N
+Stim Name in trial 41 is H50A50
+Stim Id in trial 41 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 42 is nan
+Condition in trial 42 is 0.0
+Presence in trial 42 is 0.0
+Stimulus presented at 954.1833856590001
+Response 1 given at 961.0805734750002
+Response 1 given at 964.1053659170002
+Duration in trial 42 is 0.016
+Percept in trial 42 is nan
+Stim Name in trial 42 is nan
+Stim Id in trial 42 is nan
+Bias in trial 43 is 0.7
+Condition in trial 43 is 1.0
+Presence in trial 43 is 1.0
+Stimulus presented at 971.7497156609998
+Response 1 given at 979.3706810829999
+Response 1 given at 986.7715744349998
+Subject reported a confidence of 6 at 990.4157048460002
+Duration in trial 43 is 0.2
+Percept in trial 43 is A
+Stim Name in trial 43 is H70A30
+Stim Id in trial 43 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 44 is 0.2
+Condition in trial 44 is 0.0
+Presence in trial 44 is 1.0
+Stimulus presented at 996.0592679250003
+Response 1 given at 1003.3957124489998
+Response 1 given at 1015.4480080570002
+Duration in trial 44 is 0.016
+Percept in trial 44 is A
+Stim Name in trial 44 is H20A80
+Stim Id in trial 44 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 45 is 0.2
+Condition in trial 45 is 1.0
+Presence in trial 45 is 1.0
+Stimulus presented at 1023.0805411450001
+Response 1 given at 1036.7828065080002
+Response 1 given at 1043.58617726
+Subject reported a confidence of 6 at 1045.5984868739997
+Duration in trial 45 is 0.2
+Percept in trial 45 is A
+Stim Name in trial 45 is H20A80
+Stim Id in trial 45 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 46 is 0.4
+Condition in trial 46 is 1.0
+Presence in trial 46 is 1.0
+Stimulus presented at 1051.2176520330004
+Response 1 given at 1067.505006808
+Response 1 given at 1073.171890732
+Duration in trial 46 is 0.2
+Percept in trial 46 is A
+Stim Name in trial 46 is H40A60
+Stim Id in trial 46 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 47 is 0.8
+Condition in trial 47 is 1.0
+Presence in trial 47 is 1.0
+Stimulus presented at 1080.7914367160001
+Response 1 given at 1088.379846717
+Response 1 given at 1094.2724777849999
+Duration in trial 47 is 0.2
+Percept in trial 47 is H
+Stim Name in trial 47 is H80A20
+Stim Id in trial 47 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 48 is 0.6
+Condition in trial 48 is 1.0
+Presence in trial 48 is 1.0
+Stimulus presented at 1101.9176860260004
+Response 1 given at 1113.895766277
+Response 1 given at 1119.8580232530003
+Subject reported a confidence of 5 at 1124.0146415079998
+Duration in trial 48 is 0.2
+Percept in trial 48 is H
+Stim Name in trial 48 is H60A40
+Stim Id in trial 48 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 49 is nan
+Condition in trial 49 is 1.0
+Presence in trial 49 is 0.0
+Stimulus presented at 1129.6286340819997
+Response 1 given at 1137.7277173780003
+Response 1 given at 1141.0926876160001
+Duration in trial 49 is 0.2
+Percept in trial 49 is nan
+Stim Name in trial 49 is nan
+Stim Id in trial 49 is nan
+Bias in trial 50 is 0.6
+Condition in trial 50 is 0.0
+Presence in trial 50 is 1.0
+Stimulus presented at 1148.7244150590004
+Response 1 given at 1156.3845423060002
+Response 1 given at 1173.6515564000001
+Duration in trial 50 is 0.016
+Percept in trial 50 is H
+Stim Name in trial 50 is H60A40
+Stim Id in trial 50 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Trigger at 9.682552461000341
+Start at 9.682552461000341
+Bias in trial 0 is nan
+Condition in trial 0 is 0.0
+Presence in trial 0 is 0.0
+Stimulus presented at 10.006578316000741
+Response 1 given at 17.718138400000498
+Response 4 given at 20.158180506999997
+Duration in trial 0 is 0.016
+Percept in trial 0 is nan
+Stim Name in trial 0 is nan
+Stim Id in trial 0 is nan
+Bias in trial 1 is 0.3
+Condition in trial 1 is 0.0
+Presence in trial 1 is 1.0
+Stimulus presented at 27.793778693000604
+Response 1 given at 35.513976765000734
+Response 4 given at 37.81028396500005
+Subject reported a confidence of 7 at 42.8182040340007
+Duration in trial 1 is 0.016
+Percept in trial 1 is A
+Stim Name in trial 1 is H30A70
+Stim Id in trial 1 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 2 is 0.3
+Condition in trial 2 is 1.0
+Presence in trial 2 is 1.0
+Stimulus presented at 48.449877806000586
+Response 1 given at 56.57527322400074
+Response 1 given at 60.104984666000746
+Subject reported a confidence of 6 at 63.327045581000675
+Duration in trial 2 is 0.2
+Percept in trial 2 is A
+Stim Name in trial 2 is H30A70
+Stim Id in trial 2 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 3 is 0.3
+Condition in trial 3 is 0.0
+Presence in trial 3 is 1.0
+Stimulus presented at 68.96606957099993
+Response 1 given at 78.33592008100004
+Response 1 given at 84.16962562200024
+Subject reported a confidence of 4 at 87.62332392999997
+Duration in trial 3 is 0.016
+Percept in trial 3 is A
+Stim Name in trial 3 is H30A70
+Stim Id in trial 3 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 4 is 0.8
+Condition in trial 4 is 1.0
+Presence in trial 4 is 1.0
+Stimulus presented at 93.26629012600006
+Response 1 given at 101.12182877300074
+Response 1 given at 104.95853267200073
+Duration in trial 4 is 0.2
+Percept in trial 4 is H
+Stim Name in trial 4 is H80A20
+Stim Id in trial 4 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H80A20.png
+Bias in trial 5 is 0.4
+Condition in trial 5 is 0.0
+Presence in trial 5 is 1.0
+Stimulus presented at 112.59624604200053
+Response 1 given at 119.91280050500063
+Response 1 given at 126.20733420099987
+Subject reported a confidence of 3 at 130.51885800400032
+Duration in trial 5 is 0.016
+Percept in trial 5 is A
+Stim Name in trial 5 is H40A60
+Stim Id in trial 5 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H40A60.png
+Bias in trial 6 is 0.8
+Condition in trial 6 is 1.0
+Presence in trial 6 is 1.0
+Stimulus presented at 136.15465867900002
+Response 1 given at 143.81989875900035
+Response 1 given at 147.21788443900004
+Subject reported a confidence of 2 at 152.5661030730007
+Duration in trial 6 is 0.2
+Percept in trial 6 is H
+Stim Name in trial 6 is H80A20
+Stim Id in trial 6 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H80A20.png
+Bias in trial 7 is 0.6
+Condition in trial 7 is 0.0
+Presence in trial 7 is 1.0
+Stimulus presented at 158.20562833300028
+Response 1 given at 166.9926716630007
+Response 1 given at 172.73225334700055
+Duration in trial 7 is 0.016
+Percept in trial 7 is H
+Stim Name in trial 7 is H60A40
+Stim Id in trial 7 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 8 is 0.3
+Condition in trial 8 is 0.0
+Presence in trial 8 is 1.0
+Stimulus presented at 180.3459187920007
+Response 1 given at 188.7341966140002
+Response 1 given at 196.29466580500048
+Duration in trial 8 is 0.016
+Percept in trial 8 is A
+Stim Name in trial 8 is H30A70
+Stim Id in trial 8 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 9 is nan
+Condition in trial 9 is 0.0
+Presence in trial 9 is 0.0
+Stimulus presented at 203.93300007400012
+Response 1 given at 213.28529849200004
+Response 4 given at 216.9024069269999
+Duration in trial 9 is 0.016
+Percept in trial 9 is nan
+Stim Name in trial 9 is nan
+Stim Id in trial 9 is nan
+Bias in trial 10 is 0.3
+Condition in trial 10 is 0.0
+Presence in trial 10 is 1.0
+Stimulus presented at 224.54752633099997
+Response 1 given at 233.98892040400005
+Response 1 given at 237.42469371100015
+Subject reported a confidence of 1 at 240.72324838700024
+Duration in trial 10 is 0.016
+Percept in trial 10 is A
+Stim Name in trial 10 is H30A70
+Stim Id in trial 10 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 11 is 0.5
+Condition in trial 11 is 1.0
+Presence in trial 11 is 1.0
+Stimulus presented at 246.36798345600073
+Response 4 given at 256.18400328999996
+Response 4 given at 259.2168549860007
+Subject reported a confidence of 3 at 262.9167792369999
+Duration in trial 11 is 0.2
+Percept in trial 11 is N
+Stim Name in trial 11 is H50A50
+Stim Id in trial 11 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H50A50.png
+Bias in trial 12 is 0.5
+Condition in trial 12 is 0.0
+Presence in trial 12 is 1.0
+Stimulus presented at 268.54909878000035
+Response 4 given at 275.62300992400014
+Response 4 given at 279.2393318980003
+Subject reported a confidence of 2 at 282.56438875500044
+Duration in trial 12 is 0.016
+Percept in trial 12 is N
+Stim Name in trial 12 is H50A50
+Stim Id in trial 12 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H50A50.png
+Bias in trial 13 is 0.7
+Condition in trial 13 is 0.0
+Presence in trial 13 is 1.0
+Stimulus presented at 288.205415335
+Response 1 given at 295.5665210950001
+Response 1 given at 298.44832862600015
+Subject reported a confidence of 4 at 302.33878049300074
+Duration in trial 13 is 0.016
+Percept in trial 13 is A
+Stim Name in trial 13 is H70A30
+Stim Id in trial 13 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H70A30.png
+Bias in trial 14 is nan
+Condition in trial 14 is 0.0
+Presence in trial 14 is 0.0
+Stimulus presented at 307.96479484200063
+Response 1 given at 316.7917597660007
+Response 1 given at 320.5215491859999
+Duration in trial 14 is 0.016
+Percept in trial 14 is nan
+Stim Name in trial 14 is nan
+Stim Id in trial 14 is nan
+Bias in trial 15 is 0.2
+Condition in trial 15 is 0.0
+Presence in trial 15 is 1.0
+Stimulus presented at 328.1685324030004
+Response 1 given at 335.00806218900016
+Response 1 given at 341.1463154940002
+Subject reported a confidence of 3 at 345.3670942150002
+Duration in trial 15 is 0.016
+Percept in trial 15 is A
+Stim Name in trial 15 is H20A80
+Stim Id in trial 15 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H20A80.png
+Bias in trial 16 is 0.2
+Condition in trial 16 is 1.0
+Presence in trial 16 is 1.0
+Stimulus presented at 351.01798856700043
+Response 1 given at 368.68446940100057
+Response 1 given at 374.3684599980006
+Duration in trial 16 is 0.2
+Percept in trial 16 is A
+Stim Name in trial 16 is H20A80
+Stim Id in trial 16 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H20A80.png
+Bias in trial 17 is 0.6
+Condition in trial 17 is 1.0
+Presence in trial 17 is 1.0
+Stimulus presented at 382.0190337840004
+Response 1 given at 390.6619924960005
+Response 1 given at 397.6899148430002
+Duration in trial 17 is 0.2
+Percept in trial 17 is H
+Stim Name in trial 17 is H60A40
+Stim Id in trial 17 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 18 is 0.3
+Condition in trial 18 is 1.0
+Presence in trial 18 is 1.0
+Stimulus presented at 405.33005506000063
+Response 1 given at 414.4696946670001
+Response 1 given at 418.1295456750004
+Subject reported a confidence of 5 at 421.91472119100035
+Duration in trial 18 is 0.2
+Percept in trial 18 is A
+Stim Name in trial 18 is H30A70
+Stim Id in trial 18 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 19 is 0.2
+Condition in trial 19 is 1.0
+Presence in trial 19 is 1.0
+Stimulus presented at 427.5509162510007
+Response 1 given at 439.9071543780001
+Response 4 given at 444.8117379760006
+Duration in trial 19 is 0.2
+Percept in trial 19 is A
+Stim Name in trial 19 is H20A80
+Stim Id in trial 19 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H20A80.png
+Bias in trial 20 is 0.3
+Condition in trial 20 is 1.0
+Presence in trial 20 is 1.0
+Stimulus presented at 452.44991453500006
+Response 1 given at 463.728050101
+Response 1 given at 470.92954905400074
+Subject reported a confidence of 4 at 475.8695761980007
+Duration in trial 20 is 0.2
+Percept in trial 20 is A
+Stim Name in trial 20 is H30A70
+Stim Id in trial 20 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 21 is 0.3
+Condition in trial 21 is 1.0
+Presence in trial 21 is 1.0
+Stimulus presented at 481.5036019550007
+Response 1 given at 491.73163986500003
+Response 1 given at 495.2534209410005
+Subject reported a confidence of 3 at 499.0808201590007
+Duration in trial 21 is 0.2
+Percept in trial 21 is A
+Stim Name in trial 21 is H30A70
+Stim Id in trial 21 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 22 is nan
+Condition in trial 22 is 0.0
+Presence in trial 22 is 0.0
+Stimulus presented at 504.7027076410004
+Response 1 given at 512.1727778430004
+Response 1 given at 518.936202891
+Duration in trial 22 is 0.016
+Percept in trial 22 is nan
+Stim Name in trial 22 is nan
+Stim Id in trial 22 is nan
+Bias in trial 23 is nan
+Condition in trial 23 is 0.0
+Presence in trial 23 is 0.0
+Stimulus presented at 526.563491334
+Response 1 given at 538.3764131910002
+Response 1 given at 542.2435720990006
+Duration in trial 23 is 0.016
+Percept in trial 23 is nan
+Stim Name in trial 23 is nan
+Stim Id in trial 23 is nan
+Bias in trial 24 is nan
+Condition in trial 24 is 0.0
+Presence in trial 24 is 0.0
+Stimulus presented at 549.8762162580006
+Response 1 given at 557.3620844070001
+Response 1 given at 560.6552320139999
+Duration in trial 24 is 0.016
+Percept in trial 24 is nan
+Stim Name in trial 24 is nan
+Stim Id in trial 24 is nan
+Bias in trial 25 is 0.2
+Condition in trial 25 is 1.0
+Presence in trial 25 is 1.0
+Stimulus presented at 568.2983682550002
+Response 1 given at 576.2353759470006
+Response 1 given at 581.3991414310003
+Subject reported a confidence of 2 at 584.8258839570008
+Duration in trial 25 is 0.2
+Percept in trial 25 is A
+Stim Name in trial 25 is H20A80
+Stim Id in trial 25 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H20A80.png
+Bias in trial 26 is 0.6
+Condition in trial 26 is 0.0
+Presence in trial 26 is 1.0
+Stimulus presented at 590.4532620950004
+Response 1 given at 599.9975361200004
+Response 1 given at 603.147645254
+Duration in trial 26 is 0.016
+Percept in trial 26 is H
+Stim Name in trial 26 is H60A40
+Stim Id in trial 26 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 27 is 0.5
+Condition in trial 27 is 0.0
+Presence in trial 27 is 1.0
+Stimulus presented at 610.7705353199999
+Response 1 given at 618.6973109999999
+Response 1 given at 623.8745692030006
+Duration in trial 27 is 0.016
+Percept in trial 27 is N
+Stim Name in trial 27 is H50A50
+Stim Id in trial 27 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H50A50.png
+Bias in trial 28 is 0.6
+Condition in trial 28 is 0.0
+Presence in trial 28 is 1.0
+Stimulus presented at 631.4965636020006
+Response 1 given at 639.5374228820001
+Response 1 given at 642.8579575550002
+Duration in trial 28 is 0.016
+Percept in trial 28 is H
+Stim Name in trial 28 is H60A40
+Stim Id in trial 28 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 29 is 0.8
+Condition in trial 29 is 1.0
+Presence in trial 29 is 1.0
+Stimulus presented at 650.4862452970001
+Response 1 given at 658.6409325710001
+Response 1 given at 672.1590877550007
+Subject reported a confidence of 1 at 682.2986408160004
+Duration in trial 29 is 0.2
+Percept in trial 29 is H
+Stim Name in trial 29 is H80A20
+Stim Id in trial 29 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H80A20.png
+Bias in trial 30 is 0.6
+Condition in trial 30 is 0.0
+Presence in trial 30 is 1.0
+Stimulus presented at 687.9300694370004
+Response 4 given at 696.997100429
+Response 4 given at 700.921794717
+Duration in trial 30 is 0.016
+Percept in trial 30 is H
+Stim Name in trial 30 is H60A40
+Stim Id in trial 30 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 31 is nan
+Condition in trial 31 is 0.0
+Presence in trial 31 is 0.0
+Stimulus presented at 708.549489821
+Response 4 given at 716.2593232160007
+Response 4 given at 719.6300743910006
+Duration in trial 31 is 0.016
+Percept in trial 31 is nan
+Stim Name in trial 31 is nan
+Stim Id in trial 31 is nan
+Bias in trial 32 is 0.6
+Condition in trial 32 is 0.0
+Presence in trial 32 is 1.0
+Stimulus presented at 727.2685038360005
+Response 4 given at 735.9747966470004
+Response 1 given at 745.5935826929999
+Subject reported a confidence of 3 at 749.5937593819999
+Duration in trial 32 is 0.016
+Percept in trial 32 is H
+Stim Name in trial 32 is H60A40
+Stim Id in trial 32 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 33 is 0.6
+Condition in trial 33 is 1.0
+Presence in trial 33 is 1.0
+Stimulus presented at 755.2267788200006
+Response 1 given at 763.0072701039999
+Response 1 given at 765.9851414330005
+Subject reported a confidence of 5 at 769.8990709
+Duration in trial 33 is 0.2
+Percept in trial 33 is H
+Stim Name in trial 33 is H60A40
+Stim Id in trial 33 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 34 is 0.8
+Condition in trial 34 is 0.0
+Presence in trial 34 is 1.0
+Stimulus presented at 775.5407131600005
+Response 1 given at 782.6697759799999
+Response 1 given at 785.7266306669999
+Subject reported a confidence of 4 at 788.8493883159999
+Duration in trial 34 is 0.016
+Percept in trial 34 is H
+Stim Name in trial 34 is H80A20
+Stim Id in trial 34 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H80A20.png
+Bias in trial 35 is 0.6
+Condition in trial 35 is 0.0
+Presence in trial 35 is 1.0
+Stimulus presented at 794.4816217770003
+Response 1 given at 801.3153527700006
+Response 1 given at 804.2423033340001
+Subject reported a confidence of 3 at 807.3313799120006
+Duration in trial 35 is 0.016
+Percept in trial 35 is H
+Stim Name in trial 35 is H60A40
+Stim Id in trial 35 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 36 is 0.3
+Condition in trial 36 is 0.0
+Presence in trial 36 is 1.0
+Stimulus presented at 812.9462962410007
+Response 1 given at 819.5508662110005
+Response 1 given at 822.3444381960007
+Subject reported a confidence of 2 at 825.5090555269999
+Duration in trial 36 is 0.016
+Percept in trial 36 is A
+Stim Name in trial 36 is H30A70
+Stim Id in trial 36 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H30A70.png
+Bias in trial 37 is 0.6
+Condition in trial 37 is 0.0
+Presence in trial 37 is 1.0
+Stimulus presented at 831.1157587510006
+Response 1 given at 840.5061888400005
+Response 1 given at 844.8775388150007
+Subject reported a confidence of 1 at 848.5253090080005
+Duration in trial 37 is 0.016
+Percept in trial 37 is H
+Stim Name in trial 37 is H60A40
+Stim Id in trial 37 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 38 is 0.2
+Condition in trial 38 is 1.0
+Presence in trial 38 is 1.0
+Stimulus presented at 854.1432895110001
+Response 1 given at 861.7658584670007
+Response 4 given at 865.7891337150004
+Subject reported a confidence of 1 at 869.2748159140001
+Duration in trial 38 is 0.2
+Percept in trial 38 is A
+Stim Name in trial 38 is H20A80
+Stim Id in trial 38 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H20A80.png
+Bias in trial 39 is 0.2
+Condition in trial 39 is 0.0
+Presence in trial 39 is 1.0
+Stimulus presented at 874.9084996040001
+Response 4 given at 883.9935066200005
+Response 4 given at 889.2779724669999
+Subject reported a confidence of 1 at 892.7580998270005
+Duration in trial 39 is 0.016
+Percept in trial 39 is A
+Stim Name in trial 39 is H20A80
+Stim Id in trial 39 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H20A80.png
+Bias in trial 40 is nan
+Condition in trial 40 is 1.0
+Presence in trial 40 is 0.0
+Stimulus presented at 898.3867311439999
+Response 4 given at 906.4972389270006
+Response 4 given at 912.8806651140003
+Duration in trial 40 is 0.2
+Percept in trial 40 is nan
+Stim Name in trial 40 is nan
+Stim Id in trial 40 is nan
+Bias in trial 41 is nan
+Condition in trial 41 is 0.0
+Presence in trial 41 is 0.0
+Stimulus presented at 920.512409252
+Response 4 given at 930.134996926
+Response 4 given at 934.7239067840001
+Duration in trial 41 is 0.016
+Percept in trial 41 is nan
+Stim Name in trial 41 is nan
+Stim Id in trial 41 is nan
+Bias in trial 42 is 0.7
+Condition in trial 42 is 0.0
+Presence in trial 42 is 1.0
+Stimulus presented at 942.3659203480001
+Response 1 given at 956.1652374940004
+Response 1 given at 965.5101528600007
+Subject reported a confidence of 3 at 979.0290034469999
+Duration in trial 42 is 0.016
+Percept in trial 42 is A
+Stim Name in trial 42 is H70A30
+Stim Id in trial 42 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H70A30.png
+Bias in trial 43 is nan
+Condition in trial 43 is 1.0
+Presence in trial 43 is 0.0
+Stimulus presented at 984.6598577100003
+Response 1 given at 999.5020925540002
+Response 1 given at 1012.8675149150004
+Duration in trial 43 is 0.2
+Percept in trial 43 is nan
+Stim Name in trial 43 is nan
+Stim Id in trial 43 is nan
+Bias in trial 44 is 0.7
+Condition in trial 44 is 0.0
+Presence in trial 44 is 1.0
+Stimulus presented at 1020.5118293539999
+Response 1 given at 1027.8678960870002
+Response 1 given at 1031.0795089530002
+Subject reported a confidence of 5 at 1034.5560585270005
+Duration in trial 44 is 0.016
+Percept in trial 44 is A
+Stim Name in trial 44 is H70A30
+Stim Id in trial 44 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H70A30.png
+Bias in trial 45 is 0.7
+Condition in trial 45 is 1.0
+Presence in trial 45 is 1.0
+Stimulus presented at 1040.191632346
+Response 1 given at 1052.3846346290002
+Response 1 given at 1062.6111019610007
+Subject reported a confidence of 4 at 1068.7227454150006
+Duration in trial 45 is 0.2
+Percept in trial 45 is A
+Stim Name in trial 45 is H70A30
+Stim Id in trial 45 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H70A30.png
+Bias in trial 46 is 0.6
+Condition in trial 46 is 1.0
+Presence in trial 46 is 1.0
+Stimulus presented at 1074.3468006890007
+Response 1 given at 1085.5661337340007
+Response 1 given at 1089.101081189
+Duration in trial 46 is 0.2
+Percept in trial 46 is H
+Stim Name in trial 46 is H60A40
+Stim Id in trial 46 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H60A40.png
+Bias in trial 47 is 0.8
+Condition in trial 47 is 1.0
+Presence in trial 47 is 1.0
+Stimulus presented at 1096.7407815670003
+Response 1 given at 1108.8399466
+Response 1 given at 1112.3208971960003
+Duration in trial 47 is 0.2
+Percept in trial 47 is H
+Stim Name in trial 47 is H80A20
+Stim Id in trial 47 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H80A20.png
+Bias in trial 48 is nan
+Condition in trial 48 is 1.0
+Presence in trial 48 is 0.0
+Stimulus presented at 1119.9496782530005
+Response 1 given at 1135.8032687550003
+Response 1 given at 1144.0586619630003
+Duration in trial 48 is 0.2
+Percept in trial 48 is nan
+Stim Name in trial 48 is nan
+Stim Id in trial 48 is nan
+Bias in trial 49 is 0.8
+Condition in trial 49 is 1.0
+Presence in trial 49 is 1.0
+Stimulus presented at 1151.7179010640002
+Response 1 given at 1159.224229685
+Response 1 given at 1161.9119411390002
+Subject reported a confidence of 3 at 1165.8711850030004
+Duration in trial 49 is 0.2
+Percept in trial 49 is H
+Stim Name in trial 49 is H80A20
+Stim Id in trial 49 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H80A20.png
+Bias in trial 50 is 0.4
+Condition in trial 50 is 0.0
+Presence in trial 50 is 1.0
+Stimulus presented at 1171.5015360570005
+Response 1 given at 1180.17099907
+Response 1 given at 1183.1720830660006
+Duration in trial 50 is 0.016
+Percept in trial 50 is A
+Stim Name in trial 50 is H40A60
+Stim Id in trial 50 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM034_H40A60.png
+Trigger at 9.556692955000472
+Start at 9.556692955000472
+Bias in trial 0 is 0.8
+Condition in trial 0 is 0.0
+Presence in trial 0 is 1.0
+Stimulus presented at 9.883543101001123
+Response 1 given at 37.04573010999957
+Response 1 given at 75.19503239699952
+Subject reported a confidence of 5 at 78.87311456200041
+Duration in trial 0 is 0.016
+Percept in trial 0 is H
+Stim Name in trial 0 is H80A20
+Stim Id in trial 0 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H80A20.png
+Bias in trial 1 is nan
+Condition in trial 1 is 0.0
+Presence in trial 1 is 0.0
+Stimulus presented at 84.49265842600107
+Response 1 given at 100.46178728700033
+Response 1 given at 108.13014974700127
+Duration in trial 1 is 0.016
+Percept in trial 1 is nan
+Stim Name in trial 1 is nan
+Stim Id in trial 1 is nan
+Bias in trial 2 is 0.3
+Condition in trial 2 is 1.0
+Presence in trial 2 is 1.0
+Stimulus presented at 115.7804302200002
+Response 1 given at 135.94072407800013
+Response 1 given at 139.79375916400022
+Subject reported a confidence of 3 at 144.797674843001
+Duration in trial 2 is 0.2
+Percept in trial 2 is A
+Stim Name in trial 2 is H30A70
+Stim Id in trial 2 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H30A70.png
+Bias in trial 3 is 0.2
+Condition in trial 3 is 0.0
+Presence in trial 3 is 1.0
+Stimulus presented at 150.43085789799989
+Response 1 given at 157.7606197260011
+Response 1 given at 161.18118246099948
+Subject reported a confidence of 9 at 166.13312589400084
+Duration in trial 3 is 0.016
+Percept in trial 3 is A
+Stim Name in trial 3 is H20A80
+Stim Id in trial 3 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H20A80.png
+Bias in trial 4 is 0.2
+Condition in trial 4 is 1.0
+Presence in trial 4 is 1.0
+Stimulus presented at 171.7646031860004
+Response 1 given at 179.6100199320008
+Response 1 given at 188.95637664599963
+Duration in trial 4 is 0.2
+Percept in trial 4 is A
+Stim Name in trial 4 is H20A80
+Stim Id in trial 4 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H20A80.png
+Bias in trial 5 is 0.4
+Condition in trial 5 is 0.0
+Presence in trial 5 is 1.0
+Stimulus presented at 196.60331207400122
+Response 1 given at 206.10330585200063
+Response 1 given at 214.73231910700088
+Subject reported a confidence of 9 at 219.01622067300013
+Duration in trial 5 is 0.016
+Percept in trial 5 is A
+Stim Name in trial 5 is H40A60
+Stim Id in trial 5 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H40A60.png
+Bias in trial 6 is 0.4
+Condition in trial 6 is 1.0
+Presence in trial 6 is 1.0
+Stimulus presented at 224.6529717450012
+Response 1 given at 232.65352739300033
+Response 1 given at 237.047345039
+Subject reported a confidence of 8 at 240.7034849339998
+Duration in trial 6 is 0.2
+Percept in trial 6 is A
+Stim Name in trial 6 is H40A60
+Stim Id in trial 6 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H40A60.png
+Bias in trial 7 is 0.3
+Condition in trial 7 is 0.0
+Presence in trial 7 is 1.0
+Stimulus presented at 246.3463872100001
+Response 1 given at 253.36950615200112
+Response 4 given at 259.30170700300005
+Duration in trial 7 is 0.016
+Percept in trial 7 is A
+Stim Name in trial 7 is H30A70
+Stim Id in trial 7 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H30A70.png
+Bias in trial 8 is 0.4
+Condition in trial 8 is 0.0
+Presence in trial 8 is 1.0
+Stimulus presented at 266.94153053599985
+Response 1 given at 274.67811551900013
+Response 1 given at 282.2728220560002
+Duration in trial 8 is 0.016
+Percept in trial 8 is A
+Stim Name in trial 8 is H40A60
+Stim Id in trial 8 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H40A60.png
+Bias in trial 9 is 0.6
+Condition in trial 9 is 0.0
+Presence in trial 9 is 1.0
+Stimulus presented at 289.92234132700105
+Response 1 given at 300.4278682580007
+Response 1 given at 303.69509428400124
+Subject reported a confidence of 6 at 307.9281742380008
+Duration in trial 9 is 0.016
+Percept in trial 9 is H
+Stim Name in trial 9 is H60A40
+Stim Id in trial 9 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H60A40.png
+Bias in trial 10 is 0.3
+Condition in trial 10 is 0.0
+Presence in trial 10 is 1.0
+Stimulus presented at 313.5736440760011
+Response 1 given at 320.7336298760001
+Response 1 given at 324.18965627800026
+Subject reported a confidence of 4 at 328.3641359940011
+Duration in trial 10 is 0.016
+Percept in trial 10 is A
+Stim Name in trial 10 is H30A70
+Stim Id in trial 10 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H30A70.png
+Bias in trial 11 is 0.5
+Condition in trial 11 is 1.0
+Presence in trial 11 is 1.0
+Stimulus presented at 334.0012015510001
+Response 1 given at 341.7483283500005
+Response 1 given at 345.93830472599984
+Subject reported a confidence of 3 at 349.3778691000007
+Duration in trial 11 is 0.2
+Percept in trial 11 is N
+Stim Name in trial 11 is H50A50
+Stim Id in trial 11 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H50A50.png
+Bias in trial 12 is nan
+Condition in trial 12 is 0.0
+Presence in trial 12 is 0.0
+Stimulus presented at 355.00218872000005
+Response 1 given at 362.0218228040012
+Response 1 given at 364.8018697919997
+Duration in trial 12 is 0.016
+Percept in trial 12 is nan
+Stim Name in trial 12 is nan
+Stim Id in trial 12 is nan
+Bias in trial 13 is 0.6
+Condition in trial 13 is 0.0
+Presence in trial 13 is 1.0
+Stimulus presented at 372.43748152900116
+Response 1 given at 382.3972271010007
+Response 1 given at 386.6189377999999
+Subject reported a confidence of 4 at 390.5800161019997
+Duration in trial 13 is 0.016
+Percept in trial 13 is H
+Stim Name in trial 13 is H60A40
+Stim Id in trial 13 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H60A40.png
+Bias in trial 14 is 0.3
+Condition in trial 14 is 0.0
+Presence in trial 14 is 1.0
+Stimulus presented at 396.1907887310008
+Response 1 given at 412.4994441529998
+Response 1 given at 424.51096590700035
+Subject reported a confidence of 4 at 428.4008093810007
+Duration in trial 14 is 0.016
+Percept in trial 14 is A
+Stim Name in trial 14 is H30A70
+Stim Id in trial 14 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H30A70.png
+Bias in trial 15 is 0.4
+Condition in trial 15 is 0.0
+Presence in trial 15 is 1.0
+Stimulus presented at 434.0216298970008
+Response 1 given at 443.4586392029996
+Response 1 given at 447.9602245719998
+Duration in trial 15 is 0.016
+Percept in trial 15 is A
+Stim Name in trial 15 is H40A60
+Stim Id in trial 15 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H40A60.png
+Bias in trial 16 is 0.6
+Condition in trial 16 is 1.0
+Presence in trial 16 is 1.0
+Stimulus presented at 455.59983215099965
+Response 1 given at 462.9000998850006
+Response 1 given at 471.454158206001
+Duration in trial 16 is 0.2
+Percept in trial 16 is H
+Stim Name in trial 16 is H60A40
+Stim Id in trial 16 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H60A40.png
+Bias in trial 17 is 0.7
+Condition in trial 17 is 1.0
+Presence in trial 17 is 1.0
+Stimulus presented at 479.10243028200057
+Response 1 given at 488.13772780900035
+Response 1 given at 490.9894704890012
+Duration in trial 17 is 0.2
+Percept in trial 17 is A
+Stim Name in trial 17 is H70A30
+Stim Id in trial 17 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H70A30.png
+Bias in trial 18 is 0.6
+Condition in trial 18 is 1.0
+Presence in trial 18 is 1.0
+Stimulus presented at 498.628557936001
+Response 1 given at 506.4885997399997
+Response 1 given at 511.6433755400012
+Duration in trial 18 is 0.2
+Percept in trial 18 is H
+Stim Name in trial 18 is H60A40
+Stim Id in trial 18 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H60A40.png
+Bias in trial 19 is 0.8
+Condition in trial 19 is 1.0
+Presence in trial 19 is 1.0
+Stimulus presented at 519.2679691980011
+Response 1 given at 529.4733236949996
+Response 1 given at 534.0402534370005
+Duration in trial 19 is 0.2
+Percept in trial 19 is H
+Stim Name in trial 19 is H80A20
+Stim Id in trial 19 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H80A20.png
+Bias in trial 20 is nan
+Condition in trial 20 is 1.0
+Presence in trial 20 is 0.0
+Stimulus presented at 541.6687901969999
+Response 1 given at 550.7891074890013
+Response 1 given at 554.8330605530009
+Duration in trial 20 is 0.2
+Percept in trial 20 is nan
+Stim Name in trial 20 is nan
+Stim Id in trial 20 is nan
+Bias in trial 21 is 0.5
+Condition in trial 21 is 1.0
+Presence in trial 21 is 1.0
+Stimulus presented at 562.4614162030011
+Response 1 given at 570.1086031670002
+Response 1 given at 575.201314752001
+Subject reported a confidence of 4 at 578.6343619170002
+Duration in trial 21 is 0.2
+Percept in trial 21 is N
+Stim Name in trial 21 is H50A50
+Stim Id in trial 21 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H50A50.png
+Bias in trial 22 is 0.8
+Condition in trial 22 is 0.0
+Presence in trial 22 is 1.0
+Stimulus presented at 584.2531350480003
+Response 1 given at 591.3096893830007
+Response 1 given at 594.1137106919996
+Duration in trial 22 is 0.016
+Percept in trial 22 is H
+Stim Name in trial 22 is H80A20
+Stim Id in trial 22 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H80A20.png
+Bias in trial 23 is 0.3
+Condition in trial 23 is 0.0
+Presence in trial 23 is 1.0
+Stimulus presented at 601.7363471400004
+Response 1 given at 609.7398766980004
+Response 1 given at 613.1965824920007
+Duration in trial 23 is 0.016
+Percept in trial 23 is A
+Stim Name in trial 23 is H30A70
+Stim Id in trial 23 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H30A70.png
+Bias in trial 24 is 0.2
+Condition in trial 24 is 0.0
+Presence in trial 24 is 1.0
+Stimulus presented at 620.8247824350001
+Response 1 given at 628.9396192839995
+Response 1 given at 632.2232105940002
+Duration in trial 24 is 0.016
+Percept in trial 24 is A
+Stim Name in trial 24 is H20A80
+Stim Id in trial 24 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H20A80.png
+Bias in trial 25 is 0.4
+Condition in trial 25 is 1.0
+Presence in trial 25 is 1.0
+Stimulus presented at 639.8496895059998
+Response 1 given at 647.850764277
+Response 1 given at 651.1315719960003
+Subject reported a confidence of 3 at 654.3435874570005
+Duration in trial 25 is 0.2
+Percept in trial 25 is A
+Stim Name in trial 25 is H40A60
+Stim Id in trial 25 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H40A60.png
+Bias in trial 26 is 0.7
+Condition in trial 26 is 0.0
+Presence in trial 26 is 1.0
+Stimulus presented at 659.959386691
+Response 1 given at 674.1776048240008
+Response 1 given at 678.3668436770004
+Duration in trial 26 is 0.016
+Percept in trial 26 is A
+Stim Name in trial 26 is H70A30
+Stim Id in trial 26 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H70A30.png
+Bias in trial 27 is 0.7
+Condition in trial 27 is 0.0
+Presence in trial 27 is 1.0
+Stimulus presented at 686.0071417430008
+Response 1 given at 693.8263452030005
+Response 1 given at 697.1713508680004
+Subject reported a confidence of 2 at 705.7760144140011
+Duration in trial 27 is 0.016
+Percept in trial 27 is A
+Stim Name in trial 27 is H70A30
+Stim Id in trial 27 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H70A30.png
+Bias in trial 28 is 0.8
+Condition in trial 28 is 0.0
+Presence in trial 28 is 1.0
+Stimulus presented at 711.4094282639999
+Response 1 given at 720.6250333700009
+Response 1 given at 723.9297588019999
+Subject reported a confidence of 4 at 728.0653872020011
+Duration in trial 28 is 0.016
+Percept in trial 28 is H
+Stim Name in trial 28 is H80A20
+Stim Id in trial 28 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H80A20.png
+Bias in trial 29 is 0.5
+Condition in trial 29 is 1.0
+Presence in trial 29 is 1.0
+Stimulus presented at 733.6825183380006
+Response 1 given at 741.9151567669996
+Response 1 given at 748.4360402860002
+Subject reported a confidence of 3 at 753.431607501001
+Duration in trial 29 is 0.2
+Percept in trial 29 is N
+Stim Name in trial 29 is H50A50
+Stim Id in trial 29 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H50A50.png
+Bias in trial 30 is nan
+Condition in trial 30 is 0.0
+Presence in trial 30 is 0.0
+Stimulus presented at 759.0586017469996
+Response 1 given at 769.4035831609999
+Response 1 given at 775.6233138019998
+Duration in trial 30 is 0.016
+Percept in trial 30 is nan
+Stim Name in trial 30 is nan
+Stim Id in trial 30 is nan
+Bias in trial 31 is 0.4
+Condition in trial 31 is 0.0
+Presence in trial 31 is 1.0
+Stimulus presented at 783.2687496970011
+Response 1 given at 790.9395384319996
+Response 1 given at 794.4587443479995
+Subject reported a confidence of 5 at 798.174644648001
+Duration in trial 31 is 0.016
+Percept in trial 31 is A
+Stim Name in trial 31 is H40A60
+Stim Id in trial 31 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H40A60.png
+Bias in trial 32 is 0.5
+Condition in trial 32 is 0.0
+Presence in trial 32 is 1.0
+Stimulus presented at 803.8094737070005
+Response 1 given at 811.8871570810006
+Response 1 given at 818.8265234990013
+Subject reported a confidence of 3 at 823.8963277050007
+Duration in trial 32 is 0.016
+Percept in trial 32 is N
+Stim Name in trial 32 is H50A50
+Stim Id in trial 32 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H50A50.png
+Bias in trial 33 is nan
+Condition in trial 33 is 1.0
+Presence in trial 33 is 0.0
+Stimulus presented at 829.5136130680003
+Response 1 given at 837.1807113760005
+Response 4 given at 840.0925902590006
+Duration in trial 33 is 0.2
+Percept in trial 33 is nan
+Stim Name in trial 33 is nan
+Stim Id in trial 33 is nan
+Bias in trial 34 is 0.4
+Condition in trial 34 is 0.0
+Presence in trial 34 is 1.0
+Stimulus presented at 847.7162644950004
+Response 1 given at 855.775808235001
+Response 1 given at 859.7168473199999
+Duration in trial 34 is 0.016
+Percept in trial 34 is A
+Stim Name in trial 34 is H40A60
+Stim Id in trial 34 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H40A60.png
+Bias in trial 35 is nan
+Condition in trial 35 is 0.0
+Presence in trial 35 is 0.0
+Stimulus presented at 867.3317658550004
+Response 1 given at 875.5142927590005
+Response 1 given at 881.7649732030004
+Duration in trial 35 is 0.016
+Percept in trial 35 is nan
+Stim Name in trial 35 is nan
+Stim Id in trial 35 is nan
+Bias in trial 36 is 0.5
+Condition in trial 36 is 0.0
+Presence in trial 36 is 1.0
+Stimulus presented at 889.3964268990003
+Response 1 given at 896.8435806360012
+Response 4 given at 900.2075836340009
+Subject reported a confidence of 6 at 905.0126239040001
+Duration in trial 36 is 0.016
+Percept in trial 36 is N
+Stim Name in trial 36 is H50A50
+Stim Id in trial 36 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H50A50.png
+Bias in trial 37 is 0.5
+Condition in trial 37 is 0.0
+Presence in trial 37 is 1.0
+Stimulus presented at 910.648953105001
+Response 4 given at 917.6372428080012
+Response 4 given at 920.7890619480004
+Subject reported a confidence of 7 at 924.1235824739997
+Duration in trial 37 is 0.016
+Percept in trial 37 is N
+Stim Name in trial 37 is H50A50
+Stim Id in trial 37 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H50A50.png
+Bias in trial 38 is 0.2
+Condition in trial 38 is 1.0
+Presence in trial 38 is 1.0
+Stimulus presented at 929.7552822819998
+Response 1 given at 942.1931492399999
+Response 4 given at 945.7510674590012
+Subject reported a confidence of 8 at 952.1062002130002
+Duration in trial 38 is 0.2
+Percept in trial 38 is A
+Stim Name in trial 38 is H20A80
+Stim Id in trial 38 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H20A80.png
+Bias in trial 39 is 0.2
+Condition in trial 39 is 0.0
+Presence in trial 39 is 1.0
+Stimulus presented at 957.7283398550007
+Response 1 given at 964.7734682720002
+Response 1 given at 969.0302691880006
+Duration in trial 39 is 0.016
+Percept in trial 39 is A
+Stim Name in trial 39 is H20A80
+Stim Id in trial 39 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H20A80.png
+Bias in trial 40 is 0.6
+Condition in trial 40 is 1.0
+Presence in trial 40 is 1.0
+Stimulus presented at 976.6624765600009
+Response 1 given at 984.8171427730013
+Response 1 given at 989.3253686010012
+Subject reported a confidence of 6 at 992.8720656940004
+Duration in trial 40 is 0.2
+Percept in trial 40 is H
+Stim Name in trial 40 is H60A40
+Stim Id in trial 40 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H60A40.png
+Bias in trial 41 is 0.7
+Condition in trial 41 is 0.0
+Presence in trial 41 is 1.0
+Stimulus presented at 998.5095483109999
+Response 1 given at 1005.8699795539997
+Response 1 given at 1020.0794082299999
+Subject reported a confidence of 5 at 1025.5617093540004
+Duration in trial 41 is 0.016
+Percept in trial 41 is A
+Stim Name in trial 41 is H70A30
+Stim Id in trial 41 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H70A30.png
+Bias in trial 42 is nan
+Condition in trial 42 is 0.0
+Presence in trial 42 is 0.0
+Stimulus presented at 1031.193392823001
+Response 1 given at 1039.1558669679998
+Response 1 given at 1052.2774582950005
+Duration in trial 42 is 0.016
+Percept in trial 42 is nan
+Stim Name in trial 42 is nan
+Stim Id in trial 42 is nan
+Bias in trial 43 is 0.5
+Condition in trial 43 is 1.0
+Presence in trial 43 is 1.0
+Stimulus presented at 1059.928086557
+Response 1 given at 1068.0093403360006
+Response 1 given at 1072.9581325710005
+Subject reported a confidence of 4 at 1076.275394649001
+Duration in trial 43 is 0.2
+Percept in trial 43 is N
+Stim Name in trial 43 is H50A50
+Stim Id in trial 43 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H50A50.png
+Bias in trial 44 is 0.8
+Condition in trial 44 is 0.0
+Presence in trial 44 is 1.0
+Stimulus presented at 1081.920592118
+Response 1 given at 1088.6372631110007
+Response 1 given at 1095.1468751890006
+Duration in trial 44 is 0.016
+Percept in trial 44 is H
+Stim Name in trial 44 is H80A20
+Stim Id in trial 44 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H80A20.png
+Bias in trial 45 is 0.8
+Condition in trial 45 is 1.0
+Presence in trial 45 is 1.0
+Stimulus presented at 1102.790171695
+Response 1 given at 1110.247136557
+Response 1 given at 1113.3231363819996
+Subject reported a confidence of 3 at 1117.9209789020006
+Duration in trial 45 is 0.2
+Percept in trial 45 is H
+Stim Name in trial 45 is H80A20
+Stim Id in trial 45 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H80A20.png
+Bias in trial 46 is 0.4
+Condition in trial 46 is 1.0
+Presence in trial 46 is 1.0
+Stimulus presented at 1123.53385213
+Response 1 given at 1130.648351273001
+Response 1 given at 1135.2957374510006
+Duration in trial 46 is 0.2
+Percept in trial 46 is A
+Stim Name in trial 46 is H40A60
+Stim Id in trial 46 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H40A60.png
+Bias in trial 47 is 0.2
+Condition in trial 47 is 1.0
+Presence in trial 47 is 1.0
+Stimulus presented at 1142.9134224160007
+Response 1 given at 1150.715662386001
+Response 1 given at 1157.6206235099999
+Duration in trial 47 is 0.2
+Percept in trial 47 is A
+Stim Name in trial 47 is H20A80
+Stim Id in trial 47 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H20A80.png
+Bias in trial 48 is 0.6
+Condition in trial 48 is 1.0
+Presence in trial 48 is 1.0
+Stimulus presented at 1165.261418477001
+Response 1 given at 1173.053544624001
+Response 1 given at 1177.1012231490004
+Subject reported a confidence of 5 at 1181.636249993
+Duration in trial 48 is 0.2
+Percept in trial 48 is H
+Stim Name in trial 48 is H60A40
+Stim Id in trial 48 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H60A40.png
+Bias in trial 49 is nan
+Condition in trial 49 is 1.0
+Presence in trial 49 is 0.0
+Stimulus presented at 1187.248309572
+Response 1 given at 1195.1127172710003
+Response 1 given at 1201.4825697830001
+Duration in trial 49 is 0.2
+Percept in trial 49 is nan
+Stim Name in trial 49 is nan
+Stim Id in trial 49 is nan
+Bias in trial 50 is 0.6
+Condition in trial 50 is 0.0
+Presence in trial 50 is 1.0
+Stimulus presented at 1209.1076397840006
+Response 1 given at 1216.008812655
+Response 1 given at 1220.3486108720008
+Duration in trial 50 is 0.016
+Percept in trial 50 is H
+Stim Name in trial 50 is H60A40
+Stim Id in trial 50 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF006_H60A40.png
+Trigger at 9.483108775999426
+Start at 9.483108775999426
+Bias in trial 0 is 0.2
+Condition in trial 0 is 0.0
+Presence in trial 0 is 1.0
+Stimulus presented at 9.820443791999423
+Response 1 given at 16.89895804200023
+Response 1 given at 39.55662510000002
+Subject reported a confidence of 7 at 46.737575818999176
+Duration in trial 0 is 0.016
+Percept in trial 0 is A
+Stim Name in trial 0 is H20A80
+Stim Id in trial 0 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 1 is nan
+Condition in trial 1 is 0.0
+Presence in trial 1 is 0.0
+Stimulus presented at 51.807373678999284
+Response 1 given at 60.03389168600006
+Response 1 given at 64.43389385099908
+Duration in trial 1 is 0.016
+Percept in trial 1 is nan
+Stim Name in trial 1 is nan
+Stim Id in trial 1 is nan
+Bias in trial 2 is nan
+Condition in trial 2 is 1.0
+Presence in trial 2 is 0.0
+Stimulus presented at 71.5138915890002
+Response 1 given at 79.66252106499996
+Response 1 given at 84.57515742900068
+Duration in trial 2 is 0.2
+Percept in trial 2 is nan
+Stim Name in trial 2 is nan
+Stim Id in trial 2 is nan
+Bias in trial 3 is 0.3
+Condition in trial 3 is 0.0
+Presence in trial 3 is 1.0
+Stimulus presented at 91.65083546099959
+Response 1 given at 98.98574196700065
+Response 1 given at 104.34248161299911
+Subject reported a confidence of 5 at 107.87711663099981
+Duration in trial 3 is 0.016
+Percept in trial 3 is A
+Stim Name in trial 3 is H30A70
+Stim Id in trial 3 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H30A70.png
+Bias in trial 4 is 0.6
+Condition in trial 4 is 1.0
+Presence in trial 4 is 1.0
+Stimulus presented at 112.96633092199954
+Response 1 given at 120.00058711199927
+Response 1 given at 122.86863348499901
+Subject reported a confidence of 4 at 126.15928792399973
+Duration in trial 4 is 0.2
+Percept in trial 4 is H
+Stim Name in trial 4 is H60A40
+Stim Id in trial 4 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 5 is 0.5
+Condition in trial 5 is 0.0
+Presence in trial 5 is 1.0
+Stimulus presented at 131.24991549600054
+Response 1 given at 138.83827767100047
+Response 1 given at 141.74427058999936
+Subject reported a confidence of 4 at 143.75475229899894
+Duration in trial 5 is 0.016
+Percept in trial 5 is N
+Stim Name in trial 5 is H50A50
+Stim Id in trial 5 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 6 is nan
+Condition in trial 6 is 1.0
+Presence in trial 6 is 0.0
+Stimulus presented at 148.83761087399944
+Response 1 given at 156.0732035990004
+Response 1 given at 158.8961747129997
+Duration in trial 6 is 0.2
+Percept in trial 6 is nan
+Stim Name in trial 6 is nan
+Stim Id in trial 6 is nan
+Bias in trial 7 is nan
+Condition in trial 7 is 0.0
+Presence in trial 7 is 0.0
+Stimulus presented at 165.97166157900028
+Response 1 given at 172.73225931600064
+Response 1 given at 175.82483712300018
+Duration in trial 7 is 0.016
+Percept in trial 7 is nan
+Stim Name in trial 7 is nan
+Stim Id in trial 7 is nan
+Bias in trial 8 is nan
+Condition in trial 8 is 0.0
+Presence in trial 8 is 0.0
+Stimulus presented at 182.90697419900062
+Response 1 given at 189.7288103689989
+Response 1 given at 197.8145348779999
+Duration in trial 8 is 0.016
+Percept in trial 8 is nan
+Stim Name in trial 8 is nan
+Stim Id in trial 8 is nan
+Bias in trial 9 is 0.4
+Condition in trial 9 is 0.0
+Presence in trial 9 is 1.0
+Stimulus presented at 204.90894589399977
+Response 4 given at 211.11546916899897
+Response 4 given at 218.8728822310004
+Duration in trial 9 is 0.016
+Percept in trial 9 is A
+Stim Name in trial 9 is H40A60
+Stim Id in trial 9 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 10 is 0.4
+Condition in trial 10 is 0.0
+Presence in trial 10 is 1.0
+Stimulus presented at 225.96773304599992
+Response 1 given at 234.46323452899924
+Response 1 given at 241.0992974010005
+Duration in trial 10 is 0.016
+Percept in trial 10 is A
+Stim Name in trial 10 is H40A60
+Stim Id in trial 10 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 11 is 0.2
+Condition in trial 11 is 1.0
+Presence in trial 11 is 1.0
+Stimulus presented at 248.1913350220002
+Response 1 given at 255.28768940900045
+Response 1 given at 261.891812726999
+Duration in trial 11 is 0.2
+Percept in trial 11 is A
+Stim Name in trial 11 is H20A80
+Stim Id in trial 11 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 12 is 0.2
+Condition in trial 12 is 0.0
+Presence in trial 12 is 1.0
+Stimulus presented at 268.9698046430003
+Response 1 given at 276.1819104699989
+Response 1 given at 279.81419996799923
+Subject reported a confidence of 3 at 284.04208938100055
+Duration in trial 12 is 0.016
+Percept in trial 12 is A
+Stim Name in trial 12 is H20A80
+Stim Id in trial 12 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 13 is 0.2
+Condition in trial 13 is 0.0
+Presence in trial 13 is 1.0
+Stimulus presented at 289.1258152600003
+Response 1 given at 298.6210632179991
+Response 1 given at 304.0480826639996
+Subject reported a confidence of 2 at 308.7910429450003
+Duration in trial 13 is 0.016
+Percept in trial 13 is A
+Stim Name in trial 13 is H20A80
+Stim Id in trial 13 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 14 is nan
+Condition in trial 14 is 0.0
+Presence in trial 14 is 0.0
+Stimulus presented at 313.86175333900064
+Response 1 given at 320.28039082299983
+Response 1 given at 325.37102393699934
+Duration in trial 14 is 0.016
+Percept in trial 14 is nan
+Stim Name in trial 14 is nan
+Stim Id in trial 14 is nan
+Bias in trial 15 is nan
+Condition in trial 15 is 0.0
+Presence in trial 15 is 0.0
+Stimulus presented at 332.4381000560006
+Response 1 given at 343.4509436749995
+Response 1 given at 349.1533799429999
+Duration in trial 15 is 0.016
+Percept in trial 15 is nan
+Stim Name in trial 15 is nan
+Stim Id in trial 15 is nan
+Bias in trial 16 is 0.3
+Condition in trial 16 is 1.0
+Presence in trial 16 is 1.0
+Stimulus presented at 356.2340333209995
+Response 1 given at 366.1912601740005
+Response 1 given at 369.2082662169996
+Subject reported a confidence of 2 at 372.4893344510001
+Duration in trial 16 is 0.2
+Percept in trial 16 is A
+Stim Name in trial 16 is H30A70
+Stim Id in trial 16 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H30A70.png
+Bias in trial 17 is 0.8
+Condition in trial 17 is 1.0
+Presence in trial 17 is 1.0
+Stimulus presented at 377.57352235100007
+Response 1 given at 384.7755654339999
+Response 1 given at 387.8288751130003
+Subject reported a confidence of 1 at 391.5067627259996
+Duration in trial 17 is 0.2
+Percept in trial 17 is H
+Stim Name in trial 17 is H80A20
+Stim Id in trial 17 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 18 is 0.7
+Condition in trial 18 is 1.0
+Presence in trial 18 is 1.0
+Stimulus presented at 396.60075066399986
+Response 1 given at 404.0689979309991
+Response 1 given at 408.8853067979999
+Subject reported a confidence of 1 at 412.4301937729997
+Duration in trial 18 is 0.2
+Percept in trial 18 is A
+Stim Name in trial 18 is H70A30
+Stim Id in trial 18 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 19 is 0.4
+Condition in trial 19 is 1.0
+Presence in trial 19 is 1.0
+Stimulus presented at 417.541824033
+Response 4 given at 427.18295439400026
+Response 4 given at 429.64675693699974
+Duration in trial 19 is 0.2
+Percept in trial 19 is A
+Stim Name in trial 19 is H40A60
+Stim Id in trial 19 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 20 is 0.8
+Condition in trial 20 is 1.0
+Presence in trial 20 is 1.0
+Stimulus presented at 436.73816049500056
+Response 4 given at 444.05271917900063
+Response 4 given at 446.8399842359995
+Subject reported a confidence of 5 at 450.4156363530001
+Duration in trial 20 is 0.2
+Percept in trial 20 is H
+Stim Name in trial 20 is H80A20
+Stim Id in trial 20 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 21 is 0.8
+Condition in trial 21 is 1.0
+Presence in trial 21 is 1.0
+Stimulus presented at 455.50526173899925
+Response 1 given at 465.44820915299897
+Response 1 given at 470.46557734899943
+Duration in trial 21 is 0.2
+Percept in trial 21 is H
+Stim Name in trial 21 is H80A20
+Stim Id in trial 21 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 22 is 0.5
+Condition in trial 22 is 0.0
+Presence in trial 22 is 1.0
+Stimulus presented at 477.5527914859995
+Response 1 given at 483.6490534860004
+Response 1 given at 494.9300881279996
+Subject reported a confidence of 7 at 502.72183030199994
+Duration in trial 22 is 0.016
+Percept in trial 22 is N
+Stim Name in trial 22 is H50A50
+Stim Id in trial 22 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 23 is 0.2
+Condition in trial 23 is 0.0
+Presence in trial 23 is 1.0
+Stimulus presented at 507.83344135900006
+Response 1 given at 515.4890747739992
+Response 1 given at 527.0090285139995
+Subject reported a confidence of 5 at 536.4456834800003
+Duration in trial 23 is 0.016
+Percept in trial 23 is A
+Stim Name in trial 23 is H20A80
+Stim Id in trial 23 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 24 is 0.8
+Condition in trial 24 is 0.0
+Presence in trial 24 is 1.0
+Stimulus presented at 541.5461659030007
+Response 1 given at 549.0686592139991
+Response 1 given at 551.8000102679998
+Duration in trial 24 is 0.016
+Percept in trial 24 is H
+Stim Name in trial 24 is H80A20
+Stim Id in trial 24 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 25 is 0.8
+Condition in trial 25 is 1.0
+Presence in trial 25 is 1.0
+Stimulus presented at 558.8786313370001
+Response 1 given at 565.9780707259997
+Response 1 given at 569.868313428
+Duration in trial 25 is 0.2
+Percept in trial 25 is H
+Stim Name in trial 25 is H80A20
+Stim Id in trial 25 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 26 is 0.4
+Condition in trial 26 is 0.0
+Presence in trial 26 is 1.0
+Stimulus presented at 576.9610989110006
+Response 1 given at 585.3179513720006
+Response 1 given at 588.108085812999
+Duration in trial 26 is 0.016
+Percept in trial 26 is A
+Stim Name in trial 26 is H40A60
+Stim Id in trial 26 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 27 is 0.6
+Condition in trial 27 is 0.0
+Presence in trial 27 is 1.0
+Stimulus presented at 595.1952009489996
+Response 1 given at 601.4312822720003
+Response 1 given at 606.0953337869996
+Duration in trial 27 is 0.016
+Percept in trial 27 is H
+Stim Name in trial 27 is H60A40
+Stim Id in trial 27 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 28 is 0.6
+Condition in trial 28 is 0.0
+Presence in trial 28 is 1.0
+Stimulus presented at 613.1935036710001
+Response 1 given at 620.2815801220004
+Response 1 given at 623.8854259549989
+Duration in trial 28 is 0.016
+Percept in trial 28 is H
+Stim Name in trial 28 is H60A40
+Stim Id in trial 28 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 29 is nan
+Condition in trial 29 is 1.0
+Presence in trial 29 is 0.0
+Stimulus presented at 630.9633091779997
+Response 1 given at 638.0766830089997
+Response 1 given at 641.980491156999
+Duration in trial 29 is 0.2
+Percept in trial 29 is nan
+Stim Name in trial 29 is nan
+Stim Id in trial 29 is nan
+Bias in trial 30 is 0.8
+Condition in trial 30 is 0.0
+Presence in trial 30 is 1.0
+Stimulus presented at 649.0542326840005
+Response 1 given at 656.658020335999
+Response 1 given at 659.5732056529996
+Duration in trial 30 is 0.016
+Percept in trial 30 is H
+Stim Name in trial 30 is H80A20
+Stim Id in trial 30 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 31 is 0.6
+Condition in trial 31 is 0.0
+Presence in trial 31 is 1.0
+Stimulus presented at 666.6609070729992
+Response 1 given at 678.5014218039996
+Response 1 given at 682.1542957700003
+Subject reported a confidence of 3 at 685.7501861950004
+Duration in trial 31 is 0.016
+Percept in trial 31 is H
+Stim Name in trial 31 is H60A40
+Stim Id in trial 31 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 32 is 0.8
+Condition in trial 32 is 0.0
+Presence in trial 32 is 1.0
+Stimulus presented at 690.845008454
+Response 1 given at 700.4405186980002
+Response 1 given at 703.8072347750003
+Subject reported a confidence of 2 at 707.1967341839991
+Duration in trial 32 is 0.016
+Percept in trial 32 is H
+Stim Name in trial 32 is H80A20
+Stim Id in trial 32 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 33 is 0.7
+Condition in trial 33 is 1.0
+Presence in trial 33 is 1.0
+Stimulus presented at 712.2692384339989
+Response 1 given at 719.5478823060002
+Response 1 given at 723.914952436
+Duration in trial 33 is 0.2
+Percept in trial 33 is A
+Stim Name in trial 33 is H70A30
+Stim Id in trial 33 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 34 is 0.5
+Condition in trial 34 is 0.0
+Presence in trial 34 is 1.0
+Stimulus presented at 731.0081738329991
+Response 1 given at 737.7001903910004
+Response 1 given at 743.4124456009995
+Subject reported a confidence of 5 at 749.0328452419999
+Duration in trial 34 is 0.016
+Percept in trial 34 is N
+Stim Name in trial 34 is H50A50
+Stim Id in trial 34 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 35 is 0.5
+Condition in trial 35 is 0.0
+Presence in trial 35 is 1.0
+Stimulus presented at 754.1273804400007
+Response 1 given at 765.6950764640005
+Response 1 given at 773.3972224930003
+Subject reported a confidence of 3 at 780.2316593489995
+Duration in trial 35 is 0.016
+Percept in trial 35 is N
+Stim Name in trial 35 is H50A50
+Stim Id in trial 35 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 36 is 0.4
+Condition in trial 36 is 0.0
+Presence in trial 36 is 1.0
+Stimulus presented at 785.3157175659999
+Response 1 given at 792.6535178960003
+Response 1 given at 800.8671451449991
+Duration in trial 36 is 0.016
+Percept in trial 36 is A
+Stim Name in trial 36 is H40A60
+Stim Id in trial 36 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 37 is 0.4
+Condition in trial 37 is 0.0
+Presence in trial 37 is 1.0
+Stimulus presented at 807.9687277789999
+Response 1 given at 815.3890436809997
+Response 1 given at 820.3838730989992
+Subject reported a confidence of 2 at 823.4772630539992
+Duration in trial 37 is 0.016
+Percept in trial 37 is A
+Stim Name in trial 37 is H40A60
+Stim Id in trial 37 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Bias in trial 38 is nan
+Condition in trial 38 is 1.0
+Presence in trial 38 is 0.0
+Stimulus presented at 828.5453362610006
+Response 4 given at 834.9966759729996
+Response 4 given at 838.4932807599998
+Duration in trial 38 is 0.2
+Percept in trial 38 is nan
+Stim Name in trial 38 is nan
+Stim Id in trial 38 is nan
+Bias in trial 39 is 0.2
+Condition in trial 39 is 0.0
+Presence in trial 39 is 1.0
+Stimulus presented at 845.5851758150002
+Response 4 given at 852.310960838
+Response 4 given at 855.3484097300006
+Duration in trial 39 is 0.016
+Percept in trial 39 is A
+Stim Name in trial 39 is H20A80
+Stim Id in trial 39 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H20A80.png
+Bias in trial 40 is 0.5
+Condition in trial 40 is 1.0
+Presence in trial 40 is 1.0
+Stimulus presented at 862.440231102999
+Response 4 given at 870.3190960560005
+Response 4 given at 874.2220796940001
+Subject reported a confidence of 5 at 879.6430843920007
+Duration in trial 40 is 0.2
+Percept in trial 40 is N
+Stim Name in trial 40 is H50A50
+Stim Id in trial 40 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 41 is nan
+Condition in trial 41 is 0.0
+Presence in trial 41 is 0.0
+Stimulus presented at 884.7222703659991
+Response 4 given at 891.7435181099991
+Response 4 given at 897.4635040430003
+Duration in trial 41 is 0.016
+Percept in trial 41 is nan
+Stim Name in trial 41 is nan
+Stim Id in trial 41 is nan
+Bias in trial 42 is 0.8
+Condition in trial 42 is 0.0
+Presence in trial 42 is 1.0
+Stimulus presented at 904.5613193600002
+Response 4 given at 911.2587738769998
+Response 4 given at 915.9737100620005
+Duration in trial 42 is 0.016
+Percept in trial 42 is H
+Stim Name in trial 42 is H80A20
+Stim Id in trial 42 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 43 is nan
+Condition in trial 43 is 1.0
+Presence in trial 43 is 0.0
+Stimulus presented at 923.0530118049992
+Response 1 given at 930.227560977999
+Response 1 given at 935.1124945729989
+Duration in trial 43 is 0.2
+Percept in trial 43 is nan
+Stim Name in trial 43 is nan
+Stim Id in trial 43 is nan
+Bias in trial 44 is 0.8
+Condition in trial 44 is 0.0
+Presence in trial 44 is 1.0
+Stimulus presented at 942.2016800519996
+Response 1 given at 949.9935949129995
+Response 1 given at 958.0688266599991
+Duration in trial 44 is 0.016
+Percept in trial 44 is H
+Stim Name in trial 44 is H80A20
+Stim Id in trial 44 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 45 is 0.5
+Condition in trial 45 is 1.0
+Presence in trial 45 is 1.0
+Stimulus presented at 965.162159001
+Response 1 given at 972.5880661720003
+Response 1 given at 975.822032094
+Subject reported a confidence of 4 at 981.0155743989999
+Duration in trial 45 is 0.2
+Percept in trial 45 is N
+Stim Name in trial 45 is H50A50
+Stim Id in trial 45 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H50A50.png
+Bias in trial 46 is 0.8
+Condition in trial 46 is 1.0
+Presence in trial 46 is 1.0
+Stimulus presented at 986.1216362590003
+Response 1 given at 997.9113172769994
+Response 4 given at 1002.0795431749993
+Subject reported a confidence of 5 at 1012.974792854
+Duration in trial 46 is 0.2
+Percept in trial 46 is H
+Stim Name in trial 46 is H80A20
+Stim Id in trial 46 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H80A20.png
+Bias in trial 47 is 0.6
+Condition in trial 47 is 1.0
+Presence in trial 47 is 1.0
+Stimulus presented at 1018.0674753269996
+Response 1 given at 1025.4936058580006
+Response 1 given at 1027.9252296779996
+Duration in trial 47 is 0.2
+Percept in trial 47 is H
+Stim Name in trial 47 is H60A40
+Stim Id in trial 47 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 48 is 0.7
+Condition in trial 48 is 1.0
+Presence in trial 48 is 1.0
+Stimulus presented at 1035.0229093920007
+Response 4 given at 1043.4945592080003
+Response 4 given at 1047.2636837909995
+Subject reported a confidence of 10 at 1053.2464025329991
+Duration in trial 48 is 0.2
+Percept in trial 48 is A
+Stim Name in trial 48 is H70A30
+Stim Id in trial 48 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H70A30.png
+Bias in trial 49 is 0.6
+Condition in trial 49 is 1.0
+Presence in trial 49 is 1.0
+Stimulus presented at 1058.339110076
+Response 4 given at 1066.0507715309996
+Response 4 given at 1071.113489342999
+Duration in trial 49 is 0.2
+Percept in trial 49 is H
+Stim Name in trial 49 is H60A40
+Stim Id in trial 49 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H60A40.png
+Bias in trial 50 is 0.4
+Condition in trial 50 is 0.0
+Presence in trial 50 is 1.0
+Stimulus presented at 1078.2106898849997
+Response 4 given at 1084.710564531999
+Response 4 given at 1092.6959152809995
+Duration in trial 50 is 0.016
+Percept in trial 50 is A
+Stim Name in trial 50 is H40A60
+Stim Id in trial 50 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Females/WF039_H40A60.png
+Trigger at 2.9382486329996027
+Start at 2.9382486329996027
+Bias in trial 0 is 0.8
+Condition in trial 0 is 0.0
+Presence in trial 0 is 1.0
+Stimulus presented at 3.2564873960000114
+Response 1 given at 13.761160678001033
+Response 1 given at 23.95613907400002
+Subject reported a confidence of 5 at 28.988393016999908
+Duration in trial 0 is 0.016
+Percept in trial 0 is H
+Stim Name in trial 0 is H80A20
+Stim Id in trial 0 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Bias in trial 1 is nan
+Condition in trial 1 is 0.0
+Presence in trial 1 is 0.0
+Stimulus presented at 34.40180974299983
+Response 1 given at 40.99642937700082
+Response 1 given at 47.44800937800028
+Duration in trial 1 is 0.016
+Percept in trial 1 is nan
+Stim Name in trial 1 is nan
+Stim Id in trial 1 is nan
+Bias in trial 2 is nan
+Condition in trial 2 is 1.0
+Presence in trial 2 is 0.0
+Stimulus presented at 54.86471742499998
+Response 1 given at 62.700087663000886
+Response 1 given at 65.93883491899942
+Duration in trial 2 is 0.2
+Percept in trial 2 is nan
+Stim Name in trial 2 is nan
+Stim Id in trial 2 is nan
+Bias in trial 3 is 0.3
+Condition in trial 3 is 0.0
+Presence in trial 3 is 1.0
+Stimulus presented at 73.36574500400093
+Response 1 given at 100.55680946400025
+Response 1 given at 113.07894407300046
+Subject reported a confidence of 4 at 127.36520847599968
+Duration in trial 3 is 0.016
+Percept in trial 3 is A
+Stim Name in trial 3 is H30A70
+Stim Id in trial 3 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H30A70.png
+Bias in trial 4 is 0.5
+Condition in trial 4 is 1.0
+Presence in trial 4 is 1.0
+Stimulus presented at 132.79606217400033
+Response 1 given at 141.51295203900008
+Response 1 given at 146.1556177020011
+Subject reported a confidence of 6 at 151.3214244390001
+Duration in trial 4 is 0.2
+Percept in trial 4 is N
+Stim Name in trial 4 is H50A50
+Stim Id in trial 4 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png
+Trigger at 4.562495993999619
+Start at 4.562495993999619
+Bias in trial 0 is 0.7
+Condition in trial 0 is 0.0
+Presence in trial 0 is 1.0
+Stimulus presented at 4.880955828000879
+Response 1 given at 19.215699369000504
+Response 1 given at 22.62227652600268
+Subject reported a confidence of 7 at 30.02142855800048
+Duration in trial 0 is 0.016
+Percept in trial 0 is A
+Stim Name in trial 0 is H70A30
+Stim Id in trial 0 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 1 is nan
+Condition in trial 1 is 0.0
+Presence in trial 1 is 0.0
+Stimulus presented at 35.6421632140009
+Response 1 given at 49.196544029000506
+Response 1 given at 53.93350967600054
+Duration in trial 1 is 0.016
+Percept in trial 1 is nan
+Stim Name in trial 1 is nan
+Stim Id in trial 1 is nan
+Bias in trial 2 is 0.4
+Condition in trial 2 is 1.0
+Presence in trial 2 is 1.0
+Stimulus presented at 61.569387560000905
+Response 1 given at 72.64683093500207
+Response 1 given at 76.2308037340008
+Subject reported a confidence of 5 at 79.9708130149993
+Duration in trial 2 is 0.2
+Percept in trial 2 is A
+Stim Name in trial 2 is H40A60
+Stim Id in trial 2 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H40A60.png
+Bias in trial 3 is 0.5
+Condition in trial 3 is 0.0
+Presence in trial 3 is 1.0
+Stimulus presented at 85.60273624900219
+Response 1 given at 92.27966528600155
+Response 1 given at 98.02913212500061
+Subject reported a confidence of 4 at 101.74320550600169
+Duration in trial 3 is 0.016
+Percept in trial 3 is N
+Stim Name in trial 3 is H50A50
+Stim Id in trial 3 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png
+Bias in trial 4 is 0.5
+Condition in trial 4 is 1.0
+Presence in trial 4 is 1.0
+Stimulus presented at 107.37726985600239
+Response 1 given at 124.23444335699969
+Response 1 given at 131.54339202900155
+Duration in trial 4 is 0.2
+Percept in trial 4 is N
+Stim Name in trial 4 is H50A50
+Stim Id in trial 4 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png

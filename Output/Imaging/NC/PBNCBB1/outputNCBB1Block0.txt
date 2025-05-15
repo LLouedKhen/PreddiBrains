@@ -1,0 +1,457 @@
+Trigger at 1.732703883000795
+Start at 1.732709519999844
+Bias in trial 0 is nan
+Condition in trial 0 is 0.0
+Presence in trial 0 is 0.0
+Stimulus presented at 2.11277284300013
+Response 1 given at 9.704370076000487
+Response 1 given at 12.825958778999848
+Duration in trial 0 is 0.0167
+Percept in trial 0 is nan
+Bias in trial 1 is nan
+Condition in trial 1 is 0.0
+Presence in trial 1 is 0.0
+Stimulus presented at 22.097419781999633
+Response 1 given at 29.443963969000833
+Response 1 given at 41.37450670600083
+Duration in trial 1 is 0.0167
+Percept in trial 1 is nan
+Bias in trial 2 is -0.9
+Condition in trial 2 is 0.0
+Presence in trial 2 is 1.0
+Stimulus presented at 50.65960266100046
+Response 1 given at 60.34600436800065
+Response 1 given at 63.675786866000635
+Subject reported a confidence of 1 at 68.25672466300057
+Duration in trial 2 is 0.0167
+Percept in trial 2 is -1.0
+Bias in trial 3 is 0.9000000000000007
+Condition in trial 3 is 0.0
+Presence in trial 3 is 1.0
+Stimulus presented at 74.53506116300014
+Response 1 given at 82.33489069899952
+Response 1 given at 85.72690598000008
+Subject reported a confidence of 3 at 90.83615661300064
+Duration in trial 3 is 0.0167
+Percept in trial 3 is 1.0
+Bias in trial 4 is 0.9000000000000007
+Condition in trial 4 is 1.0
+Presence in trial 4 is 1.0
+Stimulus presented at 97.12635454600058
+Response 4 given at 105.81837274899954
+Response 4 given at 112.647360854
+Subject reported a confidence of 3 at 115.66814617800082
+Duration in trial 4 is 0.2
+Percept in trial 4 is 1.0
+Bias in trial 5 is 0.5000000000000003
+Condition in trial 5 is 1.0
+Presence in trial 5 is 1.0
+Stimulus presented at 121.9732744339999
+Response 1 given at 149.94280519899985
+Response 1 given at 164.40667045600094
+Duration in trial 5 is 0.2
+Percept in trial 5 is 1.0
+Bias in trial 6 is 0.3000000000000004
+Condition in trial 6 is 1.0
+Presence in trial 6 is 1.0
+Stimulus presented at 173.70549688200117
+Response 1 given at 181.21747917799985
+Response 1 given at 184.50796801100114
+Subject reported a confidence of 4 at 189.25020078300076
+Duration in trial 6 is 0.2
+Percept in trial 6 is 1.0
+Bias in trial 7 is -0.4999999999999999
+Condition in trial 7 is 0.0
+Presence in trial 7 is 1.0
+Stimulus presented at 195.54026096300004
+Response 1 given at 206.75356216799992
+Response 1 given at 210.02611088400045
+Subject reported a confidence of 3 at 214.84459074000006
+Duration in trial 7 is 0.0167
+Percept in trial 7 is -1.0
+Bias in trial 8 is -0.9
+Condition in trial 8 is 1.0
+Presence in trial 8 is 1.0
+Stimulus presented at 221.10700659100075
+Response 1 given at 229.70920368400039
+Response 1 given at 232.7809462490004
+Subject reported a confidence of 2 at 237.17598291600007
+Duration in trial 8 is 0.2
+Percept in trial 8 is -1.0
+Bias in trial 9 is 0.5000000000000003
+Condition in trial 9 is 1.0
+Presence in trial 9 is 1.0
+Stimulus presented at 243.45669322700087
+Response 1 given at 252.4986955380009
+Response 1 given at 285.4054068919995
+Duration in trial 9 is 0.2
+Percept in trial 9 is 1.0
+Bias in trial 10 is -0.9
+Condition in trial 10 is 1.0
+Presence in trial 10 is 1.0
+Stimulus presented at 294.7154023540006
+Response 1 given at 307.48104391299967
+Response 1 given at 320.1593083120006
+Duration in trial 10 is 0.2
+Percept in trial 10 is -1.0
+Bias in trial 11 is nan
+Condition in trial 11 is 1.0
+Presence in trial 11 is 0.0
+Stimulus presented at 329.4388035690008
+Response 1 given at 348.9353451340012
+Response 1 given at 378.319544856
+Duration in trial 11 is 0.2
+Percept in trial 11 is nan
+Bias in trial 12 is 0.0
+Condition in trial 12 is 0.0
+Presence in trial 12 is 1.0
+Stimulus presented at 387.60939937200055
+Response 1 given at 394.8949628299997
+Response 1 given at 400.67663472000095
+Duration in trial 12 is 0.0167
+Percept in trial 12 is 0.0
+Bias in trial 13 is -0.9
+Condition in trial 13 is 1.0
+Presence in trial 13 is 1.0
+Stimulus presented at 409.96289048700055
+Response 1 given at 417.9972268370002
+Response 1 given at 441.1551092610007
+Duration in trial 13 is 0.2
+Percept in trial 13 is -1.0
+Bias in trial 14 is nan
+Condition in trial 14 is 1.0
+Presence in trial 14 is 0.0
+Stimulus presented at 450.41343892900113
+Response 1 given at 463.6450262170001
+Response 1 given at 471.2878968240002
+Duration in trial 14 is 0.2
+Percept in trial 14 is nan
+Bias in trial 15 is nan
+Condition in trial 15 is 0.0
+Presence in trial 15 is 0.0
+Stimulus presented at 480.5720139690002
+Response 1 given at 531.3521108260011
+Response 1 given at 548.0776846610006
+Duration in trial 15 is 0.0167
+Percept in trial 15 is nan
+Bias in trial 16 is 0.5000000000000003
+Condition in trial 16 is 0.0
+Presence in trial 16 is 1.0
+Stimulus presented at 557.3772636480007
+Response 1 given at 566.7126665180003
+Response 1 given at 575.8944135010006
+Duration in trial 16 is 0.0167
+Percept in trial 16 is 1.0
+Bias in trial 17 is 0.0
+Condition in trial 17 is 1.0
+Presence in trial 17 is 1.0
+Stimulus presented at 585.1872381760004
+Response 1 given at 593.008907935
+Response 1 given at 598.5684073749999
+Duration in trial 17 is 0.2
+Percept in trial 17 is 0.0
+Bias in trial 18 is 0.0
+Condition in trial 18 is 0.0
+Presence in trial 18 is 1.0
+Stimulus presented at 607.8553089030011
+Response 1 given at 623.3132790319996
+Response 1 given at 633.852748493
+Subject reported a confidence of 4 at 640.688748083001
+Duration in trial 18 is 0.0167
+Percept in trial 18 is 0.0
+Bias in trial 19 is -0.9
+Condition in trial 19 is 1.0
+Presence in trial 19 is 1.0
+Stimulus presented at 646.9656574210003
+Response 1 given at 679.1805376350003
+Response 1 given at 711.9751161860004
+Duration in trial 19 is 0.2
+Percept in trial 19 is -1.0
+Bias in trial 20 is -0.7
+Condition in trial 20 is 1.0
+Presence in trial 20 is 1.0
+Stimulus presented at 721.2856299630002
+Response 1 given at 736.1545715110005
+Response 1 given at 747.1155159820009
+Subject reported a confidence of 3 at 763.4740843910004
+Duration in trial 20 is 0.2
+Percept in trial 20 is -1.0
+Bias in trial 21 is 0.9000000000000007
+Condition in trial 21 is 1.0
+Presence in trial 21 is 1.0
+Stimulus presented at 769.7398754019996
+Response 1 given at 797.9774129199996
+Response 1 given at 806.6991976259997
+Subject reported a confidence of 5 at 811.692228504
+Duration in trial 21 is 0.2
+Percept in trial 21 is 1.0
+Bias in trial 22 is 0.0
+Condition in trial 22 is 1.0
+Presence in trial 22 is 1.0
+Stimulus presented at 817.9898661260013
+Response 1 given at 837.8585640279998
+Response 1 given at 842.3807271389996
+Subject reported a confidence of 4 at 892.381698733001
+Duration in trial 22 is 0.2
+Percept in trial 22 is 0.0
+Bias in trial 23 is -0.9
+Condition in trial 23 is 0.0
+Presence in trial 23 is 1.0
+Stimulus presented at 898.672065230001
+Response 1 given at 908.3088612700012
+Response 1 given at 928.3763569530001
+Subject reported a confidence of 3 at 934.4509361910004
+Duration in trial 23 is 0.0167
+Percept in trial 23 is -1.0
+Bias in trial 24 is 0.0
+Condition in trial 24 is 1.0
+Presence in trial 24 is 1.0
+Stimulus presented at 940.7343558480006
+Response 1 given at 956.6221478940006
+Response 1 given at 975.6357632060008
+Subject reported a confidence of 2 at 981.2597856390003
+Duration in trial 24 is 0.2
+Percept in trial 24 is 0.0
+Bias in trial 25 is -0.4999999999999999
+Condition in trial 25 is 1.0
+Presence in trial 25 is 1.0
+Stimulus presented at 987.5391482680006
+Response 1 given at 995.2361659310009
+Response 1 given at 1005.4017624469998
+Subject reported a confidence of 4 at 1011.4962716450009
+Duration in trial 25 is 0.2
+Percept in trial 25 is -1.0
+Bias in trial 26 is nan
+Condition in trial 26 is 0.0
+Presence in trial 26 is 0.0
+Stimulus presented at 1017.7706318380006
+Response 1 given at 1038.0704504050009
+Response 1 given at 1048.427046443001
+Duration in trial 26 is 0.0167
+Percept in trial 26 is nan
+Bias in trial 27 is 0.0
+Condition in trial 27 is 0.0
+Presence in trial 27 is 1.0
+Stimulus presented at 1057.7350841219995
+Response 1 given at 1070.9550795960004
+Response 1 given at 1084.6978208689998
+Subject reported a confidence of 6 at 1093.3896162540004
+Duration in trial 27 is 0.0167
+Percept in trial 27 is 0.0
+Bias in trial 28 is -0.7
+Condition in trial 28 is 0.0
+Presence in trial 28 is 1.0
+Stimulus presented at 1099.6619465050007
+Response 1 given at 1117.1158990450003
+Response 1 given at 1126.337810631001
+Subject reported a confidence of 5 at 1131.478942748001
+Duration in trial 28 is 0.0167
+Percept in trial 28 is -1.0
+Bias in trial 29 is -0.2999999999999998
+Condition in trial 29 is 1.0
+Presence in trial 29 is 1.0
+Stimulus presented at 1137.7622065169999
+Response 1 given at 1152.4415457430005
+Response 1 given at 1161.9470302419995
+Subject reported a confidence of 7 at 1166.2976312760002
+Duration in trial 29 is 0.2
+Percept in trial 29 is -1.0
+Bias in trial 30 is -0.4999999999999999
+Condition in trial 30 is 1.0
+Presence in trial 30 is 1.0
+Stimulus presented at 1172.5901923590009
+Response 1 given at 1180.4764949750006
+Response 1 given at 1183.7801734650002
+Duration in trial 30 is 0.2
+Percept in trial 30 is -1.0
+Bias in trial 31 is 0.0
+Condition in trial 31 is 1.0
+Presence in trial 31 is 1.0
+Stimulus presented at 1193.0765008880007
+Response 1 given at 1201.3725333229995
+Response 1 given at 1210.2502024450005
+Duration in trial 31 is 0.2
+Percept in trial 31 is 0.0
+Bias in trial 32 is nan
+Condition in trial 32 is 0.0
+Presence in trial 32 is 0.0
+Stimulus presented at 1219.5047705220004
+Response 1 given at 1228.9426221110007
+Response 1 given at 1232.593004331
+Duration in trial 32 is 0.0167
+Percept in trial 32 is nan
+Bias in trial 33 is -0.7
+Condition in trial 33 is 0.0
+Presence in trial 33 is 1.0
+Stimulus presented at 1241.8864435140003
+Response 1 given at 1256.9675597309997
+Response 1 given at 1278.8734348529997
+Duration in trial 33 is 0.0167
+Percept in trial 33 is -1.0
+Bias in trial 34 is -0.2999999999999998
+Condition in trial 34 is 0.0
+Presence in trial 34 is 1.0
+Stimulus presented at 1288.184957894
+Response 1 given at 1295.631677581001
+Response 1 given at 1298.6212327949997
+Duration in trial 34 is 0.0167
+Percept in trial 34 is -1.0
+Bias in trial 35 is 0.3000000000000004
+Condition in trial 35 is 1.0
+Presence in trial 35 is 1.0
+Stimulus presented at 1307.8896942330011
+Response 1 given at 1315.790844868001
+Response 1 given at 1318.9063186849999
+Subject reported a confidence of 5 at 1323.4000040520004
+Duration in trial 35 is 0.2
+Percept in trial 35 is 1.0
+Bias in trial 36 is 0.7000000000000005
+Condition in trial 36 is 1.0
+Presence in trial 36 is 1.0
+Stimulus presented at 1329.690493678001
+Response 1 given at 1339.225619285
+Response 1 given at 1342.2669095710007
+Duration in trial 36 is 0.2
+Percept in trial 36 is 1.0
+Bias in trial 37 is 0.5000000000000003
+Condition in trial 37 is 0.0
+Presence in trial 37 is 1.0
+Stimulus presented at 1351.5497527200005
+Response 1 given at 1358.6828650370007
+Response 1 given at 1361.584640520001
+Duration in trial 37 is 0.0167
+Percept in trial 37 is 1.0
+Bias in trial 38 is 0.9000000000000007
+Condition in trial 38 is 1.0
+Presence in trial 38 is 1.0
+Stimulus presented at 1370.878664629001
+Response 1 given at 1379.2010411840001
+Response 1 given at 1382.4708790269997
+Duration in trial 38 is 0.2
+Percept in trial 38 is 1.0
+Bias in trial 39 is 0.7000000000000005
+Condition in trial 39 is 0.0
+Presence in trial 39 is 1.0
+Stimulus presented at 1391.7704015729996
+Response 1 given at 1445.3869841220003
+Response 4 given at 1447.9669611240006
+Duration in trial 39 is 0.0167
+Percept in trial 39 is 1.0
+Bias in trial 40 is -0.7
+Condition in trial 40 is 1.0
+Presence in trial 40 is 1.0
+Stimulus presented at 1457.2774827640005
+Response 1 given at 1472.2539379589998
+Response 1 given at 1480.8168416120006
+Duration in trial 40 is 0.2
+Percept in trial 40 is -1.0
+Bias in trial 41 is -0.2999999999999998
+Condition in trial 41 is 1.0
+Presence in trial 41 is 1.0
+Stimulus presented at 1490.1104111940003
+Response 1 given at 1526.6101002530013
+Response 1 given at 1529.839581739001
+Subject reported a confidence of 4 at 1534.8009947299997
+Duration in trial 41 is 0.2
+Percept in trial 41 is -1.0
+Bias in trial 42 is -0.4999999999999999
+Condition in trial 42 is 1.0
+Presence in trial 42 is 1.0
+Stimulus presented at 1541.0858670689995
+Response 1 given at 1549.454385598001
+Response 1 given at 1552.4306451379998
+Duration in trial 42 is 0.2
+Percept in trial 42 is -1.0
+Bias in trial 43 is -0.2999999999999998
+Condition in trial 43 is 0.0
+Presence in trial 43 is 1.0
+Stimulus presented at 1561.7285676810006
+Response 1 given at 1571.1862231150008
+Response 1 given at 1574.2974518580013
+Duration in trial 43 is 0.0167
+Percept in trial 43 is -1.0
+Bias in trial 44 is -0.4999999999999999
+Condition in trial 44 is 0.0
+Presence in trial 44 is 1.0
+Stimulus presented at 1583.5913015770002
+Response 1 given at 1590.8313724920008
+Response 1 given at 1594.394430286
+Subject reported a confidence of 3 at 1598.4216231890005
+Duration in trial 44 is 0.0167
+Percept in trial 44 is -1.0
+Bias in trial 45 is nan
+Condition in trial 45 is 0.0
+Presence in trial 45 is 0.0
+Stimulus presented at 1604.6754608949996
+Response 1 given at 1631.5291896480012
+Response 1 given at 1651.2201741919998
+Duration in trial 45 is 0.0167
+Percept in trial 45 is nan
+Bias in trial 46 is 0.5000000000000003
+Condition in trial 46 is 0.0
+Presence in trial 46 is 1.0
+Stimulus presented at 1660.5345419879995
+Response 1 given at 1668.1914431349996
+Response 1 given at 1675.317187173001
+Subject reported a confidence of 2 at 1680.7859040309995
+Duration in trial 46 is 0.0167
+Percept in trial 46 is 1.0
+Bias in trial 47 is -0.4999999999999999
+Condition in trial 47 is 0.0
+Presence in trial 47 is 1.0
+Stimulus presented at 1687.085722508
+Response 1 given at 1694.9673418029997
+Response 1 given at 1698.2261006500012
+Subject reported a confidence of 3 at 1705.5183713959996
+Duration in trial 47 is 0.0167
+Percept in trial 47 is -1.0
+Bias in trial 48 is 0.7000000000000005
+Condition in trial 48 is 1.0
+Presence in trial 48 is 1.0
+Stimulus presented at 1711.8265740400002
+Response 4 given at 1719.8506923189998
+Response 4 given at 1723.2423315600008
+Duration in trial 48 is 0.2
+Percept in trial 48 is 1.0
+Bias in trial 49 is nan
+Condition in trial 49 is 0.0
+Presence in trial 49 is 0.0
+Stimulus presented at 1732.4883185540002
+Response 4 given at 1740.350158997
+Response 4 given at 1743.334957078001
+Duration in trial 49 is 0.0167
+Percept in trial 49 is nan
+Bias in trial 50 is -0.9
+Condition in trial 50 is 1.0
+Presence in trial 50 is 1.0
+Stimulus presented at 1752.62444684
+Response 4 given at 1761.3273256499997
+Response 4 given at 1764.5471466500003
+Subject reported a confidence of 7 at 1769.449213715001
+Duration in trial 50 is 0.2
+Percept in trial 50 is -1.0
+Bias in trial 51 is 0.5000000000000003
+Condition in trial 51 is 1.0
+Presence in trial 51 is 1.0
+Stimulus presented at 1775.7355062740007
+Response 4 given at 1783.513899009
+Response 4 given at 1788.3759410149996
+Duration in trial 51 is 0.2
+Percept in trial 51 is 1.0
+Bias in trial 52 is -0.7
+Condition in trial 52 is 1.0
+Presence in trial 52 is 1.0
+Stimulus presented at 1797.680145196
+Response 1 given at 1808.9285492920008
+Response 1 given at 1819.3263705890004
+Subject reported a confidence of 4 at 1824.2156398610005
+Duration in trial 52 is 0.2
+Percept in trial 52 is -1.0
+Bias in trial 53 is nan
+Condition in trial 53 is 1.0
+Presence in trial 53 is 0.0
+Stimulus presented at 1830.472637539
+Response 1 given at 1837.779150964001
+Response 1 given at 1840.8079614079998
+Duration in trial 53 is 0.2
+Percept in trial 53 is nan

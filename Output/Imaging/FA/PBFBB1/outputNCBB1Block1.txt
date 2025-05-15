@@ -1,0 +1,53 @@
+Trigger at 166.15864649000287
+Start at 166.15864649000287
+Bias in trial 51 is 0.4
+Condition in trial 51 is 1.0
+Presence in trial 51 is 1.0
+Stimulus presented at 166.46839362399987
+Response 1 given at 174.92552367100143
+Response 1 given at 177.74232257900076
+Duration in trial 51 is 0.2
+Percept in trial 51 is A
+Stim Name in trial 51 is H40A60
+Stim Id in trial 51 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H40A60.png
+Bias in trial 52 is 0.7
+Condition in trial 52 is 1.0
+Presence in trial 52 is 1.0
+Stimulus presented at 184.97677439900144
+Response 1 given at 193.32193550400189
+Response 1 given at 197.39097898900218
+Subject reported a confidence of 6 at 200.73763092100126
+Duration in trial 52 is 0.2
+Percept in trial 52 is A
+Stim Name in trial 52 is H70A30
+Stim Id in trial 52 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 53 is 0.8
+Condition in trial 53 is 1.0
+Presence in trial 53 is 1.0
+Stimulus presented at 205.97428039900115
+Response 1 given at 212.77438804300255
+Response 1 given at 215.38649604400052
+Duration in trial 53 is 0.2
+Percept in trial 53 is H
+Stim Name in trial 53 is H80A20
+Stim Id in trial 53 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H80A20.png
+Bias in trial 54 is 0.7
+Condition in trial 54 is 0.0
+Presence in trial 54 is 1.0
+Stimulus presented at 222.626676322001
+Response 1 given at 229.48808409200137
+Response 1 given at 232.0821776289995
+Duration in trial 54 is 0.016
+Percept in trial 54 is A
+Stim Name in trial 54 is H70A30
+Stim Id in trial 54 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H70A30.png
+Bias in trial 55 is 0.5
+Condition in trial 55 is 0.0
+Presence in trial 55 is 1.0
+Stimulus presented at 239.28704725699936
+Response 1 given at 246.1572543700022
+Response 1 given at 249.26221133700165
+Duration in trial 55 is 0.016
+Percept in trial 55 is N
+Stim Name in trial 55 is H50A50
+Stim Id in trial 55 is /Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Stimuli/Faces/Males/WM025_H50A50.png

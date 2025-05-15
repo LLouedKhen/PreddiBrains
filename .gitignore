@@ -1,11 +1,5 @@
-# folders to ignore : personnal lectures, stimuli, outputs 
-Lecture/
-Stimuli/
-Output/ 
-
-# Mac specific 
-Scripts/__pycache__
-.DS_Store
-
-# files to ignore : file test to open the outputs and check 
-test.ipynb
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
