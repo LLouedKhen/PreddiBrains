@@ -2,6 +2,8 @@
 Lecture/
 Stimuli/
 Output/ 
+data/
+
 
 # Mac specific 
 Scripts/__pycache__
