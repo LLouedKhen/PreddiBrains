@@ -1,4 +1,6 @@
-## Preprocessing Pipline ##
+## Preprocessing Pipline for multi Echo fMRI ##
+## Author @barbaragrosjean ##
+
 
 import os 
 import subprocess
@@ -7,8 +9,6 @@ import argparse
 import itertools
 import shutil
 import json
-from tqdm import trange
-
 
 from fsl.wrappers import mcflirt
 
@@ -38,6 +38,9 @@ def DICOM2Nifti(data_path:str, subj:str, sess:str):
     if not os.path.exists(subj_path):
         os.makedirs(subj_path)
 
+    if os.path.exists('/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/data/' + subj + sess) :
+        return 'Already extracted'
+    
     # unzip the folder PB_subj_sess
     from zipfile import ZipFile
     ZipFile(subj_path + '.zip').extractall(subj_path)
@@ -87,6 +90,9 @@ def extract_usfull_file(data_path:str, subj:str, sess:str,  nb_run=2, nb_echo=3)
     subj_raw_path = data_path + '/raw/' + subj + sess
     trash_folder = data_path + '/trash/' + subj + sess
 
+    if os.path.exists('/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/data/' + subj + sess) :
+        return 'Already extracted'
+
     if not os.path.exists(subj_folder) : 
         os.makedirs(subj_folder + '/func')
         os.makedirs(subj_folder + '/anat')
@@ -125,11 +131,12 @@ def extract_usfull_file(data_path:str, subj:str, sess:str,  nb_run=2, nb_echo=3)
 
         # field map 
 
-        if not os.path.isdir(subj_folder + '/fieldmap') :
-            os.makedirs(subj_folder + '/fieldmap')
+        if not os.path.isdir(subj_folder + '/fmap') :
+            os.makedirs(subj_folder + '/fmap')
 
         if 'gre_field_mapping' in file :
-            destination= os.path.join(subj_folder + '/fieldmap/', file)
+            file_path = os.path.join(subj_raw_path, file)
+            destination= os.path.join(subj_folder + '/fmap', file)
             json_file = os.path.join(subj_raw_path, file[:-6]+'json')
             shutil.move(file_path, destination)
             shutil.move(json_file, destination[:-6]+'json')
@@ -143,105 +150,109 @@ def extract_usfull_file(data_path:str, subj:str, sess:str,  nb_run=2, nb_echo=3)
                 shutil.move(file_path, destination)
                 shutil.move(json_file, destination[:-6]+'json')
 
-def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3) : 
+def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3, smooth='8mm') : 
     output_path = data_path+ '/' + subj + sess + '/preproc' 
     subj_path =  data_path+ '/' + subj + sess
-    trash_path = data_path+ '/trash/' +  subj + sess 
+    trash_path = data_path+ '/trash/' +  subj + sess  
 
     if not os.path.isdir(output_path) : 
         os.makedirs(output_path)
-            
-    for r in trange(nb_run, desc="preprocess runs") :
-        for e in trange(nb_echo, desc= "preprocess echos") : 
+
+
+    for r in range(nb_run) :
+        print( f'___________________ RUN {r+1} ___________________')
+        for e in range(nb_echo) : 
+            print( f'___________________ ECHO {e+1} ___________________')
+
             input_file = subj_path + '/func/raw_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1)+'.nii.gz'
             
-            # Motion correction 
-            print('Motion correction')
-            output_file = output_path + '/mc_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
-
+            ############################
+            # 1. Slice timing correction 
+            ############################
+            print('########### Slice Timing correction ##########')
+            output_file = output_path + '/st_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
+            
             if not os.path.isfile(output_file):
+
+                # got the TR
+                json_path = subj_path + '/func/raw_' + subj +sess + '_run' + str(r+1) + '_e1.json'
+                with open(json_path, 'r') as jfile:
+                    json_file = json.load(jfile)
+                    TR = str(json_file["RepetitionTime"])
+
                 try :
-                    mcflirt(infile=input_file, refvol=0, o=output_file, plots=True, mats=True, dof=6)
-                    print(f"Motion Correction done, run {r+1}, echo {e+1}! :)")
+                    command = ['slicetimer', '-i', input_file, '-o', output_file,  "-r", str(TR), "--odd"]
+                    subprocess.call(command)
+                    print(f"Done.")
+
+                except subprocess.CalledProcessError as err:
+                    print(f'ERROR : ', err)
+
+            else : 
+                print('Already done.')
+            
+
+            ######################
+            # 2. Motion correction
+            ######################
+         
+            print('########### Motion correction ##########')
+            input_file = output_file
+            output_file = output_path + '/st_mc_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
+            mean_file_e1 = output_path + '/mean_' + subj + sess + '_run' + str(r+1) + '_e1.nii.gz'
+            mat_files_e1 = output_path + '/st_mc_'+subj +sess + '_run'+ str(r+1) +'_e1.nii.gz.mat' 
+
+            if e == 0 and not os.path.isfile(mean_file_e1) : 
+                print('-> Save the mean volume from e1')
+                command = ['fslmaths', input_file, '-Tmean', mean_file_e1]
+                try:
+                    subprocess.run(command, check=True)
+                    print('Done.')
+                except subprocess.CalledProcessError as err:
+                    print(f'ERROR: ', err)
+
+            if e ==0 and not os.path.exists(mat_files_e1):
+                print('-> Compute motion correction transformation')
+                try :
+                    mcflirt(infile=input_file, refvol=mean_file_e1, o=output_file, plots=True, mats=True, dof=6)
+
+                    # Change the name of the files to be compatible with applyxfm4D
+                    files = sorted(os.listdir(mat_files_e1))
+
+                    for f in files:
+                        if f.startswith("MAT_"):
+                            num = int(f.split("_")[1])
+                            new_name = f"MAT_{num:05d}"
+                            os.rename(os.path.join(mat_files_e1, f), os.path.join(mat_files_e1, new_name))
+
+                    print(f"Done.")
 
                 except :
-                    print(f'ERROR : {subj}, run {r+1} mcfilrt')
+                    print(f'ERROR: mcfilrt')
 
-            else : 
-                print('Motion correction already done')
-
-            # Trash 
-            if os.path.isdir(output_file+ '.mat') : 
-                destination= trash_path + '/mc_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz.mat'
-                shutil.move(output_file + '.mat', destination)
-
-            if os.path.isfile(output_file+ '.par') : 
-                destination= trash_path + '/mc_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz.par'
-                shutil.move(output_file+ '.par', destination)
-
-            # Slice timing correction 
-            print('Slice Timing Correction')
-            input_file = output_file
-            output_file = output_path + '/mc_st_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
-            
-            if not os.path.isfile(output_file):
-                try :
-                    command = ['slicetimer', '-i', input_file, '-o', output_file,  "-r", "2", "--odd"]
+            if not os.path.isfile(output_file) :  
+                print('-> Apply transformation')
+                command = ['applyxfm4D', input_file,  mean_file_e1, output_file, mat_files_e1]
+                try : 
                     subprocess.call(command)
-                    print(f"Slice Timing Correction done, run {r+1}, echo {e+1}! :)")
+                    print(f"Done.")
 
                 except subprocess.CalledProcessError as err:
-                    print(f'ERROR : {subj}, {r+1}', err)
-
+                    print(f'ERROR: ', err)
+                
             else : 
-                print('Slice Timing correction already done')
+                print('Already done.')
 
-            
-            # Skull Stripping 
+
+            ##########################
+            # 3. Field map correciton 
+            ##########################
+         
+            print('########### Field map correciton  ##########')
             input_file = output_file
-            output_file = output_path + '/mc_st_bet_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
-            mean_file = output_path + '/mean_epi_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
-            mean_file_bet = output_path + '/mean_epi_bet_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
-            
-            if not os.path.isfile(output_file):
-                try :
-                    # compute mean image
-                    command = ['fslmaths', input_file, '-Tmean', mean_file]
-                    subprocess.call(command)
+            output_file = output_path + '/st_mc_fm_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
 
-                    # use bet on mean imagg
-                    command = ['bet', mean_file, mean_file_bet ,'-f', '0.3' ,'-m']
-                    subprocess.call(command)
-
-                    # apply the mask mean file bet to the 4D image
-                    command = ['fslmaths', input_file, '-mas', mean_file_bet, output_file]
-                    subprocess.call(command)
-                    
-                    print(f"Skull stripping done, run {r+1}, echo {e+1}! :)")
-
-                except subprocess.CalledProcessError as err:
-                    print(f'ERROR : {subj}, {r+1}', err)
-
-            else : 
-                print('Skull stripping already done')
-
-            # trash
-            if os.path.isfile(mean_file) : 
-                destination= trash_path + '/mean_epi_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
-                shutil.move(mean_file, destination)
-
-            if os.path.isfile(mean_file_bet) : 
-                destination= trash_path + '/mean_epi_bet_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz'
-                shutil.move(mean_file_bet, destination)
-                shutil.move(mean_file_bet[:-7] + '_mask.nii.gz', destination[:-7] + '_mask.nii.gz')
-
-
-            # Field map correciton 
-            print('Field map correction')
-            input_file = output_file
-            output_file = output_path + '/fm_bet_st_mc_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1)
-
-            fieldmap_path = subj_path + '/fieldmap/'
+            fieldmap_path = subj_path + '/fmap/'
 
             if r == 0 : 
                 name = 'run1_5_e2'
@@ -263,13 +274,14 @@ def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3) :
             
             if not os.path.exists(output_file):
                 try :
-                    # skull strip the magnitude brain 
-                    command = ['bet',  magnitude_file, magnitude_bet, '-f', '0.35', '-m']
-                    subprocess.call(command)
+                    if not os.path.isfile(field_map) : 
+                        # skull strip the magnitude brain 
+                        command = ['bet',  magnitude_file, magnitude_bet, '-f', '0.35', '-m']
+                        subprocess.call(command)
 
-                    # prep field map 
-                    command= ['fsl_prepare_fieldmap', 'SIEMENS',phase_file , magnitude_bet,  field_map, TE]
-                    subprocess.call(command)
+                        # prep field map 
+                        command= ['fsl_prepare_fieldmap', 'SIEMENS',phase_file , magnitude_bet,  field_map, TE]
+                        subprocess.call(command)
 
                     # apply distrortion
                     json_path = f'/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/data/PB_001/func/raw_PB_001_run{r+1}_e{e+1}.json'
@@ -277,18 +289,226 @@ def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3) :
                         json_file = json.load(jfile)
                         EffectiveEchoSpacing = str(json_file["EffectiveEchoSpacing"])
 
-                    command = ['fugue', '-i', input_file, f'--dwell={EffectiveEchoSpacing}', f'--loadfmap={field_map}', f'--mask={magnitude_bet[:-7] + '_mask.nii.gz'}', '-u', output_file]
+                    command = ['fugue', '-i', input_file, f'--dwell={EffectiveEchoSpacing}', f'--loadfmap={field_map}', 
+                               f'--mask={magnitude_bet[:-7]}_mask.nii.gz', '-u', output_file]
+                    
                     subprocess.call(command)
 
-                    print(f"Field map correction done, run {r+1}, echo {e+1}! :)")                    
+                    print(f"Done.")                    
 
                 except subprocess.CalledProcessError as err:
-                    print(f'ERROR : {subj}, {r+1}', err)
+                    print(f'ERROR: ', err)
 
             else : 
-                print('Field map correction already done')
+                print('Already done.')
 
-            # trash TODO
+    
+        #################
+        # 4. Combine Echo
+        #################
+        print('########### Combine Echo - Tedana ##########')
+        destination_file = output_path + '/tedana_' +subj + sess + '_run' + str(r+1) + '.nii.gz'
+
+        if not os.path.exists(destination_file) : 
+            outputdir_run = output_path + '/tedana' + '/run' + str(r+1)
+
+            if not os.path.isdir(outputdir_run):
+                os.makedirs(outputdir_run)
+
+            # get echo time
+            time = []
+            for e in  range(nb_echo) :
+                jsonfile_path = subj_path + '/func/'+ f'raw_{subj}_run{r+1}_e{e+1}.json'
+                with open(jsonfile_path, 'r') as jfile:
+                    json_file = json.load(jfile)
+                    time.append(json_file["EchoTime"]*1000)
+
+            run = [output_path + f'/st_mc_fm_{subj}{sess}_run{r+1}_e{e+1}.nii.gz' for e in range(nb_echo)]
+
+            command = f'tedana -d {" ".join(run)} -e {" ".join(map(str, time))} --out-dir {outputdir_run}'
+            try : 
+                subprocess.call(command, shell=True)  
+                print('Done.')
+                
+                # move the output that we are interested in 
+                file = output_path +'/tedana/run' + str(r+1) + '/desc-optcom_bold.nii.gz'
+                
+                if os.path.exists(file) : 
+                    shutil.move(file, destination_file)
+
+            except subprocess.CalledProcessError as err:
+                print(f'ERROR: ', err)
+        else:
+            print('Already done.')
+
+        ##########################
+        # 5. Co-Registration to T1
+        ##########################
+        print('########### Co-Registration ##########')
+        input_file=destination_file
+        destination_file = output_path + '/func_in_T1_' +subj + sess + '_run' + str(r+1) + '.nii.gz'
+
+        # Anat prep - Skull strip the anatomical image
+        print('-> Preparing anatomical image T1 ...')
+        anat_file = os.path.join(data_path, subj + sess, 'anat', 'T1_' + subj + sess)
+        anat_file_bet = os.path.join(data_path, subj + sess, 'anat', 'T1_' + subj + sess + '_optiBET_brain.nii.gz')
+
+        optiBET_file = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Processing/optiBET.sh'
+        shutil.copy(optiBET_file, subj_path + '/anat/optiBET.sh')
+        global_path = os.getcwd()
+
+        if not os.path.exists(anat_file_bet):
+            os.chdir(os.path.join(data_path, subj + sess, 'anat'))
+            command = ['sh', 'optiBET.sh', anat_file]
+            subprocess.run(command)
+
+            # remove optibet file
+            if os.path.isfile(output_path + '/optiBET.sh') : 
+                os.remove(output_path + '/optiBET.sh')
+
+            # get back to the right folder
+            os.chdir(global_path)
+        else : 
+            print('Already done.')
+        
+        # Compute mean image after tedana
+        print('-> Compute mean functional combine image')
+        mean_func = os.path.join(output_path, f'mean_func_{subj}_{sess}_run{r+1}.nii.gz')
+
+        if not os.path.exists(mean_func):
+            command = ['fslmaths', input_file, '-Tmean', mean_func]
+            try:
+                subprocess.run(command, check=True)
+                print('Done.')
+            except subprocess.CalledProcessError as err:
+                print(f'ERROR: ', err)
+        else : 
+            print('Already done.')
+
+        # Compute transform 
+        print('Compute and apply the transform matrix Func -T1')
+        if not os.path.exists(output_file):
+            print('-> Compute transform Func - T1')
+            mat_func_to_T1 = os.path.join(output_path, f'func_to_T1_{subj}_{sess}_run{r+1}.mat')
+            if not os.path.isfile(mat_func_to_T1) : 
+                flirt_command = ['flirt', '-in', mean_func, '-ref', anat_file_bet, '-omat', mat_func_to_T1, '-dof', '6']
+                try:
+                    subprocess.run(flirt_command, check=True)
+                    print('Done.')
+                except subprocess.CalledProcessError as err:
+                    print(f'ERROR:', err)        
+            
+            print('-> Apply transform Func - T1')
+            try:
+                apply_command = [
+                    'flirt', '-in', input_file, '-ref', anat_file_bet,
+                    '-applyxfm', '-init', mat_func_to_T1, '-out', output_file
+                ]
+                subprocess.run(apply_command, check=True)
+                print(f'Done.')
+            except subprocess.CalledProcessError as err:
+                print(f'ERROR:', err)
+        else:
+            print(f'Already done.')
+
+        ###################
+        # 6. Normalization
+        ###################
+        print('########### Normalization ##########')
+        input_file=output_file
+        output_file = output_path + '/func_in_MNI' + subj + sess + '_run' + str(r+1) + '.nii.gz'
+
+        print('-> Preparing MNI template ...')
+        MNI_file = os.path.join(data_path, 'AAL3/MNI.nii')
+        MNI_file_bet = os.path.join(data_path, 'AAL3/MNI_optiBET_brain.nii.gz')
+
+        optiBET_file = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Processing/optiBET.sh'
+        shutil.copy(optiBET_file, data_path + '/AAL3/optiBET.sh')
+        global_path = os.getcwd()
+
+        if not os.path.exists(anat_file_bet):
+            os.chdir(os.path.join(data_path, '/AAL3'))
+            command = ['sh', 'optiBET.sh', MNI_file]
+            subprocess.run(command)
+
+            # Remove optibet file
+            if os.path.isfile(output_path + '/optiBET.sh') : 
+                os.remove(output_path + '/optiBET.sh')
+
+            # get back to the right folder
+            os.chdir(global_path)
+        else : 
+            print('Already done.')
+
+        if not os.path.isfile(output_file) : 
+            print('-> Compute transform T1 - MNI')
+            mat_T1_to_MNI = os.path.join(output_path, f'T1_MNI_{subj}{sess}.mat')
+            if not os.path.exists(mat_T1_to_MNI):
+                flirt_command = [
+                    'flirt', '-in', anat_file_bet, '-ref', MNI_file_bet,
+                    '-omat', mat_T1_to_MNI, '-dof', '6'
+                ]
+                try:
+                    subprocess.run(flirt_command, check=True)
+                    print('Done.')
+                except subprocess.CalledProcessError as err:
+                    print(f'ERROR: ', err)
+
+            print('-> Apply transform T1 - MNI to functional volumes')
+            applyxfm_command = ['flirt', '-in', input_file, '-ref', MNI_file_bet,'-applyxfm', '-init', mat_T1_to_MNI, '-out', output_file]
+            try:
+                subprocess.run(applyxfm_command, check=True)
+                print('Done.')
+            except subprocess.CalledProcessError as err:
+                print(f'ERROR: ', err)
+        else:
+            print(f'Already Done.')
+
+        ###############
+        # 6. Smoothing
+        ################
+        print(f'########### Smoothing - {smooth} ##########')
+
+        sigma_map = {'4mm' : 1.70, '5mm' : 2.12, '6mm': 2.55, '8mm': 3.40}
+        sigma = sigma_map[smooth]
+
+        output_path = data_path+ '/' + subj + sess + '/preproc' 
+
+        for r in range(nb_run) :
+            input_file = output_file
+            output_file = os.path.join(output_path, f'sm_func_MNI_{subj}{sess}_run{r+1}.nii.gz')
+
+            if not os.path.isfile(input_file) :
+                try : 
+                    command = ['fslmaths', input_file,  '-s', sigma, output_file]
+                    subprocess.call(command)
+                    print('Done.')
+
+                except subprocess.CalledProcessError as err:
+                    print(f'ERROR: ', err)
+
+            else : 
+                print('Already done.')
+
+
+    # rest goes to trash
+    if not os.path.isdir(trash_path) : 
+        os.makedirs(trash_path)
+
+    if os.path.isdir(output_path +'/tedana') : 
+        shutil.move(output_path +'/tedana', trash_path)
+
+    if os.path.isfile(output_path + '/optiBET.sh') : 
+        os.remove(output_path + '/optiBET.sh')
+
+    for r in range(nb_run) :
+        if os.path.isdir(output_file+ '.mat') : 
+                destination= trash_path + '/mc_' + subj + sess + '_run' + str(r+1) + '_e1.nii.gz.mat'
+                shutil.move(output_file + '.mat', destination)
+        for e in range(nb_echo) :
+            if os.path.isfile(output_file+ '.par') : 
+                destination= trash_path + '/mc_' + subj + sess + '_run' + str(r+1) + '_e' + str(e+1) + '.nii.gz.par'
+                shutil.move(output_file+ '.par', destination)
 
 def combine_echo(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3) : 
     output_path = data_path+ '/' + subj + sess + '/preproc' 
@@ -313,7 +533,7 @@ def combine_echo(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3) :
                     json_file = json.load(jfile)
                     time.append(json_file["EchoTime"]*1000)
 
-            run = [output_path + f'/fm_bet_st_mc_{subj}_run{r+1}_e{e+1}.nii.gz' for e in range(nb_echo)]
+            run = [output_path + f'/fm_st_mc_{subj}{sess}_run{r+1}_e{e+1}.nii.gz' for e in range(nb_echo)]
 
             command = f'tedana -d {" ".join(run)} -e {" ".join(map(str, time))} --out-dir {outputdir_run}'
             try : 
@@ -334,71 +554,20 @@ def combine_echo(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3) :
             os.makedirs(trash_path)
 
         if os.path.isdir(output_path +'/tedana') : 
-            shutil.move(output_path +'/tedana', trash_path + '_run' + str(r) )
+            shutil.move(output_path +'/tedana', trash_path)
 
-def registration_to_T1(data_path: str, subj: str, sess: str, nb_run=2):
-    output_path = os.path.join(data_path, subj + sess, 'preproc')
-    anat_file = os.path.join(data_path, subj + sess, 'anat', 'T1_' + subj + sess)
-    anat_file_bet = os.path.join(data_path, subj + sess, 'anat', 'bet_T1_' + subj + sess)
 
-    # Skull strip the anatomical image
-    if not os.path.exists(anat_file_bet + '.nii.gz'):
-        command = ['bet', anat_file, anat_file_bet, '-f', '0.5', '-m']
-        subprocess.call(command)
 
-    for r in trange(nb_run, desc="Registering runs to T1"):
-        print(f'Registering run {r+1} to T1')
-
-        input_func = os.path.join(output_path, f'tedana_{subj}{sess}_run{r+1}.nii.gz')
-        mean_func = os.path.join(output_path, f'mean_{subj}{sess}_run{r+1}.nii.gz')
-
-        # Step 1: Compute mean functional image (used for registration)
-        if not os.path.exists(mean_func):
-            command = ['fslmaths', input_func, '-Tmean', mean_func]
-            try:
-                subprocess.run(command, check=True)
-                print('fslmaths (mean func) done.')
-            except subprocess.CalledProcessError as err:
-                print(f'ERROR during mean func computation: {subj}, {command}', err)
-
-        # Step 2: Compute transformation matrix from mean_func to T1
-        mat_func_to_T1 = os.path.join(output_path, f'func_to_T1_{subj}{sess}_run{r+1}.mat')
-        if not os.path.exists(mat_func_to_T1):
-            flirt_command = [
-                'flirt', '-in', mean_func, '-ref', anat_file_bet,
-                '-omat', mat_func_to_T1, '-dof', '6'
-            ]
-            try:
-                subprocess.run(flirt_command, check=True)
-                print('FLIRT: Computed transform matrix (mean func → T1).')
-            except subprocess.CalledProcessError as err:
-                print(f'ERROR during FLIRT matrix computation: {subj}, {flirt_command}', err)
-
-        # Step 3: Apply transformation to the whole functional run
-        func_in_T1 = os.path.join(output_path, f'func_in_T1_{subj}{sess}_run{r+1}.nii.gz')
-        if not os.path.exists(func_in_T1):
-            applyxfm_command = [
-                'flirt', '-in', input_func, '-ref', anat_file_bet,
-                '-applyxfm', '-init', mat_func_to_T1, '-out', func_in_T1
-            ]
-            try:
-                subprocess.run(applyxfm_command, check=True)
-                print('FLIRT: Applied transform to full run → T1 space.')
-            except subprocess.CalledProcessError as err:
-                print(f'ERROR applying transform: {subj}, {applyxfm_command}', err)
-        else:
-            print(f'Run {r+1} already transformed to T1.')
-
-def smoothing(data_path:str, subj:str, sess:str, nb_run =2, smooth = '4mm') : 
+def smoothing(data_path:str, subj:str, sess:str, nb_run =2, smooth = '8mm') : 
 
     sigma_map = {'4mm' : 1.70, '5mm' : 2.12, '6mm': 2.55, '8mm': 3.40}
     sigma = sigma_map[smooth]
 
     output_path = data_path+ '/' + subj + sess + '/preproc' 
 
-    for r in trange(nb_run, desc="smoothing runs") :
-        input_file = os.path.join(output_path, f'func_in_MNI_PB_001_run{str(r+1)}.nii.gz')
-        output_file = os.path.join(output_path, f'sm_func_in_MNI_PB_001_run{str(r+1)}.nii.gz')
+    for r in range(nb_run) :
+        input_file = os.path.join(output_path, f'tedana_{subj}{sess}_run{r+1}.nii.gz')
+        output_file = os.path.join(output_path, f'sm_func_MNI_{subj}{sess}_run{r+1}.nii.gz')
 
         if not os.path.isfile(input_file) :
             try : 
@@ -411,11 +580,6 @@ def smoothing(data_path:str, subj:str, sess:str, nb_run =2, smooth = '4mm') :
 
         else : 
             print('Smoothing already done')
-
-def concat_runs(data_path:str, subj:str, sess:str, nb_run =2, smooth = '4mm') : 
-    # TODO
-    return 0
-
 
 if __name__ == "__main__":
 
@@ -446,11 +610,9 @@ if __name__ == "__main__":
  
         preprocessing(data_path, subj, sess)
 
-        combine_echo(data_path, subj, sess)   
+        #combine_echo(data_path, subj, sess)
 
-        registration(data_path, subj, sess)
-
-        smoothing(data_path, subj, sess)
+        #smoothing(data_path, subj, sess)
    
 
    
