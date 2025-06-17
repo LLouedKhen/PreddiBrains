@@ -72,6 +72,8 @@ Once that all your preprocessing steps run you should have the following structr
 - the preprocess images are in /preproc under the name sm_func_MNI_PB___run__.nii.gz
 
 ### 2. First Level analysis - subject level GLM
+For now the behaivoral data are in data/PB__sess__/behav. 
+
 #### A. Design matrix 
 From Leyla design matrix we have the following design matrix: 
 
