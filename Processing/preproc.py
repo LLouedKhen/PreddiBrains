@@ -352,7 +352,6 @@ def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3, smooth
         print('-> Preparing anatomical image T1 ...')
         anat_file = os.path.join(data_path, subj + sess, 'anat', 'T1_' + subj + sess)
         anat_file_bet = os.path.join(data_path, subj + sess, 'anat', 'T1_' + subj + sess + '_optiBET_brain.nii.gz')
-
         optiBET_file = '/Users/barbaragrosjean/Desktop/CHUV/PreddiBrains/Processing/optiBET.sh'
         shutil.copy(optiBET_file, subj_path + '/anat/optiBET.sh')
         global_path = os.getcwd()
@@ -392,6 +391,7 @@ def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3, smooth
             mat_func_to_T1 = os.path.join(output_path, f'func_to_T1_{subj}{sess}_run{r+1}.mat')
             if not os.path.isfile(mat_func_to_T1) : 
                 flirt_command = ['flirt', '-in',mean_func, '-ref', anat_file_bet, '-omat', mat_func_to_T1, '-dof', '6']
+
                 try:
                     subprocess.run(flirt_command, check=True)
                     print('Done.')
@@ -400,10 +400,9 @@ def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3, smooth
             
             print('-> Apply transform Func - T1')
             try:
-                apply_command = [
-                    'flirt', '-in', input_file, '-ref', anat_file_bet,
-                    '-applyxfm', '-init', mat_func_to_T1, '-out', output_file
-                ]
+                #apply_command = ['flirt', '-in', input_file, '-ref', anat_file_bet,'-applyxfm', '-init', mat_func_to_T1, '-out', output_file]
+                apply_command = ['applyxfm4D', input_file, anat_file_bet, output_file, mat_func_to_T1, '-singlematrix']
+                 
                 subprocess.run(apply_command, check=True)
                 print(f'Done.')
             except subprocess.CalledProcessError as err:
@@ -443,9 +442,9 @@ def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3, smooth
 
         if not os.path.isfile(output_file) : 
             print('-> Compute transform T1 - MNI')
-            mat_T1_to_MNI = os.path.join(output_path, f'T1_MNI_{subj}{sess}.mat')
-            mat_T1_to_MNI_2 = os.path.join(output_path, f'T1_MNI_{subj}{sess}_2.mat')
-            T1_2_MNI_warp = os.path.join(output_path, f'T1_MNI_{subj}{sess}_warp.mat')
+            mat_T1_to_MNI = os.path.join(output_path, f'T1_to_MNI_{subj}{sess}.mat')
+            mat_T1_to_MNI_2 = os.path.join(output_path, f'T1_to_MNI_2_{subj}{sess}.mat')
+            T1_2_MNI_warp = os.path.join(output_path, f'T1_to_MNI_warp_{subj}{sess}.mat')
             if not os.path.exists(mat_T1_to_MNI):
                 flirt_command = ['flirt', '-in', anat_file_bet, '-ref', MNI_file_bet,
                                 '-omat', mat_T1_to_MNI, '-dof', '6']
@@ -464,7 +463,7 @@ def preprocessing(data_path:str, subj:str, sess:str, nb_run=2, nb_echo=3, smooth
             print('-> Apply transform T1 - MNI to functional volumes')
             #applyxfm_command = ['flirt', '-in', input_file, '-ref', MNI_file_bet,'-applyxfm', '-init', mat_T1_to_MNI, '-out', output_file]
             applywarp_command = ['applywarp', '--in=', input_file, '--ref=', MNI_file, '--warp=', 
-                                 T1_2_MNI_warp.nii.gz, '--premat=', mat_func_to_T1, '--out=', output_file]
+                                 T1_2_MNI_warp, '--premat=', mat_T1_to_MNI, '--out=', output_file]
             try:
                 subprocess.run(applywarp_command, check=True)
                 print('Done.')
